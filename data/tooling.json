@@ -1,0 +1,97 @@
+[
+    {
+      "slug": "catheter-tipping-tooling",
+      "name": "Catheter Tip Tooling",
+      "type": "capability",
+      "description": "Custom dies and mandrels engineered for your specific catheter geometry. Designed to integrate with ONEX Catheter Tipper systems.",
+      "compatible_products": ["catheter-tipper-1", "catheter-tipper-pro"],
+      "applications": ["catheter-tipping", "catheter-flaring"],
+      "components": ["catheter-tipping-die", "catheter-tipping-mandrel"],
+      "process": [
+        "Design review and catheter-sample evaluation",
+        "3D CAD design and thermal analysis",
+        "Prototype tooling production",
+        "Process development and recipe validation on ONEX equipment",
+        "Final documentation and handoff"
+      ],
+      "includes_process_development": true,
+      "related_services": ["process-development"],
+      "cta": "Request Custom Tooling"
+    },
+    {
+      "slug": "catheter-tipping-die",
+      "name": "Catheter Tipping Die",
+      "type": "component",
+      "parent": "catheter-tip-tooling",
+      "description": "Custom-engineered die for forming thermoplastic catheter tips. Precision-machined for geometry accuracy and heat uniformity.",
+      "applications": ["catheter-tipping"],
+      "compatible_products": ["catheter-tipper-1", "catheter-tipper-pro"],
+      "materials_supported": ["polyethylene", "polyurethane"],
+      "process": [
+        "Geometry analysis and 3D CAD design",
+        "Precision machining and surface finishing",
+        "Validation and thermal characterization",
+        "Process development to optimize tipping parameters"
+      ],
+      "includes_process_development": true,
+      "related_services": ["process-development"],
+      "cta": "Request a Custom Die"
+    },
+    {
+      "slug": "catheter-tipping-mandrel",
+      "name": "Catheter Tipping Mandrel",
+      "type": "component",
+      "parent": "catheter-tip-tooling",
+      "description": "Precision mandrel that supports the catheter ID during tipping or flaring. Built to your exact geometry and wall thickness.",
+      "applications": ["catheter-tipping", "catheter-flaring"],
+      "compatible_products": ["catheter-tipper-1", "catheter-tipper-pro"],
+      "materials_supported": ["polyethylene", "polyurethane"],
+      "process": [
+        "CAD design from catheter dimensions",
+        "Prototype machining and validation",
+        "Production tooling and delivery",
+        "Process development for optimal mandrel alignment and cycle timing"
+      ],
+      "includes_process_development": true,
+      "related_services": ["process-development"],
+      "cta": "Request Custom Mandrel"
+    },
+    {
+      "slug": "soft-tip-bonding-tooling",
+      "name": "Soft-Tip Bonding Tooling",
+      "type": "capability",
+      "description": "Cassette assemblies custom-designed for bonding soft-tip catheters on the ONEX Soft Tip Bonder.",
+      "compatible_products": ["soft-tip-bonder"],
+      "applications": ["bonding"],
+      "components": ["bonding-cassette"],
+      "process": [
+        "Geometry review",
+        "Cassette design and prototype build",
+        "Thermal validation on ONEX equipment",
+        "Process development for bonding cycle optimization"
+      ],
+      "includes_process_development": true,
+      "related_services": ["process-development"],
+      "cta": "Request Custom Tooling"
+    },
+    {
+      "slug": "bonding-cassette",
+      "name": "Bonding Cassette",
+      "type": "component",
+      "parent": "soft-tip-bonding-tooling",
+      "description": "Custom cassette fixture for soft-tip bonding operations. Ensures precise alignment and repeatable weld quality.",
+      "applications": ["bonding"],
+      "compatible_products": ["soft-tip-bonder"],
+      "materials_supported": ["pvc", "pebax"],
+      "process": [
+        "3D design from catheter samples",
+        "Prototype build and thermal testing",
+        "Final production delivery",
+        "Process development to validate bond strength and temperature profile"
+      ],
+      "includes_process_development": true,
+      "related_services": ["process-development"],
+      "cta": "Request Custom Cassette"
+    }
+  ]
+  

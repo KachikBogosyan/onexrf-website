@@ -1,0 +1,12 @@
+[
+    {
+      "slug": "rf-induction",
+      "name": "RF Induction Technology",
+      "description": "ONEX RF heating provides precise, consistent energy delivery for repeatable catheter manufacturing processes.",
+      "related": {
+        "products": ["catheter-tipper-1", "catheter-tipper-pro", "soft-tip-bonder"],
+        "applications": ["catheter-tipping", "catheter-flaring", "bonding"]
+      }
+    }
+  ]
+  
