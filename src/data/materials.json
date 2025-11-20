@@ -6,7 +6,7 @@
       "description": "Used for less complex catheters due to its flexibility and cost-effectiveness. It is also known for its chemical resistance and biocompatibility",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -16,7 +16,7 @@
       "description": "Polyurethane's offers superior durability, strength, and flexibility, making it suitable for more intricate designs.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -26,7 +26,7 @@
       "description": "Versatile and affordable, PVC can be formulated to be flexible, transparent, and resistant to kinks. It is a common choice, though some newer formulations are DEHP-free due to health concerns.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -36,7 +36,7 @@
       "description": "Thermoplastic elastomer used in soft-tip bonding of catheters.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -45,7 +45,7 @@
       "description": "A highly biocompatible material that is flexible and clear. It is a common choice for long-term use and is latex-free.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -55,7 +55,7 @@
       "description": "TPU provides excellent flexibility, abrasion resistance, and elasticity. It is ideal for catheters requiring soft, kink-resistant tubing while maintaining good mechanical strength.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -65,7 +65,7 @@
       "description": "Blends the elasticity of rubber with the strength of plastic, allowing for high flexibility without kinking.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -75,7 +75,7 @@
       "description": "Primarily used as an inner liner for guide catheters to provide a low-friction surface for smooth navigation.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -85,7 +85,7 @@
       "description": "Acts as a component to add strength or provide a heat-shrinkable covering in multi-layer catheters. Softer than PTFE and melts at a lower temperature, making it suitable for heat shrinking and other processes. It is also more translucent than PTFE.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -95,7 +95,7 @@
       "description": "A high-performance plastic polymer, prized for their strength, flexibility, and smooth surface.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-1", "catheter-tipper-pro"]
+        "products": ["catheter-tipper", "dual-catheter-tipper"]
       }
     },
     {
@@ -105,7 +105,7 @@
       "description": "A lightweight, semi-rigid polymer with good chemical resistance. It is often used in less critical catheter components or connectors due to its rigidity and low cost.",
       "related": {
         "applications": ["catheter-flaring"],
-        "products": ["catheter-tipper-1"]
+        "products": ["catheter-tipper"]
       }
     },
     {
@@ -115,7 +115,7 @@
       "description": "HDPE offers rigidity and high chemical resistance, making it suitable for structural or semi-rigid components in catheter assemblies.",
       "related": {
         "applications": ["catheter-flaring"],
-        "products": ["catheter-tipper-1"]
+        "products": ["catheter-tipper"]
       }
     },
     {
@@ -125,7 +125,7 @@
       "description": "ETFE combines high mechanical strength, abrasion resistance, and chemical stability, often used as a liner or jacket for catheters requiring durability and biocompatibility.",
       "related": {
         "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper-pro"]
+        "products": ["dual-catheter-tipper"]
       }
     },
     {
@@ -135,7 +135,7 @@
       "description": "LDPE is softer and more flexible than HDPE, making it useful for applications where gentle flexibility is desired without sacrificing chemical resistance.",
       "related": {
         "applications": ["catheter-tipping"],
-        "products": ["catheter-tipper-1"]
+        "products": ["catheter-tipper"]
       }
     },
     {
@@ -145,7 +145,7 @@
       "description": "PEEK is a high-performance polymer offering exceptional strength, stiffness, and temperature resistance. It is used in demanding catheter components where precision and durability are critical.",
       "related": {
         "applications": ["catheter-flaring"],
-        "products": ["catheter-tipper-pro"]
+        "products": ["dual-catheter-tipper"]
       }
     }
   ]

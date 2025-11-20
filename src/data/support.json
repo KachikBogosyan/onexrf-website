@@ -3,7 +3,7 @@
       "slug": "process-development",
       "name": "Process Development",
       "description": "Collaborative development of forming or bonding recipes to validate your custom tooling on ONEX equipment. Our engineers refine parameters for consistent, repeatable production results.",
-      "included_with": ["catheter-tip-tooling", "soft-tip-bonding-tooling"],
+      "included_with": ["catheter-tipping-tooling", "soft-tip-bonding-tooling"],
       "available_as_standalone": true,
       "process_steps": [
         "Tooling integration and setup on ONEX equipment",

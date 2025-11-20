@@ -1,0 +1,751 @@
+[
+  {
+    "slug": "catheter-tipper",
+    "name": "Catheter Tipper",
+    "aliases": ["CTF-807-LX1"],
+    "category": "Catheter Tippers",
+    "description": "The LX model RF tipper provides the utmost consistency using closed-loop process control for RF energy and die temperature. The RF tipper can use two-style cassettes to form the catheter tube's distal or proximal end. Suitable for R&D and manufacturing use.",
+    "image": "/images/products/CTF-807-LX1-PNG.png",
+  
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generator.rf_power",
+      "rf_frequency": "@specs_long.generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+  
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "CTF-807-LX1",
+        "amplifier_controller": "AC1-300",
+        "tipping_station": "TS-H12",
+        "number_of_dies": "1-up"
+      },
+  
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 1.5\" with standard cassette",
+        "max_temperature": "450°C"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+  
+      "generator": {
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+  
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+  
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+  
+      "dimensions": {
+        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
+        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "14\" × 24\" (356 × 610 mm)"
+      },
+  
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "20 lb / 10 kg",
+        "shipping_weight": "69 lb / 31 kg"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring"],
+      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
+      "tooling": ["catheter-tipping-tooling"],
+      "technologies": ["rf-induction"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "catheter-tipper-pro",
+    "name": "Catheter Tipper Pro",
+    "aliases": ["CTF-807-LXS1"],
+    "category": "Catheter Tippers",
+    "description": "Servo precision catheter tip forming machine for R&D and manufacturing use. The LXS Servo RF Tipper offers high-speed control and stroke precision. Ideal for forming short-tip catheters, sheaths, and long tapered introducers over 3\". Fully loaded for catheter tipping, flaring, and bonding applications.",
+    "image": "/images/products/CTF-807-LXS1.png",
+  
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generator.rf_power",
+      "rf_frequency": "@specs_long.generator.frequency",
+      "servo_system": "@specs_long.servo_slide.servo_drive",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+  
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "CTF-807-LXS1",
+        "amplifier_controller": "AC1-300",
+        "tipping_station": "TS-H12",
+        "number_of_dies": "1-up"
+      },
+  
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 1.5\" with standard cassette",
+        "max_temperature": "450°C"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+  
+      "generator": {
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC L18ERM",
+        "servo_controls": "AB Kinetix 350 Servo Drive",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+  
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+  
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+  
+      "servo_slide": {
+        "servo_drive": "2097-V31PR0-LM AB Servo Drive",
+        "servo_motor": "MPL-A1530 AB Servo Motor",
+        "slide": "LX3010-S1-N1-200 / 5\" Stroke Slide"
+      },
+  
+      "dimensions": {
+        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
+        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "14\" × 24\" (356 × 610 mm)"
+      },
+  
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "20 lb / 10 kg",
+        "shipping_weight": "69 lb / 31 kg"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
+      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
+      "tooling": ["catheter-tipping-tooling"],
+      "technologies": ["rf-induction"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "dual-catheter-tipper",
+    "name": "Dual Catheter Tipper",
+    "aliases": ["CTF-807-LX2"],
+    "category": "Catheter Tippers",
+    "description": "The LX2 model is designed to form two standard-length catheters simultaneously with independent temperature control. Ideal for increasing throughput while maintaining precise forming consistency.",
+    "image": "/images/products/CTF-807-LX2-Geo-PNG.png",
+  
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generators.rf_power",
+      "rf_frequency": "@specs_long.generators.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+  
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "CTF-807-LX2",
+        "amplifier_controller": "AC2-300",
+        "tipping_station": "TS-H22",
+        "number_of_dies": "1-up"
+      },
+  
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 1.5\" with standard cassette",
+        "max_temperature": "450°C"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 20 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+  
+      "generators": {
+        "quantity": 2,
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+  
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+  
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+  
+      "dimensions": {
+        "amplifier_controller": "17\" × 15\" × 20\" (420 × 370 × 520 mm)",
+        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "19\" × 28\" (490 × 720 mm)"
+      },
+  
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "20 lb / 10 kg",
+        "shipping_weight": "89 lb / 40 kg"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring"],
+      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
+      "tooling": ["catheter-tipping-tooling"],
+      "technologies": ["rf-induction"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "dual-catheter-tipper-pro",
+    "name": "Dual Catheter Tipper Pro",
+    "aliases": ["CTF-807-LXS2"],
+    "category": "Catheter Tippers",
+    "description": "The LXS2 model is designed to form two standard-length catheters simultaneously, each with independent temperature control. Its servo slide ensures precise speed and consistent results.",
+    "image": "/images/products/CTF-807-LXS2.png",
+    "specifications": {
+      "model_number": "CTF-807-LXS2",
+      "product_size": {
+        "distal": "2.5Fr–34Fr",
+        "proximal": "0.1\"–2.5\""
+      },
+      "rf_generator": {
+        "power": "30–300 watts",
+        "frequency": "6.78 MHz"
+      },
+      "control_system": {
+        "plc": "Allen Bradley PLC",
+        "servo": "Kinetix 350 Servo Drive",
+        "hmi": "7\" Touch Screen PC HMI"
+      },
+      "servo_slide_controls": {
+        "servo_drive": "2097-V31PR0-LM AB Servo Drive",
+        "servo_motor": "MPL-A1530 AB Servo Motor",
+        "servo_slide": "LX3010-S1-N1-200 / 5\" Stroke Slide"
+      },
+      "left_side_slide": {
+        "guided_cylinder":"1\" Stroke Guided Cylinder",
+        "gripper_mounting_bracket": "Flex Gripper Mounting Bracket"
+      },
+      "utilities": {
+        "electrical": "100–240VAC / 15A / 50–60Hz",
+        "air": "80 psi / 5 bar Clean Dry Air (CDA)"
+      },
+      "dimensions": {
+        "footprint": {
+            "inches": "20\" x 26\"",
+            "millimeters": "508mm x 660.4mm"
+            
+        },
+        "shipping_weight": {
+            "pounds": "105 lb",
+            "kilograms": "48 kg"
+        }
+      },
+      "compliance": ["CE Marked", "UL (per request)"],
+      "validation_support": [
+        "Documents available for IQ, FAI, DOE",
+        "OQ at customer site (per request)"
+      ],
+      "operating_environment": {
+        "temperature": {
+            "fahrenheit": "65–95°F",
+            "celsius":"18–35°C"
+        },
+        "humidity": "68% max non-condensing",
+        "altitude": "Max 2000 m elevation"
+      }
+    },
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring","catheter-bonding"],
+      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
+      "tooling": ["catheter-tipping-tooling"],
+      "technologies": ["rf-induction"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "long-catheter-tipper",
+    "name": "Long Catheter Tipper",
+    "aliases": ["CTF-807-LX3"],
+    "category": "Catheter Tippers",
+    "description": "The LX3 model is designed to form up to 4\" long tapered tip catheters. The process uses an RF induction coil uniformly wound around the die for even mold heating and controlled plastic formation.",
+    "image": "/images/products/CTF-807-LX3-PNG.png",
+  
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generator.rf_power",
+      "rf_frequency": "@specs_long.generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+  
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "CTF-807-LX3",
+        "amplifier_controller": "AC1-300",
+        "tipping_station": "TS-H14",
+        "number_of_dies": "1-up"
+      },
+  
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 4.0\" with long cassette",
+        "max_temperature": "450°C"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+  
+      "generator": {
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+  
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+  
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+  
+      "dimensions": {
+        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
+        "tipping_station": "28\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "28\" × 24\" (710 × 610 mm)"
+      },
+  
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "30 lb / 15 kg",
+        "shipping_weight": "80 lb / 39 kg"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring"],
+      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
+      "tooling": ["catheter-tipping-tooling"],
+      "technologies": ["rf-induction"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "modular-catheter-tipper",
+    "name": "Modular Catheter Tipper",
+    "aliases": ["MTF-807-LX1"],
+    "category": "Catheter Tippers",
+    "description": "The MTF-807 is a modular tipping station designed for low budget applications and for integration with automated machines. A set of dies with standard shapes and sizes is also available for basic study of material behaviors in lab or R&D environments.",
+    "image": "/images/products/MTF-807-LX1-PNG.png",
+  
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generator.rf_power",
+      "rf_frequency": "@specs_long.generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+  
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "MTF-807-LX1",
+        "amplifier_controller": "AC1-300",
+        "tipping_station": "MTS-100",
+        "number_of_dies": "1-up"
+      },
+  
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 1.5\" with standard cassette",
+        "max_temperature": "450°C"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+  
+      "generator": {
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+  
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+  
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+  
+      "dimensions": {
+        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
+        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "14\" × 24\" (356 × 610 mm)"
+      },
+  
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "15 lb / 7 kg",
+        "shipping_weight": "69 lb / 31 kg"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring"],
+      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
+      "tooling": ["catheter-tipping-tooling"],
+      "technologies": ["rf-induction"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "soft-tip-bonder",
+    "name": "Soft Tip Bonder",
+    "aliases": ["STB-807-LX1"],
+    "category": "Catheter Tippers",
+    "description": "The STB-807 is designed to form and bond soft tips to the catheter shaft distal end. The model includes a left-side air slide and gripper mechanism for bonding or cutting applications.",
+    "image": "/images/products/STB-807-LX1.png",
+  
+    "specs_short": {
+      "model_number": "@specs_long.rf_soft_tip_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generator.rf_power",
+      "rf_frequency": "@specs_long.generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+  
+    "specs_long": {
+      "rf_soft_tip_system": {
+        "model_number": "STB-807-LX1",
+        "amplifier_controller": "AC1-300",
+        "tipping_station": "TS-H12",
+        "number_of_dies": "1-up"
+      },
+  
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 1.5\" with standard cassette",
+        "max_temperature": "450°C"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+  
+      "generator": {
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+  
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+  
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+  
+      "dimensions": {
+        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
+        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "14\" × 24\" (356 × 610 mm)"
+      },
+  
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "20 lb / 10 kg",
+        "shipping_weight": "69 lb / 31 kg"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "related": {
+      "applications": ["bonding"],
+      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
+      "tooling": ["soft-tip-bonding-tooling"],
+      "technologies": ["rf-induction"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  }  
+]

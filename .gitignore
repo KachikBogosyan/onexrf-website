@@ -51,3 +51,5 @@ next-env.d.ts
 *.ico
 *.svg
 !public/*.svg
+
+notes.txt
