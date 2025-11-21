@@ -13,7 +13,7 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["pebax", "pa"],
             "tooling": ["catheter-tipping-die", "catheter-tipping-mandrel"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/dilator-tip.jpg"
         },
@@ -25,7 +25,7 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["pe", "pu"],
             "tooling": ["catheter-tipping-die", "catheter-tipping-mandrel"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/sheath-tip.jpg"
         },
@@ -37,7 +37,7 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["pe", "pebax"],
             "tooling": ["catheter-tipping-die", "catheter-tipping-mandrel"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/introducer-tip.jpg"
         },
@@ -50,7 +50,7 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["pebax", "pa"],
             "tooling": ["catheter-tipping-die", "catheter-tipping-mandrel"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/bullet-nose-tip.jpg"
         },
@@ -63,7 +63,7 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["pebax", "pu", "pe"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/taper-conical-tip.jpg"
         },
@@ -76,7 +76,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "tpu", "fep"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/closed-end-tip.jpg"
         },
@@ -89,7 +89,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "pu", "pa"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/neckdown.jpg"
         },
@@ -102,7 +102,7 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["pebax", "pe", "tpu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/tip-end-forming.jpg"
         },
@@ -115,7 +115,7 @@
             "products": ["catheter-tipper"],
             "materials": ["pe", "pu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/radius-tip.jpg"
         },
@@ -128,7 +128,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "tpu", "pa"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/angle-tip.jpg"
         },
@@ -141,7 +141,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "pu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/multi-lumen-tip.jpg"
         },
@@ -154,7 +154,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["tpu", "pebax", "pvc"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/soft-tip.jpg"
         },
@@ -167,7 +167,7 @@
             "products": ["catheter-tipper"],
             "materials": ["pvc", "pu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/iv-tip.jpg"
         },
@@ -180,7 +180,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "fep", "ptfe"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/guidewire-tip.jpg"
         },
@@ -193,7 +193,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pu", "pebax"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/cvc-tip.jpg"
         },
@@ -206,7 +206,7 @@
             "products": ["catheter-tipper"],
             "materials": ["pvc", "tpu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/urinary-tip.jpg"
         },
@@ -219,7 +219,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "pa", "pu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/angiographic-tip.jpg"
         },
@@ -232,7 +232,7 @@
             "products": ["catheter-tipper"],
             "materials": ["pvc", "tpu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/tracheal-tip.jpg"
         },
@@ -245,7 +245,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["peek"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/peek-tube-forming.jpg"
         },
@@ -258,7 +258,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["peek"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/peek-mushroom-forming.jpg"
         },
@@ -271,7 +271,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "fep", "ptfe"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/micro-catheter-tipping.jpg"
         },
@@ -284,7 +284,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "tpu", "pe"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/balloon-catheter-tip.jpg"
         },
@@ -297,7 +297,7 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["tpu", "pvc"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/urethral-access-sheath.jpg"
         },
@@ -310,7 +310,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "pu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/diameter-reduction.jpg"
         },
@@ -323,7 +323,7 @@
             "products": ["dual-catheter-tipper"],
             "materials": ["pebax", "tpu"],
             "tooling": ["catheter-tipping-die"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/variable-lumen-diameter.jpg"
         }
@@ -346,10 +346,10 @@
           "name": "Flared Conical Shape",
           "description": "Creates a smooth, conical flare at the proximal end to mate with connectors or hubs. Provides mechanical strength and leak-proof assembly during bonding.",
           "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper"],
+            "products": ["catheter-tipper", "dual-catheter-tipper-pro"],
             "materials": ["pe", "pu"],
             "tooling": ["catheter-tipping-mandrel"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/flared-conical-shape.jpg"
         },
@@ -361,13 +361,13 @@
             "products": ["catheter-tipper", "dual-catheter-tipper"],
             "materials": ["pe", "pu"],
             "tooling": ["catheter-tipping-mandrel"],
-            "services": ["process-development"]
+            "support": ["process-development"]
           },
           "image": "/images/examples/hood-formed-tip.jpg"
         }
       ],
       "related": {
-        "products": ["catheter-tipper", "dual-catheter-tipper"],
+        "products": ["catheter-tipper"],
             "materials": ["pe", "pu"],
         "tooling": ["catheter-tipping-tooling", "catheter-tipping-mandrel"],
         "technologies": ["rf-induction"]

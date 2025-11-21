@@ -4,7 +4,7 @@ export type Related = {
     materials?: string[];
     tooling?: string[];
     technologies?: string[];
-    services?: string[]; // we'll map support.json entries here later
+    support?: string[]; // we'll map support.json entries here later
   };
   
   export type SubApplication = {

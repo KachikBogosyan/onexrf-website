@@ -5,11 +5,12 @@ import { getSubApplicationBySlugs } from "@/lib/applications";
 import { SolutionModule } from "@/components/SolutionModule";
 
 type Props = {
-  params: { slug: string; subAppSlug: string };
+  params: Promise<{ slug: string; subAppSlug: string }>;
 };
 
-export default function SubApplicationPage({ params }: Props) {
-  const result = getSubApplicationBySlugs(params.slug, params.subAppSlug);
+export default async function SubApplicationPage({ params }: Props) {
+  const { slug, subAppSlug } = await params;
+  const result = getSubApplicationBySlugs(slug, subAppSlug);
   if (!result) return notFound();
 
   const { application, subApp } = result;
@@ -40,10 +41,10 @@ export default function SubApplicationPage({ params }: Props) {
         ...(subApp.related?.technologies || []),
       ])
     ),
-    services: Array.from(
+    support: Array.from(
       new Set([
-        ...(application.related.services || []),
-        ...(subApp.related?.services || []),
+        ...(application.related.support || []),
+        ...(subApp.related?.support || []),
       ])
     ),
   };

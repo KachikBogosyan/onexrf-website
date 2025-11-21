@@ -1,26 +1,25 @@
 [
-    {
-      "slug": "process-development",
-      "name": "Process Development",
-      "description": "Collaborative development of forming or bonding recipes to validate your custom tooling on ONEX equipment. Our engineers refine parameters for consistent, repeatable production results.",
-      "included_with": ["catheter-tipping-tooling", "soft-tip-bonding-tooling"],
-      "available_as_standalone": true,
-      "process_steps": [
-        "Tooling integration and setup on ONEX equipment",
-        "Parameter tuning for temperature, pressure, timing, and power",
-        "Sample runs and part evaluation",
-        "Documentation of final validated recipe"
-      ]
-    },
-    {
-      "slug": "training",
-      "name": "Training Seminars",
-      "description": "Operator and engineer training programs on ONEX equipment."
-    },
-    {
-      "slug": "machine-servicing",
-      "name": "Machine Servicing",
-      "description": "Maintenance, repairs, and performance optimization services for ONEX systems."
-    }
-  ]
-  
+  {
+    "slug": "process-development",
+    "name": "Process Development",
+    "description": "Collaborative development of forming or bonding recipes to validate your custom tooling on ONEX equipment. Our engineers refine parameters for consistent, repeatable production results.",
+    "included_with": ["catheter-tipping-tooling", "soft-tip-bonding-tooling"],
+    "available_as_standalone": true,
+    "process_steps": [
+      "Tooling integration and setup on ONEX equipment",
+      "Parameter tuning for temperature, pressure, timing, and power",
+      "Sample runs and part evaluation",
+      "Documentation of final validated recipe"
+    ]
+  },
+  {
+    "slug": "training",
+    "name": "Training Seminars",
+    "description": "Operator and engineer training programs on ONEX equipment."
+  },
+  {
+    "slug": "machine-servicing",
+    "name": "Machine Servicing",
+    "description": "Maintenance, repairs, and performance optimization services for ONEX systems."
+  }
+]

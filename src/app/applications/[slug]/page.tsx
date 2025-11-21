@@ -5,11 +5,12 @@ import { getApplicationBySlug } from "@/lib/applications";
 import { SolutionModule } from "@/components/SolutionModule";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function ApplicationPage({ params }: Props) {
-  const application = getApplicationBySlug(params.slug);
+export default async function ApplicationPage({ params }: Props) {
+  const { slug } = await params;
+  const application = getApplicationBySlug(slug);
   if (!application) return notFound();
 
   const { name, aliases, description, sub_applications, related } = application;
