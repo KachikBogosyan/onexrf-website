@@ -20,7 +20,8 @@ export function SolutionModule({ title, related, contextLabel }: Props) {
   const { products, tooling, materials, support } = related;
 
   const resolvedProducts: Product[] =
-    products?.map(getProductBySlug).filter((p): p is Product => p !== undefined) ?? [];
+    (products?.map(getProductBySlug).filter((p): p is Product => p !== undefined) ?? [])
+      .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
   const resolvedTooling: Tooling[] =
     tooling?.map(getToolingBySlug).filter((t): t is Tooling => t !== undefined) ?? [];
@@ -63,6 +64,7 @@ export function SolutionModule({ title, related, contextLabel }: Props) {
                 description={p.description || ""}
                 image={p.image}
                 link={`/products/${p.slug}`}
+                is_new={p.is_new}
               />
             ))}
           </div>
