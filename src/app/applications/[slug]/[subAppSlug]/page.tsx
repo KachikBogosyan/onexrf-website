@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getSubApplicationBySlugs } from "@/lib/applications";
 import { SolutionModule } from "@/components/SolutionModule";
+import { getExamplesForSubApplicationPage } from "@/lib/examples";
+import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
 
 type Props = {
   params: Promise<{ slug: string; subAppSlug: string }>;
@@ -14,6 +16,7 @@ export default async function SubApplicationPage({ params }: Props) {
   if (!result) return notFound();
 
   const { application, subApp } = result;
+  const examples = getExamplesForSubApplicationPage(slug, subAppSlug);
 
   // merge related (application + subApp) – simple union
   const mergedRelated = {
@@ -91,6 +94,8 @@ export default async function SubApplicationPage({ params }: Props) {
         contextLabel={subApp.name}
         title="Solution for this Use Case"
       />
+
+      <ExamplesCarousel examples={examples} title="Examples" />
     </div>
   );
 }

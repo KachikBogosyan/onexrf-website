@@ -1,0 +1,34 @@
+[
+    {
+      "slug": "pebax-flared-conical-tip-5fr",
+      "title": "Pebax Flared Conical Tip – 5Fr",
+      "description": "Example of a flared conical catheter tip produced using Pebax 72D with an ONEX RF catheter tipper. This geometry is commonly used for introducers and access systems.",
+      
+      "images": [
+        "/images/examples/5Fr Tip Flaring with PEBAX Material.png",
+        "/images/examples/5Fr Tip Flaring with PEBAX Material long.png"
+      ],
+  
+      "application": "catheter-flaring",
+      "sub_application": "flared-conical-shape",
+  
+      "material": "pebax",
+  
+      "product": "catheter-tipper",
+  
+      "tooling": {
+        "die": "flaring-die",
+        "mandrel": null
+      },
+  
+      "blog_post": null,
+  
+      "metadata": {
+        "catheter_size": "5Fr",
+        "wall_thickness": "0.007\"",
+        "color": "Natural",
+        "notes": "Produced with single-shot RF forming profile"
+      }
+    }
+  ]
+  

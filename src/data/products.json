@@ -8,7 +8,7 @@
     "description": "The LX model RF tipper provides the utmost consistency using closed-loop process control for RF energy and die temperature. The RF tipper can use two-style cassettes to form the catheter tube's distal or proximal end. Suitable for R&D and manufacturing use.",
     "image": "/images/products/CTF-807-LX1-PNG.png",
     "is_new": false,
-    "order": 4,
+    "order": 3,
   
     "specs_short": {
       "model_number": "@specs_long.rf_tipping_system.model_number",
@@ -123,7 +123,7 @@
     "description": "Servo precision catheter tip forming machine for R&D and manufacturing use. The LXS Servo RF Tipper offers high-speed control and stroke precision. Ideal for forming short-tip catheters, sheaths, and long tapered introducers over 3\". Fully loaded for catheter tipping, flaring, and bonding applications.",
     "image": "/images/products/CTF-807-LXS1.png",
     "is_new": true,
-    "order": 2,
+    "order": 1,
   
     "specs_short": {
       "model_number": "@specs_long.rf_tipping_system.model_number",
@@ -229,6 +229,22 @@
       }
     },
   
+    "key_features": [
+      "Servo-driven precision control for consistent tip forming",
+      "High-speed operation with stroke precision",
+      "Closed-loop process control for RF energy and die temperature",
+      "7\" Touch Screen PC HMI for intuitive operation",
+      "Suitable for short-tip catheters, sheaths, and long tapered introducers over 3\"",
+      "FDA 21 CFR Part 11 compliant software"
+    ],
+  
+    "highlights": [
+      "Ideal for both R&D and manufacturing environments",
+      "Fully loaded for catheter tipping, flaring, and bonding applications",
+      "Allen Bradley PLC with Kinetix 350 Servo Drive for reliable performance",
+      "CE / UL certified (per request)"
+    ],
+  
     "related": {
       "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
       "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
@@ -246,7 +262,7 @@
     "description": "The LX2 model is designed to form two standard-length catheters simultaneously with independent temperature control. Ideal for increasing throughput while maintaining precise forming consistency.",
     "image": "/images/products/CTF-807-LX2-Geo-PNG.png",
     "is_new": false,
-    "order": 3,
+    "order": 4,
     "specs_short": {
       "model_number": "@specs_long.rf_tipping_system.model_number",
       "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
@@ -361,7 +377,7 @@
     "description": "The LXS2 model is designed to form two standard-length catheters simultaneously, each with independent temperature control. Its servo slide ensures precise speed and consistent results.",
     "image": "/images/products/CTF-807-LXS2.png",
     "is_new": true,
-    "order": 1,
+    "order": 2,
     "specifications": {
       "model_number": "CTF-807-LXS2",
       "product_size": {

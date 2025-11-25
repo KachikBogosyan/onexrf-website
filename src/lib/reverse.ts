@@ -1,5 +1,7 @@
 import { getApplications } from "./applications";
+import { getAllMaterials } from "./materials";
 import type { Application, SubApplication } from "./types";
+import type { Material } from "./materials";
 
 export function getApplicationsUsingProduct(productSlug: string) {
   const apps = getApplications();
@@ -29,4 +31,11 @@ export function getSubApplicationsUsingProduct(productSlug: string) {
   return results;
 }
 
-// Repeat for tooling, materials, support if needed later
+export function getMaterialsUsingProduct(productSlug: string): Material[] {
+  const materials = getAllMaterials();
+  return materials.filter((material) =>
+    material.related?.products?.includes(productSlug)
+  );
+}
+
+// Repeat for tooling, support if needed later

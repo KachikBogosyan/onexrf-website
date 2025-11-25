@@ -369,7 +369,7 @@
       "related": {
         "products": ["catheter-tipper"],
             "materials": ["pe", "pu"],
-        "tooling": ["catheter-tipping-tooling", "catheter-tipping-mandrel"],
+        "tooling": ["catheter-tipping-tooling", "catheter-tipping-mandrel","catheter-tipping-die"],
         "technologies": ["rf-induction"]
       }
     }

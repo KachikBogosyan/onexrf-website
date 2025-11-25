@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { getMaterialBySlug } from "@/lib/materials";
 import { getApplications } from "@/lib/applications";
 import Link from "next/link";
+import { getExamplesForMaterialPage } from "@/lib/examples";
+import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
 
 export default async function MaterialPage({
   params,
@@ -16,9 +18,17 @@ export default async function MaterialPage({
   const apps = getApplications().filter((a) =>
     a.related.materials?.includes(slug)
   );
+  const examples = getExamplesForMaterialPage(slug);
 
   return (
     <div className="space-y-10">
+      <nav className="text-xs text-slate-500 mb-2">
+        <Link href="/materials" className="hover:underline">
+          Materials
+        </Link>{" "}
+        / <span className="text-slate-700">{material.name}</span>
+      </nav>
+
       {/* HEADER */}
       <header className="space-y-2">
         <p className="text-xs uppercase tracking-wide text-slate-500">Material</p>
@@ -44,6 +54,9 @@ export default async function MaterialPage({
           </ul>
         </section>
       )}
+
+      {/* Examples Section */}
+      <ExamplesCarousel examples={examples} title="Examples" />
 
       {/* CTA */}
       <section className="border-t pt-6">

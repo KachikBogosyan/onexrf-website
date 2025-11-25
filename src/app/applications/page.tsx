@@ -31,6 +31,9 @@ export default function ApplicationsPage() {
                 Also known as: {app.aliases.join(", ")}
               </p>
             )}
+            <div className="mt-3 mb-2 w-full h-32 bg-slate-200 rounded-md flex items-center justify-center">
+              <span className="text-xs text-slate-400">Image placeholder</span>
+            </div>
             <p className="mt-2 text-sm text-slate-700 line-clamp-3">
               {app.description}
             </p>

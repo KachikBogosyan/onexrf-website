@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { getToolingBySlug } from "@/lib/tooling";
 import Link from "next/link";
 import { getApplications } from "@/lib/applications";
+import { getExamplesForToolingPage } from "@/lib/examples";
+import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
 
 export default async function ToolingPage({
   params,
@@ -17,6 +19,7 @@ export default async function ToolingPage({
   const apps = getApplications().filter((a) =>
     a.related.tooling?.includes(slug)
   );
+  const examples = getExamplesForToolingPage(slug);
 
   return (
     <div className="space-y-10">
@@ -54,6 +57,9 @@ export default async function ToolingPage({
           </ul>
         </section>
       )}
+
+      {/* Examples Section */}
+      <ExamplesCarousel examples={examples} title="Examples" />
 
       {/* CTA */}
       <section className="border-t pt-6">

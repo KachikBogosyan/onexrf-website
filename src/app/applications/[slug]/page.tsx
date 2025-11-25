@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getApplicationBySlug } from "@/lib/applications";
 import { SolutionModule } from "@/components/SolutionModule";
+import { getExamplesForApplicationPage } from "@/lib/examples";
+import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -14,9 +16,17 @@ export default async function ApplicationPage({ params }: Props) {
   if (!application) return notFound();
 
   const { name, aliases, description, sub_applications, related } = application;
+  const examples = getExamplesForApplicationPage(slug);
 
   return (
     <div className="space-y-8">
+      <nav className="text-xs text-slate-500 mb-2">
+        <Link href="/applications" className="hover:underline">
+          Applications
+        </Link>{" "}
+        / <span className="text-slate-700">{name}</span>
+      </nav>
+
       <header className="space-y-2">
         <p className="text-xs uppercase tracking-wide text-slate-500">
           Application
@@ -49,6 +59,9 @@ export default async function ApplicationPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {/* Examples Section */}
+      <ExamplesCarousel examples={examples} title="Examples" />
 
       <SolutionModule
         related={related}
