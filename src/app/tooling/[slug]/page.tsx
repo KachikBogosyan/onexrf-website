@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getApplications } from "@/lib/applications";
 import { getExamplesForToolingPage } from "@/lib/examples";
 import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
+import { PageNav, type Section } from "@/components/PageNav";
 
 export default async function ToolingPage({
   params,
@@ -20,6 +21,15 @@ export default async function ToolingPage({
     a.related.tooling?.includes(slug)
   );
   const examples = getExamplesForToolingPage(slug);
+
+  // Define sections for this page
+  const sections: Section[] = [
+    ...(apps.length > 0
+      ? [{ id: 'applications', label: 'Applications' }]
+      : []),
+    ...(examples.length > 0 ? [{ id: 'examples', label: 'Examples' }] : []),
+    { id: 'contact', label: 'Contact' },
+  ];
 
   return (
     <div className="space-y-10">
@@ -39,9 +49,11 @@ export default async function ToolingPage({
         />
       )}
 
+      <PageNav sections={sections} />
+
       {/* APPLICATIONS */}
       {apps.length > 0 && (
-        <section>
+        <section id="applications">
           <h2 className="text-lg font-semibold mb-2">Applications</h2>
           <ul className="list-disc list-inside text-sm">
             {apps.map((a) => (
@@ -59,10 +71,14 @@ export default async function ToolingPage({
       )}
 
       {/* Examples Section */}
-      <ExamplesCarousel examples={examples} title="Examples" />
+      {examples.length > 0 && (
+        <section id="examples">
+          <ExamplesCarousel examples={examples} title="Examples" />
+        </section>
+      )}
 
       {/* CTA */}
-      <section className="border-t pt-6">
+      <section id="contact" className="border-t pt-6">
         <h3 className="font-semibold text-slate-800 text-sm mb-1">
           Request tooling consultation
         </h3>

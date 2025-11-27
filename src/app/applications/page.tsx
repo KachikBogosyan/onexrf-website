@@ -1,22 +1,22 @@
 // app/applications/page.tsx
 import Link from "next/link";
+import Image from "next/image";
 import { getApplications } from "@/lib/applications";
+import { MarketingHero } from "@/components/MarketingHero";
 
 export default function ApplicationsPage() {
   const applications = getApplications();
 
   return (
-    <div className="space-y-6">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-semibold tracking-tight">
-          Applications
-        </h1>
-        <p className="text-sm text-slate-600 max-w-2xl">
-          Start with your catheter application. ONEX provides complete solutions
-          including machines, custom tooling, and process development to form
-          consistent parts for R&amp;D or production.
-        </p>
-      </header>
+    <div className="space-y-12">
+      <MarketingHero
+        heading="Applications"
+        body="Start with your catheter application. ONEX provides complete solutions including machines, custom tooling, and process development to form consistent parts for R&D or production."
+        media={{
+          src: "/images/applications-hero.png",
+          alt: "Catheter applications",
+        }}
+      />
 
       <div className="grid md:grid-cols-2 gap-6">
         {applications.map((app) => (
@@ -31,9 +31,16 @@ export default function ApplicationsPage() {
                 Also known as: {app.aliases.join(", ")}
               </p>
             )}
-            <div className="mt-3 mb-2 w-full h-32 bg-slate-200 rounded-md flex items-center justify-center">
-              <span className="text-xs text-slate-400">Image placeholder</span>
-            </div>
+            {app.image && (
+              <div className="mt-3 mb-2 w-full h-56 relative rounded-md overflow-hidden bg-slate-100">
+                <Image
+                  src={app.image}
+                  alt={app.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
             <p className="mt-2 text-sm text-slate-700 line-clamp-3">
               {app.description}
             </p>

@@ -20,6 +20,7 @@ export type Related = {
     name: string;
     aliases?: string[];
     description: string;
+    image?: string;
     sub_applications?: SubApplication[];
     related: Related;
   };

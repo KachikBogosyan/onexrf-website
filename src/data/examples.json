@@ -17,7 +17,7 @@
       "product": "catheter-tipper",
   
       "tooling": {
-        "die": "flaring-die",
+        "die": "catheter-flaring-die",
         "mandrel": null
       },
   
@@ -29,6 +29,95 @@
         "color": "Natural",
         "notes": "Produced with single-shot RF forming profile"
       }
-    }
+    },
+    {
+        "slug": "flaring-31f-bicaval-introducer-catheter",
+        "title": "PVC Flared Bicaval Introducer Tip – 31Fr",
+        "description": "Example of a flared bicaval introducer catheter tip produced using Pebax 72D with an ONEX RF catheter tipper. This geometry is commonly used for introducers and access systems.",
+        
+        "images": [
+          "/images/examples/Flaring 31F Bicaval Introducer Catheter.png"
+        ],
+    
+        "application": "catheter-flaring",
+        "sub_application": "introducer-tip-forming",
+    
+        "material": "pvc",
+    
+        "product": "dual-catheter-tipper",
+    
+        "tooling": {
+          "die": "catheter-flaring-die",
+          "mandrel": null
+        },
+    
+        "blog_post": null,
+    
+        "metadata": {
+          "catheter_size": "31Fr",
+          "wall_thickness": "0.007\"",
+          "color": "Natural",
+          "notes": "Produced with single-shot RF forming profile"
+        }
+      },
+      {
+        "slug": "tip-forming-13f-dilator",
+        "title": "HDPE Tip Forming 13F Dilator",
+        "description": "Example of a tip forming 13F dilator produced using HDPE with an ONEX RF catheter tipper. This geometry is commonly used for dilators and access systems.",
+        
+        "images": [
+          "/images/examples/Tip Forming 13F Dilator.png"
+        ],
+    
+        "application": "catheter-tipping",
+        "sub_application": "dilator-tip-forming",
+    
+        "material": "hdpe",
+    
+        "product": "catheter-tipper-pro",
+    
+        "tooling": {
+          "die": "catheter-tipping-die",
+          "mandrel": null
+        },
+    
+        "blog_post": null,
+    
+        "metadata": {
+          "catheter_size": "13Fr",
+          "wall_thickness": "0.007\"",
+          "color": "Natural",
+          "notes": "Produced with single-shot RF forming profile"
+        }
+      },
+      {
+        "slug": "tip-forming-7f-cvc-catheter",
+        "title": "Tip Forming 7F CVC Catheter",
+        "description": "Example of a tip forming 7F CVC catheter produced with an ONEX RF catheter tipper. This geometry is commonly used for CVC catheters and access systems.",
+        
+        "images": [
+          "/images/examples/7F CVC Catheter.png"
+        ],
+    
+        "application": "catheter-tipping",
+        "sub_application": "cvc-tip",
+    
+        "material": null,
+    
+        "product": "catheter-tipper-pro",
+    
+        "tooling": {
+          "die": "catheter-tipping-die",
+          "mandrel": null
+        },
+        "blog_post": null,
+    
+        "metadata": {
+          "catheter_size": "13Fr",
+          "wall_thickness": null,
+          "color": null,
+          "notes": null
+        }
+      }
   ]
   

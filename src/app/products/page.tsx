@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getProductsByLine } from "@/lib/products";
+import { MarketingHero } from "@/components/MarketingHero";
 
 export default function CatheterTippersPage() {
   const products = getProductsByLine("catheter-tippers").sort(
@@ -9,14 +10,14 @@ export default function CatheterTippersPage() {
 
   return (
     <div className="space-y-16">
-      {/* PAGE HEADER */}
-      <header className="space-y-2">
-        <h1 className="text-3xl font-semibold">Catheter Tippers</h1>
-        <p className="text-sm text-slate-600 max-w-2xl">
-          Precision RF catheter tip forming systems engineered for R&D and high-volume
-          manufacturing.
-        </p>
-      </header>
+      <MarketingHero
+        heading="Catheter Tippers"
+        body="Precision RF catheter tip forming systems engineered for R&D and high-volume manufacturing."
+        media={{
+          src: "/images/products-hero.png",
+          alt: "Catheter Tippers",
+        }}
+      />
 
       {/* PRODUCT GRID */}
       <section>
@@ -58,24 +59,6 @@ export default function CatheterTippersPage() {
               </div>
             </Link>
           ))}
-        </div>
-      </section>
-
-      {/* MARKETING SECTION */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">
-          Industry-Leading Catheter Tip Forming Solutions
-        </h2>
-        <p className="text-slate-700 max-w-3xl text-sm">
-          ONEX catheter tippers are trusted worldwide for consistent, repeatable,
-          and validated RF forming performance. Whether you're developing new catheter
-          geometries or scaling into high-volume production, ONEX delivers
-          application-driven precision and reliability.
-        </p>
-
-        {/* Placeholder for future GIF or branded image */}
-        <div className="border rounded-lg h-48 flex items-center justify-center text-slate-400 italic">
-          GIF or animation placeholder
         </div>
       </section>
 

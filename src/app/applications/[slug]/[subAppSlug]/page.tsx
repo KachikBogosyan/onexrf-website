@@ -5,6 +5,8 @@ import { getSubApplicationBySlugs } from "@/lib/applications";
 import { SolutionModule } from "@/components/SolutionModule";
 import { getExamplesForSubApplicationPage } from "@/lib/examples";
 import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
+import { MarketingHero } from "@/components/MarketingHero";
+import { PageNav, type Section } from "@/components/PageNav";
 
 type Props = {
   params: Promise<{ slug: string; subAppSlug: string }>;
@@ -52,6 +54,12 @@ export default async function SubApplicationPage({ params }: Props) {
     ),
   };
 
+  // Define sections for this page
+  const sections: Section[] = [
+    { id: 'solutions', label: 'Solutions' },
+    ...(examples.length > 0 ? [{ id: 'examples', label: 'Examples' }] : []),
+  ];
+
   return (
     <div className="space-y-8">
       <nav className="text-xs text-slate-500 mb-2">
@@ -68,34 +76,34 @@ export default async function SubApplicationPage({ params }: Props) {
         / <span className="text-slate-700">{subApp.name}</span>
       </nav>
 
-      <header className="space-y-2">
-        <p className="text-xs uppercase tracking-wide text-slate-500">
-          Application Use Case
-        </p>
-        <h1 className="text-2xl font-semibold tracking-tight">{subApp.name}</h1>
-        <p className="text-sm text-slate-700 max-w-2xl">
-          {subApp.description}
-        </p>
-      </header>
-
-      {/* Placeholder for future image gallery */}
-      {subApp.image && (
-        <section>
-          <img
-            src={subApp.image}
-            alt={subApp.name}
-            className="max-w-md rounded-lg border bg-white"
-          />
-        </section>
-      )}
-
-      <SolutionModule
-        related={mergedRelated}
-        contextLabel={subApp.name}
-        title="Solution for this Use Case"
+      <MarketingHero
+        heading={subApp.name}
+        body={subApp.description}
+        media={
+          subApp.image
+            ? {
+                src: subApp.image,
+                alt: subApp.name,
+              }
+            : undefined
+        }
       />
 
-      <ExamplesCarousel examples={examples} title="Examples" />
+      <PageNav sections={sections} />
+
+      <section id="solutions">
+        <SolutionModule
+          related={mergedRelated}
+          contextLabel={subApp.name}
+          title={`Solution for ${subApp.name}`}
+        />
+      </section>
+
+      {examples.length > 0 && (
+        <section id="examples">
+          <ExamplesCarousel examples={examples} title="Examples" />
+        </section>
+      )}
     </div>
   );
 }

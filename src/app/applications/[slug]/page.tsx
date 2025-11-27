@@ -1,10 +1,14 @@
 // app/applications/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { getApplicationBySlug } from "@/lib/applications";
 import { SolutionModule } from "@/components/SolutionModule";
 import { getExamplesForApplicationPage } from "@/lib/examples";
 import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
+import { MarketingHero } from "@/components/MarketingHero";
+import { PageNav, type Section } from "@/components/PageNav";
+import { SubApplicationsAccordion } from "@/components/SubApplicationsAccordion";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -15,8 +19,29 @@ export default async function ApplicationPage({ params }: Props) {
   const application = getApplicationBySlug(slug);
   if (!application) return notFound();
 
-  const { name, aliases, description, sub_applications, related } = application;
+  const { name, aliases, description, sub_applications, related, image } = application;
   const examples = getExamplesForApplicationPage(slug);
+
+  // Build body content with description and aliases
+  const bodyContent = (
+    <>
+      {aliases && aliases.length > 0 && (
+        <p className="text-xs text-slate-500 mb-2">
+          Also known as: {aliases.join(", ")}
+        </p>
+      )}
+      <p>{description}</p>
+    </>
+  );
+
+  // Define sections for this page
+  const sections: Section[] = [
+    ...(sub_applications && sub_applications.length > 0
+      ? [{ id: 'applications', label: 'Applications' }]
+      : []),
+    ...(examples.length > 0 ? [{ id: 'examples', label: 'Examples' }] : []),
+    { id: 'solutions', label: 'Solutions' },
+  ];
 
   return (
     <div className="space-y-8">
@@ -27,47 +52,45 @@ export default async function ApplicationPage({ params }: Props) {
         / <span className="text-slate-700">{name}</span>
       </nav>
 
-      <header className="space-y-2">
-        <p className="text-xs uppercase tracking-wide text-slate-500">
-          Application
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight">{name}</h1>
-        {aliases && aliases.length > 0 && (
-          <p className="text-xs text-slate-500">
-            Also known as: {aliases.join(", ")}
-          </p>
-        )}
-        <p className="text-sm text-slate-700 max-w-2xl">{description}</p>
-      </header>
+      <MarketingHero
+        heading={name}
+        body={bodyContent}
+        media={
+          image
+            ? {
+                src: image,
+                alt: name,
+              }
+            : undefined
+        }
+      />
+
+      <PageNav sections={sections} />
 
       {sub_applications && sub_applications.length > 0 && (
-        <section>
-          <h2 className="text-lg font-semibold mb-3">Specific Use Cases</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {sub_applications.map((sub) => (
-              <Link
-                key={sub.slug}
-                href={`/applications/${application.slug}/${sub.slug}`}
-                className="block rounded-lg border bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <h3 className="text-sm font-semibold">{sub.name}</h3>
-                <p className="mt-1 text-xs text-slate-700 line-clamp-3">
-                  {sub.description}
-                </p>
-              </Link>
-            ))}
-          </div>
+        <section id="applications">
+          <h2 className="text-lg font-semibold mb-6">{name} Applications</h2>
+          <SubApplicationsAccordion
+            subApplications={sub_applications}
+            applicationSlug={application.slug}
+          />
         </section>
       )}
 
       {/* Examples Section */}
-      <ExamplesCarousel examples={examples} title="Examples" />
+      {examples.length > 0 && (
+        <section id="examples">
+          <ExamplesCarousel examples={examples} title="Examples" />
+        </section>
+      )}
 
-      <SolutionModule
-        related={related}
-        contextLabel={name}
-        title="Solution for this Application"
-      />
+      <section id="solutions">
+        <SolutionModule
+          related={related}
+          contextLabel={name}
+          title={`Solution for ${name}`}
+        />
+      </section>
     </div>
   );
 }

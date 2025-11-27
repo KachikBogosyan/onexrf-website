@@ -4,6 +4,7 @@ import { getApplicationsUsingProduct, getSubApplicationsUsingProduct, getMateria
 import Link from "next/link";
 import { getExamplesForProductPage } from "@/lib/examples";
 import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
+import { PageNav, type Section } from "@/components/PageNav";
 
 export default async function ProductPage({
   params,
@@ -30,6 +31,19 @@ export default async function ProductPage({
       subApplications: subAppsForApp.map((item) => item.subApp),
     };
   });
+
+  // Define sections for this page
+  const sections: Section[] = [
+    ...(product.specs_short && product.specs_long
+      ? [{ id: 'specifications', label: 'Specifications' }]
+      : []),
+    ...(appsWithSubApps.length > 0
+      ? [{ id: 'applications', label: 'Applications' }]
+      : []),
+    ...(materials.length > 0 ? [{ id: 'materials', label: 'Materials' }] : []),
+    ...(examples.length > 0 ? [{ id: 'examples', label: 'Examples' }] : []),
+    { id: 'contact', label: 'Contact' },
+  ];
 
   return (
     <div className="space-y-10">
@@ -80,9 +94,11 @@ export default async function ProductPage({
         </div>
       )}
 
+      <PageNav sections={sections} />
+
       {/* SHORT SPECS */}
       {product.specs_short && product.specs_long && (
-        <section>
+        <section id="specifications">
           <h2 className="text-lg font-semibold mb-4">Specifications</h2>
           <dl className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
             {Object.entries(product.specs_short).map(([key, value]) => {
@@ -104,7 +120,7 @@ export default async function ProductPage({
 
       {/* APPLICATIONS SECTION */}
       {appsWithSubApps.length > 0 && (
-        <section>
+        <section id="applications">
           <h2 className="text-lg font-semibold mb-4">Applications</h2>
           <div className="space-y-4">
             {appsWithSubApps.map(({ application, subApplications }) => (
@@ -137,7 +153,7 @@ export default async function ProductPage({
 
       {/* MATERIALS SECTION */}
       {materials.length > 0 && (
-        <section>
+        <section id="materials">
           <h2 className="text-lg font-semibold mb-4">Materials</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {materials.slice(0, 5).map((material) => (
@@ -177,10 +193,14 @@ export default async function ProductPage({
       )}
 
       {/* Examples Section */}
-      <ExamplesCarousel examples={examples} title="Examples" />
+      {examples.length > 0 && (
+        <section id="examples">
+          <ExamplesCarousel examples={examples} title="Examples" />
+        </section>
+      )}
 
       {/* CTA */}
-      <section className="border-t pt-6">
+      <section id="contact" className="border-t pt-6">
         <h3 className="font-semibold text-slate-800 text-sm mb-1">
           Discuss your catheter needs
         </h3>

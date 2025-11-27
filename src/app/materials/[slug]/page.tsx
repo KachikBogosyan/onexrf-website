@@ -4,6 +4,7 @@ import { getApplications } from "@/lib/applications";
 import Link from "next/link";
 import { getExamplesForMaterialPage } from "@/lib/examples";
 import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
+import { PageNav, type Section } from "@/components/PageNav";
 
 export default async function MaterialPage({
   params,
@@ -19,6 +20,13 @@ export default async function MaterialPage({
     a.related.materials?.includes(slug)
   );
   const examples = getExamplesForMaterialPage(slug);
+
+  // Define sections for this page
+  const sections: Section[] = [
+    ...(apps.length > 0 ? [{ id: 'applications', label: 'Used In' }] : []),
+    ...(examples.length > 0 ? [{ id: 'examples', label: 'Examples' }] : []),
+    { id: 'contact', label: 'Contact' },
+  ];
 
   return (
     <div className="space-y-10">
@@ -36,9 +44,11 @@ export default async function MaterialPage({
         <p className="max-w-2xl text-sm text-slate-700">{material.description}</p>
       </header>
 
+      <PageNav sections={sections} />
+
       {/* APPLICATIONS */}
       {apps.length > 0 && (
-        <section>
+        <section id="applications">
           <h2 className="text-lg font-semibold mb-2">Used In</h2>
           <ul className="list-disc list-inside text-sm">
             {apps.map((a) => (
@@ -56,10 +66,14 @@ export default async function MaterialPage({
       )}
 
       {/* Examples Section */}
-      <ExamplesCarousel examples={examples} title="Examples" />
+      {examples.length > 0 && (
+        <section id="examples">
+          <ExamplesCarousel examples={examples} title="Examples" />
+        </section>
+      )}
 
       {/* CTA */}
-      <section className="border-t pt-6">
+      <section id="contact" className="border-t pt-6">
         <h3 className="font-semibold text-slate-800 text-sm mb-1">
           Discuss your material
         </h3>
