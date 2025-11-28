@@ -1,380 +1,777 @@
 [
-    {
-      "slug": "catheter-tipping",
-      "name": "Catheter Tipping",
-      "aliases": ["Distal End Forming"],
-      "description": "Forming the distal ends of thermoplastic catheters to achieve smooth, atraumatic tips for device insertion. Commonly performed using ONEX Catheter Tipper systems with custom die and mandrel tooling.",
-      "sub_applications": [
-        {
-          "slug": "dilator-tip-forming",
-          "name": "Dilator Tip Forming",
-          "description": "Forming rounded or tapered dilator tips that ease entry into vessels or sheaths. Demonstrates smooth geometry and wall-thickness uniformity across Pebax and Polyimide materials.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pebax", "pa"],
-            "tooling": ["catheter-tipping-die", "catheter-tip-mandrel"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/Tip Forming 13F Dilator.png"
+  {
+    "slug": "catheter-tipping",
+    "name": "Catheter Tipping",
+    "aliases": [
+      "Distal End Forming"
+    ],
+    "description": "Forming the distal ends of thermoplastic catheters to achieve smooth, atraumatic tips for device insertion. Commonly performed using ONEX Catheter Tipper systems with custom die and mandrel tooling.",
+    "sub_applications": [
+      {
+        "slug": "dilator-tip-forming",
+        "name": "Dilator Tip Forming",
+        "description": "Forming rounded or tapered dilator tips that ease entry into vessels or sheaths. Demonstrates smooth geometry and wall-thickness uniformity across Pebax and Polyimide materials.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pebax",
+            "pa"
+          ],
+          "tooling": [
+            "catheter-tipping-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
         },
-        {
-          "slug": "sheath-tip-forming",
-          "name": "Sheath Tip Forming",
-          "description": "Used to produce distal sheath tips with gradual tapers for atraumatic insertion and controlled stiffness transition. Typically formed in Polyethylene or Polyurethane.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pe", "pu"],
-            "tooling": ["catheter-tipping-die", "catheter-tip-mandrel"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/sheath-tip.jpg"
-        },
-      
-        {
-          "slug": "bullet-nose-tip-forming",
-          "name": "Bullet Nose Tip Forming",
-          "description": "Forms the characteristic rounded 'bullet-nose' tip for atraumatic device insertion. Commonly used in Pebax or Polyimide catheters to achieve low-profile entry geometry.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper"],
-            "materials": ["pebax", "pa"],
-            "tooling": ["catheter-tipping-die", "catheter-tip-mandrel"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/bullet-nose-tip.jpg"
-        },
-        {
-          "slug": "taper-conical-tip",
-          "name": "Taper / Conical Tip",
-          "aliases": ["Tapered Tip", "Conical Tip"],
-          "description": "A gradual conical taper formed at the catheter’s distal end to aid smooth insertion and reduce trauma. Achieved using precision dies and mandrels to maintain consistent wall thickness.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper"],
-            "materials": ["pebax", "pu", "pe"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/taper-conical-tip.jpg"
-        },
-        {
-          "slug": "closed-end-tip",
-          "name": "Closed End Tip",
-          "aliases": ["Sealed Tip", "Closed Distal Tip"],
-          "description": "Forms a sealed distal tip for catheters or tubing requiring a fluid-tight termination. Used in diagnostic or balloon catheters where a guidewire lumen ends distally.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "tpu", "fep"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/closed-end-tip.jpg"
-        },
-        {
-          "slug": "neckdown-forming",
-          "name": "Neckdown",
-          "aliases": ["Tube Neckdown", "Diameter Transition"],
-          "description": "Reduces tube diameter to create a transition zone between two different lumen sizes or to attach components. Often applied before bonding or overmolding operations.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "pu", "pa"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/neckdown.jpg"
-        },
-        {
-          "slug": "tip-end-forming",
-          "name": "Tip and End Forming",
-          "aliases": ["Distal End Forming", "Catheter End Shaping"],
-          "description": "General category covering the shaping, rounding, or flaring of catheter ends for clinical performance and safety. Applied to distal or proximal ends depending on function.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper"],
-            "materials": ["pebax", "pe", "tpu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/tip-end-forming.jpg"
-        },
-        {
-          "slug": "radius-tip",
-          "name": "Radius Tip",
-          "aliases": ["Rounded Tip", "Smooth Tip"],
-          "description": "Creates a rounded distal end with a controlled radius for atraumatic entry into vessels. Often used in dilator and introducer designs.",
-          "related": {
-            "products": ["catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pe", "pu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/radius-tip.jpg"
-        },
-        {
-          "slug": "angle-tip",
-          "name": "Angle Tip",
-          "aliases": ["Beveled Tip", "Angled Distal Tip"],
-          "description": "Forms an angled or beveled distal end to aid navigation and selective access within anatomy. Used in angiographic and diagnostic catheters.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "tpu", "pa"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/angle-tip.jpg"
-        },
-        {
-          "slug": "multi-lumen-tip",
-          "name": "Multi-Lumen Tip",
-          "aliases": ["Multiple Lumen Tip", "Dual Lumen Tip"],
-          "description": "Used for catheters with multiple lumens requiring uniform tip geometry and lumen alignment. Ensures consistent flow and bonding between lumens.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "pu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/multi-lumen-tip.jpg"
-        },
-        {
-          "slug": "soft-tip",
-          "name": "Soft Tip",
-          "aliases": ["Flexible Tip", "Atraumatic Tip"],
-          "description": "Applies a softer polymer at the distal end for improved patient comfort and reduced vessel trauma. Typically bonded or formed over a stiffer shaft.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["tpu", "pebax", "pvc"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/soft-tip.jpg"
-        },
-        {
-          "slug": "iv-tip",
-          "name": "IV Tip",
-          "aliases": ["Intravenous Tip", "Cannula Tip"],
-          "description": "Forms the distal geometry of intravenous catheters and cannulas for smooth venous entry. Focuses on minimizing insertion resistance and tip burrs.",
-          "related": {
-            "products": ["catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pvc", "pu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/iv-tip.jpg"
-        },
-        {
-          "slug": "guidewire-tip",
-          "name": "Guidewire Tip",
-          "aliases": ["Micro Guide Tip", "Wire Cover Tip"],
-          "description": "Creates small, highly precise distal ends for guidewire covers or tubing. Designed for exceptional concentricity and flexibility at micro-scale diameters.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "fep", "ptfe"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/guidewire-tip.jpg"
-        },
-        {
-          "slug": "cvc-tip",
-          "name": "CVC Tip",
-          "aliases": ["Central Venous Catheter Tip", "Vascular Access Tip"],
-          "description": "Used for forming distal tips of central venous catheters (CVCs), offering smooth entry and biocompatibility for long-term vascular access.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pu", "pebax"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/7F CVC Catheter.png"
-        },
-        {
-          "slug": "urinary-tip",
-          "name": "Urinary Tip",
-          "aliases": ["Foley Tip", "Urethral Tip"],
-          "description": "Forms the smooth distal tips of urinary or Foley catheters for atraumatic urethral insertion and patient comfort.",
-          "related": {
-            "products": ["catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pvc", "tpu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/urinary-tip.jpg"
-        },
-        {
-          "slug": "angiographic-tip",
-          "name": "Angiographic Tip",
-          "aliases": ["Angio Tip", "Diagnostic Tip"],
-          "description": "Used in shaping distal ends of angiographic catheters with precise geometries to ensure optimal flow dynamics and navigation in vessels.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "pa", "pu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/angiographic-tip.jpg"
-        },
-        {
-          "slug": "tracheal-tip",
-          "name": "Tracheal Tip",
-          "aliases": ["Endotracheal Tip", "Airway Tube Tip"],
-          "description": "Forms smooth distal ends of tracheal and endotracheal tubes to minimize airway irritation. Often features rounded and radiused edges.",
-          "related": {
-            "products": ["catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pvc", "tpu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/tracheal-tip.jpg"
-        },
-        {
-          "slug": "peek-tube-forming",
-          "name": "PEEK Tube Forming",
-          "aliases": ["PEEK Tube Tipping", "PEEK Tube Shaping"],
-          "description": "Thermoforming of high-performance PEEK tubing for structural medical applications requiring rigidity, chemical resistance, and precision geometry.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["peek"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/peek-tube-forming.jpg"
-        },
-        {
-          "slug": "peek-mushroom-forming",
-          "name": "PEEK Mushroom Forming",
-          "aliases": ["PEEK Mushroom Tip", "PEEK Flared End"],
-          "description": "Creates mushroom-shaped ends on PEEK tubing for secure mechanical retention or component interfacing. Used in high-strength catheter or connector assemblies.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["peek"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/peek-mushroom-forming.jpg"
-        },
-        {
-          "slug": "micro-catheter-tipping",
-          "name": "Micro Catheter Tipping",
-          "aliases": ["Micro-Tip Forming", "Neuro Catheter Tipping"],
-          "description": "Enables formation of ultra-small tips for neurovascular or micro-delivery catheters. Ensures tight concentricity and delicate material control at sub-millimeter scales.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "fep", "ptfe"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/micro-catheter-tipping.jpg"
-        },
-        {
-          "slug": "balloon-catheter-tip",
-          "name": "Balloon Catheter Tip",
-          "aliases": ["Balloon Tip Forming", "Balloon Distal Tip"],
-          "description": "Forms or bonds distal tips on balloon catheters, ensuring strong adhesion and smooth transitions between balloon and shaft segments.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "tpu", "pe"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/balloon-catheter-tip.jpg"
-        },
-        {
-          "slug": "urethral-access-sheath",
-          "name": "Urethral Access Sheath",
-          "aliases": ["Urology Sheath", "Access Sheath Tip"],
-          "description": "Shapes and flares distal ends of urethral access sheaths to ease instrument passage and reduce patient discomfort during urological procedures.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["tpu", "pvc"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/urethral-access-sheath.jpg"
-        },
-        {
-          "slug": "diameter-reduction",
-          "name": "Diameter Reduction",
-          "aliases": ["Tube Reduction", "Dimensional Constriction"],
-          "description": "Uniformly decreases catheter or tubing diameter to achieve tighter fits, bonding zones, or specialized transitions for multi-section assemblies.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "pu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/diameter-reduction.jpg"
-        },
-        {
-          "slug": "variable-lumen-diameter",
-          "name": "Variable Catheter Lumen Diameter",
-          "aliases": ["Multi-Diameter Lumen", "Tapered Lumen Catheter"],
-          "description": "Produces catheters with varying internal lumen diameters along their length for tailored flow dynamics or mechanical properties.",
-          "related": {
-            "products": ["dual-catheter-tipper"],
-            "materials": ["pebax", "tpu"],
-            "tooling": ["catheter-tipping-die"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/variable-lumen-diameter.jpg"
-        }
-      ],
-      "related": {
-        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-        "materials": ["pe", "pu", "pebax", "pa"],
-        "tooling": ["catheter-tipping-tooling", "catheter-tipping-die", "catheter-tip-mandrel"],
-        "technologies": ["rf-induction"]
+        "image": "/images/examples/Tip Forming 13F Dilator.png",
+        "long_description": ""
       },
-      "image": "/images/examples/Tip Forming 13F Dilator.png"
+      {
+        "slug": "sheath-tip-forming",
+        "name": "Sheath Tip Forming",
+        "description": "Used to produce distal sheath tips with gradual tapers for atraumatic insertion and controlled stiffness transition. Typically formed in Polyethylene or Polyurethane.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-tipping-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/sheath-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "bullet-nose-tip-forming",
+        "name": "Bullet Nose Tip Forming",
+        "description": "Forms the characteristic rounded 'bullet-nose' tip for atraumatic device insertion. Commonly used in Pebax or Polyimide catheters to achieve low-profile entry geometry.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pa"
+          ],
+          "tooling": [
+            "catheter-tipping-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/bullet-nose-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "taper-conical-tip",
+        "name": "Taper / Conical Tip",
+        "aliases": [
+          "Tapered Tip",
+          "Conical Tip"
+        ],
+        "description": "A gradual conical taper formed at the catheter’s distal end to aid smooth insertion and reduce trauma. Achieved using precision dies and mandrels to maintain consistent wall thickness.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pu",
+            "pe"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/taper-conical-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "closed-end-tip",
+        "name": "Closed End Tip",
+        "aliases": [
+          "Sealed Tip",
+          "Closed Distal Tip"
+        ],
+        "description": "Forms a sealed distal tip for catheters or tubing requiring a fluid-tight termination. Used in diagnostic or balloon catheters where a guidewire lumen ends distally.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "tpu",
+            "fep"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/closed-end-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "neckdown-forming",
+        "name": "Neckdown",
+        "aliases": [
+          "Tube Neckdown",
+          "Diameter Transition"
+        ],
+        "description": "Reduces tube diameter to create a transition zone between two different lumen sizes or to attach components. Often applied before bonding or overmolding operations.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pu",
+            "pa"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/neckdown.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "tip-end-forming",
+        "name": "Tip and End Forming",
+        "aliases": [
+          "Distal End Forming",
+          "Catheter End Shaping"
+        ],
+        "description": "General category covering the shaping, rounding, or flaring of catheter ends for clinical performance and safety. Applied to distal or proximal ends depending on function.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pe",
+            "tpu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/tip-end-forming.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "radius-tip",
+        "name": "Radius Tip",
+        "aliases": [
+          "Rounded Tip",
+          "Smooth Tip"
+        ],
+        "description": "Creates a rounded distal end with a controlled radius for atraumatic entry into vessels. Often used in dilator and introducer designs.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/radius-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "angle-tip",
+        "name": "Angle Tip",
+        "aliases": [
+          "Beveled Tip",
+          "Angled Distal Tip"
+        ],
+        "description": "Forms an angled or beveled distal end to aid navigation and selective access within anatomy. Used in angiographic and diagnostic catheters.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "tpu",
+            "pa"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/angle-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "multi-lumen-tip",
+        "name": "Multi-Lumen Tip",
+        "aliases": [
+          "Multiple Lumen Tip",
+          "Dual Lumen Tip"
+        ],
+        "description": "Used for catheters with multiple lumens requiring uniform tip geometry and lumen alignment. Ensures consistent flow and bonding between lumens.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/multi-lumen-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "soft-tip",
+        "name": "Soft Tip",
+        "aliases": [
+          "Flexible Tip",
+          "Atraumatic Tip"
+        ],
+        "description": "Applies a softer polymer at the distal end for improved patient comfort and reduced vessel trauma. Typically bonded or formed over a stiffer shaft.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "tpu",
+            "pebax",
+            "pvc"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/soft-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "iv-tip",
+        "name": "IV Tip",
+        "aliases": [
+          "Intravenous Tip",
+          "Cannula Tip"
+        ],
+        "description": "Forms the distal geometry of intravenous catheters and cannulas for smooth venous entry. Focuses on minimizing insertion resistance and tip burrs.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pvc",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/iv-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "guidewire-tip",
+        "name": "Guidewire Tip",
+        "aliases": [
+          "Micro Guide Tip",
+          "Wire Cover Tip"
+        ],
+        "description": "Creates small, highly precise distal ends for guidewire covers or tubing. Designed for exceptional concentricity and flexibility at micro-scale diameters.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "fep",
+            "ptfe"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/guidewire-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "cvc-tip",
+        "name": "CVC Tip",
+        "aliases": [
+          "Central Venous Catheter Tip",
+          "Vascular Access Tip"
+        ],
+        "description": "Used for forming distal tips of central venous catheters (CVCs), offering smooth entry and biocompatibility for long-term vascular access.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pu",
+            "pebax"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/7F CVC Catheter.png",
+        "long_description": "Central Venous Catheter (CVC) tips demand highly controlled geometries, strong and uniform distal bonds, and a tightly repeatable thermal-forming process to ensure safe, reliable clinical performance. Variations in tubing sizes, multi-lumen constructions, polymer blends, and tip profiles make CVC tip forming a complex manufacturing challenge that requires deep process understanding. ONEX specializes in supporting customers through this exact application, providing the expertise, purpose-built catheter tipping machines, precision-engineered tooling, and hands-on process development needed to achieve consistent, production-ready results."
+      },
+      {
+        "slug": "urinary-tip",
+        "name": "Urinary Tip",
+        "aliases": [
+          "Foley Tip",
+          "Urethral Tip"
+        ],
+        "description": "Forms the smooth distal tips of urinary or Foley catheters for atraumatic urethral insertion and patient comfort.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pvc",
+            "tpu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/urinary-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "angiographic-tip",
+        "name": "Angiographic Tip",
+        "aliases": [
+          "Angio Tip",
+          "Diagnostic Tip"
+        ],
+        "description": "Used in shaping distal ends of angiographic catheters with precise geometries to ensure optimal flow dynamics and navigation in vessels.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pa",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/angiographic-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "tracheal-tip",
+        "name": "Tracheal Tip",
+        "aliases": [
+          "Endotracheal Tip",
+          "Airway Tube Tip"
+        ],
+        "description": "Forms smooth distal ends of tracheal and endotracheal tubes to minimize airway irritation. Often features rounded and radiused edges.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pvc",
+            "tpu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/tracheal-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "peek-tube-forming",
+        "name": "PEEK Tube Forming",
+        "aliases": [
+          "PEEK Tube Tipping",
+          "PEEK Tube Shaping"
+        ],
+        "description": "Thermoforming of high-performance PEEK tubing for structural medical applications requiring rigidity, chemical resistance, and precision geometry.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "peek"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/peek-tube-forming.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "peek-mushroom-forming",
+        "name": "PEEK Mushroom Forming",
+        "aliases": [
+          "PEEK Mushroom Tip",
+          "PEEK Flared End"
+        ],
+        "description": "Creates mushroom-shaped ends on PEEK tubing for secure mechanical retention or component interfacing. Used in high-strength catheter or connector assemblies.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "peek"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/peek-mushroom-forming.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "micro-catheter-tipping",
+        "name": "Micro Catheter Tipping",
+        "aliases": [
+          "Micro-Tip Forming",
+          "Neuro Catheter Tipping"
+        ],
+        "description": "Enables formation of ultra-small tips for neurovascular or micro-delivery catheters. Ensures tight concentricity and delicate material control at sub-millimeter scales.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "fep",
+            "ptfe"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/micro-catheter-tipping.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "balloon-catheter-tip",
+        "name": "Balloon Catheter Tip",
+        "aliases": [
+          "Balloon Tip Forming",
+          "Balloon Distal Tip"
+        ],
+        "description": "Forms or bonds distal tips on balloon catheters, ensuring strong adhesion and smooth transitions between balloon and shaft segments.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "tpu",
+            "pe"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/balloon-catheter-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "urethral-access-sheath",
+        "name": "Urethral Access Sheath",
+        "aliases": [
+          "Urology Sheath",
+          "Access Sheath Tip"
+        ],
+        "description": "Shapes and flares distal ends of urethral access sheaths to ease instrument passage and reduce patient discomfort during urological procedures.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "tpu",
+            "pvc"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/urethral-access-sheath.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "diameter-reduction",
+        "name": "Diameter Reduction",
+        "aliases": [
+          "Tube Reduction",
+          "Dimensional Constriction"
+        ],
+        "description": "Uniformly decreases catheter or tubing diameter to achieve tighter fits, bonding zones, or specialized transitions for multi-section assemblies.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/diameter-reduction.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "variable-lumen-diameter",
+        "name": "Variable Catheter Lumen Diameter",
+        "aliases": [
+          "Multi-Diameter Lumen",
+          "Tapered Lumen Catheter"
+        ],
+        "description": "Produces catheters with varying internal lumen diameters along their length for tailored flow dynamics or mechanical properties.",
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "tpu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/variable-lumen-diameter.jpg",
+        "long_description": ""
+      }
+    ],
+    "related": {
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pebax",
+        "pa"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling",
+        "catheter-tipping-die",
+        "catheter-tip-mandrel"
+      ],
+      "technologies": [
+        "rf-induction"
+      ]
     },
-    {
-      "slug": "catheter-flaring",
-      "name": "Catheter Flaring",
-      "aliases": ["Proximal End Flaring"],
-      "description": "Expanding proximal catheter ends for hub or connector attachment. This process produces conical or hood-style geometries for assembly and fluid-tight connection.",
-      "sub_applications": [
-        {
-          "slug": "flared-conical-shape",
-          "name": "Flared Conical Shape",
-          "description": "Creates a smooth, conical flare at the proximal end to mate with connectors or hubs. Provides mechanical strength and leak-proof assembly during bonding.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper-pro"],
-            "materials": ["pe", "pu"],
-            "tooling": ["catheter-flaring-die", "catheter-tip-mandrel"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/5Fr Tip Flaring with PEBAX Material.png"
+    "image": "/images/examples/Tip Forming 13F Dilator.png"
+  },
+  {
+    "slug": "catheter-flaring",
+    "name": "Catheter Flaring",
+    "aliases": [
+      "Proximal End Flaring"
+    ],
+    "description": "Expanding proximal catheter ends for hub or connector attachment. This process produces conical or hood-style geometries for assembly and fluid-tight connection.",
+    "sub_applications": [
+      {
+        "slug": "flared-conical-shape",
+        "name": "Flared Conical Shape",
+        "description": "Creates a smooth, conical flare at the proximal end to mate with connectors or hubs. Provides mechanical strength and leak-proof assembly during bonding.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-flaring-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
         },
-        {
-          "slug": "hood-formed-tip",
-          "name": "Hood-Formed Tip",
-          "description": "Produces a proximal hood or bell-mouth geometry used for catheter-hub transitions or fluid port integration.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pe", "pu"],
-            "tooling": ["catheter-flaring-die", "catheter-tip-mandrel"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/hood-formed-tip.jpg"
-        },
-        {
-          "slug": "introducer-tip-forming",
-          "name": "Introducer Tip Forming",
-          "description": "Creates the tapered leading edge of introducer catheters and sheaths. Designed for consistent OD reduction and concentricity using custom die-mandrel sets.",
-          "related": {
-            "products": ["catheter-tipper", "dual-catheter-tipper","catheter-tipper-pro","dual-catheter-tipper-pro"],
-            "materials": ["pe", "pebax"],
-            "tooling": ["catheter-flaring-die", "catheter-tip-mandrel"],
-            "support": ["process-development"]
-          },
-          "image": "/images/examples/Flaring 31F Bicaval Introducer Catheter.png"
-        }
-      ],
-      "related": {
-        "products": ["catheter-tipper", "catheter-tipper-pro"],
-            "materials": ["pe", "pu"],
-        "tooling": ["catheter-tipping-tooling", "catheter-tip-mandrel","catheter-flaring-die"],
-        "technologies": ["rf-induction"],
-        "support": ["process-development"] 
+        "image": "/images/examples/5Fr Tip Flaring with PEBAX Material.png",
+        "long_description": "Long description for Flared Conical Shape"
       },
-      "image": "/images/examples/Flaring 31F Bicaval Introducer Catheter.png"
-    }
-  ]
-  
+      {
+        "slug": "hood-formed-tip",
+        "name": "Hood-Formed Tip",
+        "description": "Produces a proximal hood or bell-mouth geometry used for catheter-hub transitions or fluid port integration.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-flaring-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/hood-formed-tip.jpg",
+        "long_description": ""
+      },
+      {
+        "slug": "introducer-tip-forming",
+        "name": "Introducer Tip Forming",
+        "description": "Creates the tapered leading edge of introducer catheters and sheaths. Designed for consistent OD reduction and concentricity using custom die-mandrel sets.",
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro",
+            "dual-catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pebax"
+          ],
+          "tooling": [
+            "catheter-flaring-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/Flaring 31F Bicaval Introducer Catheter.png",
+        "long_description": ""
+      }
+    ],
+    "related": {
+      "products": [
+        "catheter-tipper",
+        "catheter-tipper-pro"
+      ],
+      "materials": [
+        "pe",
+        "pu"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling",
+        "catheter-tip-mandrel",
+        "catheter-flaring-die"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development"
+      ]
+    },
+    "image": "/images/examples/Flaring 31F Bicaval Introducer Catheter.png"
+  }
+]

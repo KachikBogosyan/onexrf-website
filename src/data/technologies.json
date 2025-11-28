@@ -4,9 +4,30 @@
       "name": "RF Induction Technology",
       "description": "ONEX RF heating provides precise, consistent energy delivery for repeatable catheter manufacturing processes.",
       "related": {
-        "products": ["catheter-tipper", "dual-catheter-tipper", "soft-tip-bonder"],
+        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
         "applications": ["catheter-tipping", "catheter-flaring", "bonding"]
-      }
+      },
+      "image": "/images/technologies/rf-induction.png"
+    },
+    {
+      "slug": "rf-welding",
+      "name": "RF Welding",
+      "description": "RF (radio frequency) welding is a process that uses high-frequency electromagnetic energy to join two layers of thermoplastic materials by creating an airtight and durable bond.",
+      "related": {
+        "products": [],
+        "applications": []
+      },
+      "image": "/images/technologies/rf-welding.png"
+    },
+    {
+      "slug":"catheter-tip-forming-theory",
+      "name": "Catheter Tip Forming Theory",
+      "description": "Catheter tip forming theory is the science behind the process of forming the distal ends of thermoplastic catheters to achieve smooth, atraumatic tips for device insertion. It is a complex process that requires a deep understanding of the materials, the equipment, and the process parameters.",
+      "related": {
+        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
+        "applications": ["catheter-tipping", "catheter-flaring", "bonding", "catheter-bonding"]
+      },
+      "image": "/images/technologies/catheter-tip-forming-theory.png"
     }
   ]
   

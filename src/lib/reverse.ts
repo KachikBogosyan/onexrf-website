@@ -2,6 +2,9 @@ import { getApplications } from "./applications";
 import { getAllMaterials } from "./materials";
 import type { Application, SubApplication } from "./types";
 import type { Material } from "./materials";
+import type { Product } from "./products";
+import { getProductBySlug } from "./products";
+import { getAllTechnologies, type Technology } from "./technologies";
 
 export function getApplicationsUsingProduct(productSlug: string) {
   const apps = getApplications();
@@ -36,6 +39,53 @@ export function getMaterialsUsingProduct(productSlug: string): Material[] {
   return materials.filter((material) =>
     material.related?.products?.includes(productSlug)
   );
+}
+
+export function getApplicationsUsingTechnology(technologySlug: string): Application[] {
+  const apps = getApplications();
+  const technologies = getAllTechnologies();
+  const technology = technologies.find((t) => t.slug === technologySlug);
+  
+  // Check both directions:
+  // 1. Applications that reference this technology
+  // 2. Technology that references applications
+  const appSlugsFromTech = technology?.related?.applications || [];
+  
+  return apps.filter((app) =>
+    app.related.technologies?.includes(technologySlug) ||
+    appSlugsFromTech.includes(app.slug)
+  );
+}
+
+export function getProductsUsingTechnology(technologySlug: string): Product[] {
+  const technologies = getAllTechnologies();
+  const technology = technologies.find((t) => t.slug === technologySlug);
+  
+  if (!technology || !technology.related?.products) {
+    return [];
+  }
+
+  return technology.related.products
+    .map((slug) => getProductBySlug(slug))
+    .filter((p): p is Product => p !== undefined)
+    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+}
+
+export function getTechnologiesForApplication(applicationSlug: string): Technology[] {
+  const technologies = getAllTechnologies();
+  const application = getApplications().find((app) => app.slug === applicationSlug);
+  
+  // Check both directions:
+  // 1. Technologies that reference this application
+  // 2. Application that references technologies
+  const techSlugsFromApp = application?.related?.technologies || [];
+  
+  const result = technologies.filter((tech) =>
+    techSlugsFromApp.includes(tech.slug) ||
+    tech.related?.applications?.includes(applicationSlug)
+  );
+  
+  return result;
 }
 
 // Repeat for tooling, support if needed later

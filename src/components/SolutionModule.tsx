@@ -105,23 +105,6 @@ export function SolutionModule({ title, related, contextLabel }: Props) {
           </div>
         </div>
       )}
-
-      {/* ========== CONTACT CTA ========== */}
-      <div className="mt-10 border-t pt-5">
-        <h3 className="font-semibold text-slate-800 text-sm">
-          Discuss your application
-        </h3>
-        <p className="text-xs text-slate-600 mb-2">
-          Provide your catheter specs; we’ll recommend the ideal equipment,
-          tooling, and process development plan.
-        </p>
-        <Link
-          href={`/contact?application=${encodeURIComponent(contextLabel)}`}
-          className="inline-flex items-center rounded-md border border-blue-600 px-3 py-1.5 text-xs font-medium text-blue-600 hover:bg-blue-50"
-        >
-          Contact ONEX About This Application
-        </Link>
-      </div>
     </section>
   );
 }

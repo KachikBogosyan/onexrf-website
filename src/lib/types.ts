@@ -11,6 +11,7 @@ export type Related = {
     slug: string;
     name: string;
     description: string;
+    long_description?: string;
     image?: string;
     related?: Related;
   };

@@ -7,6 +7,10 @@ import { getExamplesForSubApplicationPage } from "@/lib/examples";
 import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
 import { MarketingHero } from "@/components/MarketingHero";
 import { PageNav, type Section } from "@/components/PageNav";
+import { ContactCTA } from "@/components/ContactCTA";
+import { ContentModule } from "@/components/ContentModule";
+import { getTechnologyBySlug, type Technology } from "@/lib/technologies";
+import { SolutionCard } from "@/components/SolutionCard";
 
 type Props = {
   params: Promise<{ slug: string; subAppSlug: string }>;
@@ -19,6 +23,7 @@ export default async function SubApplicationPage({ params }: Props) {
 
   const { application, subApp } = result;
   const examples = getExamplesForSubApplicationPage(slug, subAppSlug);
+  const { long_description } = subApp;
 
   // merge related (application + subApp) – simple union
   const mergedRelated = {
@@ -54,10 +59,18 @@ export default async function SubApplicationPage({ params }: Props) {
     ),
   };
 
+  // Get technologies from merged related technologies
+  const technologies: Technology[] = (mergedRelated.technologies || [])
+    .map((techSlug) => getTechnologyBySlug(techSlug))
+    .filter((tech): tech is Technology => tech !== undefined);
+
   // Define sections for this page
   const sections: Section[] = [
+    ...(long_description ? [{ id: 'about', label: 'About' }] : []),
     { id: 'solutions', label: 'Solutions' },
+    { id: 'contact', label: 'Contact' },
     ...(examples.length > 0 ? [{ id: 'examples', label: 'Examples' }] : []),
+    ...(technologies.length > 0 ? [{ id: 'technologies', label: 'Technologies' }] : []),
   ];
 
   return (
@@ -91,6 +104,18 @@ export default async function SubApplicationPage({ params }: Props) {
 
       <PageNav sections={sections} />
 
+      {/* About Section */}
+      {long_description && (
+        <section id="about">
+          <ContentModule
+            title="About"
+            content={long_description}
+            image={subApp.image}
+            imageAlt={subApp.name}
+          />
+        </section>
+      )}
+
       <section id="solutions">
         <SolutionModule
           related={mergedRelated}
@@ -99,9 +124,30 @@ export default async function SubApplicationPage({ params }: Props) {
         />
       </section>
 
+      
+
+      <ContactCTA context={subApp.name} contextType="subApplication" />
+
       {examples.length > 0 && (
         <section id="examples">
           <ExamplesCarousel examples={examples} title="Examples" />
+        </section>
+      )}
+      
+      {technologies.length > 0 && (
+        <section id="technologies">
+          <h2 className="text-lg font-semibold mb-6">Technologies</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {technologies.map((tech) => (
+              <SolutionCard
+                key={tech.slug}
+                title={tech.name}
+                description={tech.description}
+                image={tech.image}
+                link={`/technologies/${tech.slug}`}
+              />
+            ))}
+          </div>
         </section>
       )}
     </div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getExamplesForProductPage } from "@/lib/examples";
 import { ExamplesCarousel } from "@/components/examples/ExamplesCarousel";
 import { PageNav, type Section } from "@/components/PageNav";
+import { ContactCTA } from "@/components/ContactCTA";
 
 export default async function ProductPage({
   params,
@@ -200,20 +201,7 @@ export default async function ProductPage({
       )}
 
       {/* CTA */}
-      <section id="contact" className="border-t pt-6">
-        <h3 className="font-semibold text-slate-800 text-sm mb-1">
-          Discuss your catheter needs
-        </h3>
-        <p className="text-xs text-slate-600 mb-2">
-          Provide your catheter dimensions and material; we'll confirm if this equipment is suitable.
-        </p>
-        <Link
-          href={`/contact?product=${encodeURIComponent(product.name)}`}
-          className="inline-block border border-blue-600 px-3 py-1.5 text-xs text-blue-600 rounded hover:bg-blue-50"
-        >
-          Contact ONEX About This Machine
-        </Link>
-      </section>
+      <ContactCTA context={product.name} contextType="product" />
     </div>
   );
 }
