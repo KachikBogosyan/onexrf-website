@@ -10,9 +10,13 @@ export type Related = {
   export type SubApplication = {
     slug: string;
     name: string;
+    aliases?: string[];
     description: string;
     long_description?: string;
     image?: string;
+    use_cases?: string[];
+    process_requirements?: string[];
+    details?: Array<{ label: string; value: string }>;
     related?: Related;
   };
   

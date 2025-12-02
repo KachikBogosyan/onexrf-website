@@ -74,7 +74,7 @@ export function SolutionModule({ title, related, contextLabel }: Props) {
       {/* ========== TOOLING ========== */}
       {resolvedTooling.length > 0 && (
         <div className="mt-8">
-          <h3 className="text-lg font-semibold mb-3">Tooling</h3>
+          <h3 className="text-lg font-semibold mb-3">Required Tooling</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {resolvedTooling.map((t) => (
               <SolutionCard
@@ -92,7 +92,7 @@ export function SolutionModule({ title, related, contextLabel }: Props) {
       {/* ========== SUPPORT ========== */}
       {resolvedSupport.length > 0 && (
         <div className="mt-8">
-          <h3 className="text-lg font-semibold mb-3">Support</h3>
+          <h3 className="text-lg font-semibold mb-3">Provided Support</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {resolvedSupport.map((s) => (
               <SolutionCard
