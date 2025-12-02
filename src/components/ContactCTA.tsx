@@ -2,7 +2,7 @@ import Link from "next/link";
 
 type ContactCTAProps = {
   context?: string;
-  contextType?: "product" | "application" | "subApplication" | "technology" | "material";
+  contextType?: "product" | "application" | "subApplication" | "technology" | "material" | "tooling" | "support";
   label?: string;
 };
 
@@ -24,6 +24,10 @@ export function ContactCTA({
         return "Contact ONEX About This Technology";
       case "material":
         return "Contact ONEX About This Material";
+      case "tooling":
+        return "Contact ONEX About This Tooling";
+      case "support":
+        return "Contact ONEX About This Support";
       default:
         return "Contact ONEX";
     }
@@ -40,7 +44,11 @@ export function ContactCTA({
             ? `technology=${encodeURIComponent(context || "")}`
             : contextType === "material"
               ? `material=${encodeURIComponent(context || "")}`
-              : `product=${encodeURIComponent(context || "")}`;
+              : contextType === "tooling"
+                ? `tooling=${encodeURIComponent(context || "")}`
+                : contextType === "support"
+                  ? `support=${encodeURIComponent(context || "")}`
+                  : `product=${encodeURIComponent(context || "")}`;
 
   return (
     <section id="contact" className="border-t pt-6">

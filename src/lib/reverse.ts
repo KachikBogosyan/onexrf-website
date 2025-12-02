@@ -5,6 +5,8 @@ import type { Material } from "./materials";
 import type { Product } from "./products";
 import { getProductBySlug } from "./products";
 import { getAllTechnologies, type Technology } from "./technologies";
+import { getAllTooling, type Tooling } from "./tooling";
+import { getAllSupport, type Support } from "./support";
 
 export function getApplicationsUsingProduct(productSlug: string) {
   const apps = getApplications();
@@ -118,4 +120,71 @@ export function getProductsUsingMaterial(materialSlug: string): Product[] {
     .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 }
 
-// Repeat for tooling, support if needed later
+export function getApplicationsUsingTooling(toolingSlug: string): Application[] {
+  const apps = getApplications();
+  const tooling = getAllTooling();
+  const toolingItem = tooling.find((t) => t.slug === toolingSlug);
+  
+  if (!toolingItem) return [];
+  
+  // Check both directions:
+  // 1. Applications that reference this tooling
+  // 2. Tooling that references applications (check both related.applications and direct applications field)
+  const appSlugsFromTooling = (toolingItem as any).applications || toolingItem?.related?.applications || [];
+  
+  return apps.filter((app) =>
+    app.related.tooling?.includes(toolingSlug) ||
+    appSlugsFromTooling.includes(app.slug)
+  );
+}
+
+export function getProductsUsingTooling(toolingSlug: string): Product[] {
+  const tooling = getAllTooling();
+  const toolingItem = tooling.find((t) => t.slug === toolingSlug);
+  
+  if (!toolingItem) return [];
+  
+  // Check both related.products and compatible_products field
+  const productSlugs = (toolingItem as any).compatible_products || toolingItem?.related?.products || [];
+  
+  if (productSlugs.length === 0) {
+    return [];
+  }
+
+  return productSlugs
+    .map((slug: string) => getProductBySlug(slug))
+    .filter((p): p is Product => p !== undefined)
+    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+}
+
+export function getApplicationsUsingSupport(supportSlug: string): Application[] {
+  const apps = getApplications();
+  const support = getAllSupport();
+  const supportItem = support.find((s) => s.slug === supportSlug);
+  
+  if (!supportItem) return [];
+  
+  // Check both directions:
+  // 1. Applications that reference this support
+  // 2. Support that references applications
+  const appSlugsFromSupport = supportItem?.related?.applications || [];
+  
+  return apps.filter((app) =>
+    app.related.support?.includes(supportSlug) ||
+    appSlugsFromSupport.includes(app.slug)
+  );
+}
+
+export function getProductsUsingSupport(supportSlug: string): Product[] {
+  const support = getAllSupport();
+  const supportItem = support.find((s) => s.slug === supportSlug);
+  
+  if (!supportItem || !supportItem?.related?.products) {
+    return [];
+  }
+
+  return supportItem.related.products
+    .map((slug) => getProductBySlug(slug))
+    .filter((p): p is Product => p !== undefined)
+    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+}

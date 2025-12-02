@@ -24,7 +24,7 @@
       "type": "component",
       "parent": "catheter-tip-tooling",
       "description": "Custom-engineered die for forming thermoplastic catheter tips. Precision-machined for geometry accuracy and heat uniformity.",
-      "applications": ["catheter-tipping","catheter-flaring"],
+      "applications": ["catheter-tipping"],
       "compatible_products": ["catheter-tipper", "dual-catheter-tipper"],
       "materials_supported": ["polyethylene", "polyurethane"],
       "process": [
