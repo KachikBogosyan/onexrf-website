@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Script from "next/script";
 
 type Context = {
-  type: "product" | "application" | "material" | "tooling" | "support" | null;
+  type: "product" | "application" | "material" | "tooling" | "support" | "technology" | null;
   name: string;
   slug?: string;
 } | null;

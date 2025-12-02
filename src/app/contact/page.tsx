@@ -4,6 +4,7 @@ import { getApplicationBySlug } from "@/lib/applications";
 import { getMaterialBySlug } from "@/lib/materials";
 import { getToolingBySlug } from "@/lib/tooling";
 import { getSupportBySlug } from "@/lib/support";
+import { getTechnologyBySlug } from "@/lib/technologies";
 import { HubSpotForm } from "@/components/HubSpotForm";
 
 type Props = {
@@ -13,6 +14,7 @@ type Props = {
     material?: string;
     tooling?: string;
     support?: string;
+    technology?: string;
   }>;
 };
 
@@ -21,7 +23,7 @@ export default async function ContactPage({ searchParams }: Props) {
   
   // Resolve context from query params
   let context: {
-    type: "product" | "application" | "material" | "tooling" | "support" | null;
+    type: "product" | "application" | "material" | "tooling" | "support" | "technology" | null;
     name: string;
     slug?: string;
   } | null = null;
@@ -61,6 +63,13 @@ export default async function ContactPage({ searchParams }: Props) {
       context = { type: "support", name: support.name, slug: support.slug };
     } else {
       context = { type: "support", name: decodeURIComponent(params.support) };
+    }
+  } else if (params.technology) {
+    const technology = getTechnologyBySlug(params.technology);
+    if (technology) {
+      context = { type: "technology", name: technology.name, slug: technology.slug };
+    } else {
+      context = { type: "technology", name: decodeURIComponent(params.technology) };
     }
   }
 
