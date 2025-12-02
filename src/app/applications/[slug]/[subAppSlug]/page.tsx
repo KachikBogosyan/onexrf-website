@@ -62,7 +62,7 @@ export default async function SubApplicationPage({ params }: Props) {
   // Get technologies from merged related technologies
   const technologies: Technology[] = (mergedRelated.technologies || [])
     .map((techSlug) => getTechnologyBySlug(techSlug))
-    .filter((tech): tech is Technology => tech !== undefined);
+    .filter((tech: Technology | undefined): tech is Technology => tech !== undefined);
 
   // Define sections for this page
   const sections: Section[] = [

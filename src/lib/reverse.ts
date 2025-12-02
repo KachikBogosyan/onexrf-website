@@ -69,8 +69,8 @@ export function getProductsUsingTechnology(technologySlug: string): Product[] {
 
   return technology.related.products
     .map((slug) => getProductBySlug(slug))
-    .filter((p): p is Product => p !== undefined)
-    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+    .filter((p: Product | undefined): p is Product => p !== undefined)
+    .sort((a: Product, b: Product) => (a.order ?? 999) - (b.order ?? 999));
 }
 
 export function getTechnologiesForApplication(applicationSlug: string): Technology[] {
@@ -116,8 +116,8 @@ export function getProductsUsingMaterial(materialSlug: string): Product[] {
 
   return material.related.products
     .map((slug) => getProductBySlug(slug))
-    .filter((p): p is Product => p !== undefined)
-    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+    .filter((p: Product | undefined): p is Product => p !== undefined)
+    .sort((a: Product, b: Product) => (a.order ?? 999) - (b.order ?? 999));
 }
 
 export function getApplicationsUsingTooling(toolingSlug: string): Application[] {
@@ -154,7 +154,7 @@ export function getProductsUsingTooling(toolingSlug: string): Product[] {
   return productSlugs
     .map((slug: string) => getProductBySlug(slug))
     .filter((p: Product | undefined): p is Product => p !== undefined)
-    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+    .sort((a: Product, b: Product) => (a.order ?? 999) - (b.order ?? 999));
 }
 
 export function getApplicationsUsingSupport(supportSlug: string): Application[] {
@@ -185,6 +185,6 @@ export function getProductsUsingSupport(supportSlug: string): Product[] {
 
   return supportItem.related.products
     .map((slug) => getProductBySlug(slug))
-    .filter((p): p is Product => p !== undefined)
-    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+    .filter((p: Product | undefined): p is Product => p !== undefined)
+    .sort((a: Product, b: Product) => (a.order ?? 999) - (b.order ?? 999));
 }

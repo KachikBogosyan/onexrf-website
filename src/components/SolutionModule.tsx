@@ -20,17 +20,17 @@ export function SolutionModule({ title, related, contextLabel }: Props) {
   const { products, tooling, materials, support } = related;
 
   const resolvedProducts: Product[] =
-    (products?.map(getProductBySlug).filter((p): p is Product => p !== undefined) ?? [])
-      .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+    (products?.map(getProductBySlug).filter((p: Product | undefined): p is Product => p !== undefined) ?? [])
+      .sort((a: Product, b: Product) => (a.order ?? 999) - (b.order ?? 999));
 
   const resolvedTooling: Tooling[] =
-    tooling?.map(getToolingBySlug).filter((t): t is Tooling => t !== undefined) ?? [];
+    tooling?.map(getToolingBySlug).filter((t: Tooling | undefined): t is Tooling => t !== undefined) ?? [];
 
   const resolvedMaterials: Material[] =
-    materials?.map(getMaterialBySlug).filter((m): m is Material => m !== undefined) ?? [];
+    materials?.map(getMaterialBySlug).filter((m: Material | undefined): m is Material => m !== undefined) ?? [];
 
   const resolvedSupport: Support[] =
-    support?.map(getSupportBySlug).filter((s): s is Support => s !== undefined) ?? [];
+    support?.map(getSupportBySlug).filter((s: Support | undefined): s is Support => s !== undefined) ?? [];
 
   const empty =
     resolvedProducts.length === 0 &&
