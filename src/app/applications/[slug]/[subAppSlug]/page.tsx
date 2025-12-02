@@ -144,7 +144,7 @@ export default async function SubApplicationPage({ params }: Props) {
                 title={tech.name}
                 description={tech.description}
                 image={tech.image}
-                link={`/technologies/${tech.slug}`}
+                link={`/resources/technologies/${tech.slug}`}
               />
             ))}
           </div>

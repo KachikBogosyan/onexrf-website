@@ -17,26 +17,31 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Link href="/" className="font-semibold tracking-tight text-lg">
               ONEX RF
             </Link>
-            <nav className="flex gap-6 text-sm">
-              <Link href="/applications" className="hover:underline">
-                Applications
+            <div className="flex items-center gap-6">
+              <nav className="flex gap-6 text-sm">
+                <Link href="/applications" className="hover:underline">
+                  Applications
+                </Link>
+                <Link href="/products" className="hover:underline">
+                  Products
+                </Link>
+                <Link href="/tooling" className="hover:underline">
+                  Tooling
+                </Link>
+                <Link href="/resources" className="hover:underline">
+                  Resources
+                </Link>
+                <Link href="/support" className="hover:underline">
+                  Support
+                </Link>
+              </nav>
+              <Link
+                href="/contact"
+                className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors"
+              >
+                Contact
               </Link>
-              <Link href="/products" className="hover:underline">
-                Products
-              </Link>
-              <Link href="/technologies" className="hover:underline">
-                Technologies
-              </Link>
-              <Link href="/materials" className="hover:underline">
-                Materials
-              </Link>
-              <Link href="/tooling" className="hover:underline">
-                Tooling
-              </Link>
-              <Link href="/support" className="hover:underline">
-                Support
-              </Link>
-            </nav>
+            </div>
           </div>
         </header>
 

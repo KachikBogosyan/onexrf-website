@@ -160,7 +160,7 @@ export default async function ProductPage({
             {materials.slice(0, 5).map((material) => (
               <Link
                 key={material.slug}
-                href={`/materials/${material.slug}`}
+                href={`/resources/materials/${material.slug}`}
                 className="flex flex-col items-center text-center hover:opacity-80 transition-opacity"
               >
                 <div className="w-full aspect-square bg-slate-100 rounded-md border border-slate-200 flex items-center justify-center mb-2 overflow-hidden">
@@ -183,7 +183,7 @@ export default async function ProductPage({
           {materials.length > 5 && (
             <div className="mt-4">
               <Link
-                href={`/materials?product=${slug}`}
+                href={`/resources/materials?product=${slug}`}
                 className="text-sm text-blue-600 hover:underline"
               >
                 View all {materials.length} materials →

@@ -87,7 +87,13 @@ export default async function ContactPage({ searchParams }: Props) {
             <span className="font-medium">Inquiry about:</span>{" "}
             {context.slug ? (
               <Link
-                href={`/${context.type}s/${context.slug}`}
+                href={
+                  context.type === "material"
+                    ? `/resources/materials/${context.slug}`
+                    : context.type === "technology"
+                    ? `/resources/technologies/${context.slug}`
+                    : `/${context.type}s/${context.slug}`
+                }
                 className="text-blue-600 hover:underline"
               >
                 {context.name}
