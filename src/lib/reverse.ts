@@ -153,7 +153,7 @@ export function getProductsUsingTooling(toolingSlug: string): Product[] {
 
   return productSlugs
     .map((slug: string) => getProductBySlug(slug))
-    .filter((p): p is Product => p !== undefined)
+    .filter((p: Product | undefined): p is Product => p !== undefined)
     .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 }
 
