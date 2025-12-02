@@ -210,6 +210,7 @@ declare global {
           formId: string;
           target: string;
           onFormReady?: ($form: any) => void;
+          onFormSubmit?: () => void;
         }) => void;
       };
     };
