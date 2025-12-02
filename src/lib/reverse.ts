@@ -88,4 +88,34 @@ export function getTechnologiesForApplication(applicationSlug: string): Technolo
   return result;
 }
 
+export function getApplicationsUsingMaterial(materialSlug: string): Application[] {
+  const apps = getApplications();
+  const materials = getAllMaterials();
+  const material = materials.find((m) => m.slug === materialSlug);
+  
+  // Check both directions:
+  // 1. Applications that reference this material
+  // 2. Material that references applications
+  const appSlugsFromMaterial = material?.related?.applications || [];
+  
+  return apps.filter((app) =>
+    app.related.materials?.includes(materialSlug) ||
+    appSlugsFromMaterial.includes(app.slug)
+  );
+}
+
+export function getProductsUsingMaterial(materialSlug: string): Product[] {
+  const materials = getAllMaterials();
+  const material = materials.find((m) => m.slug === materialSlug);
+  
+  if (!material || !material.related?.products) {
+    return [];
+  }
+
+  return material.related.products
+    .map((slug) => getProductBySlug(slug))
+    .filter((p): p is Product => p !== undefined)
+    .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
+}
+
 // Repeat for tooling, support if needed later
