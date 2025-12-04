@@ -11,8 +11,33 @@
       {
         "slug": "dilator-tip-forming",
         "name": "Dilator Tip Forming",
-        "description": "Forming rounded or tapered dilator tips that ease entry into vessels or sheaths. Demonstrates smooth geometry and wall-thickness uniformity across Pebax and Polyimide materials.",
-        "long_description": "",
+        "description": "A tapered distal section engineered to expand tissue gradually and enable smooth advancement of sheath systems. Dilator tips require precise thermal forming to achieve a consistent taper, tight sheath-dilator fit, and atraumatic insertion.",
+
+        "long_description": "Dilator tips are designed to create a smooth, controlled transition that allows clinicians to comfortably expand tissue and advance introducer sheaths without resistance or trauma. While the geometry appears straightforward, forming a reliable dilator taper requires exceptional control over heat, material flow, and internal support. Small deviations can result in rough edges, uneven tapering, or poor gap matching with the paired sheath—issues that directly impact insertion force, procedural efficiency, and physician satisfaction. With a wide range of tube diameters, wall structures, and polymer chemistries used across modern dilator systems, achieving consistent performance demands a highly repeatable forming process. ONEX meets this need through RF-driven temperature stability, engineered forming profiles, and a process-centric approach that produces smooth, concentric tapers with excellent sheath compatibility. The result is a dilator tip that advances cleanly, engages the sheath precisely, and delivers a dependable tactile experience in clinical use.",
+      
+        "use_cases": [
+          "Dilator–sheath systems requiring tight geometric and gap alignment",
+          "Tissue dilation for vascular access procedures (PICC, CVC, introducers)",
+          "Urological and endovascular access where controlled tapering reduces trauma",
+          "Applications needing a smooth, gradual taper for navigation through soft tissue",
+          "Dilators intended for seamless handoff and engagement with introducer sheaths"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to shape a smooth, gradual taper without creating steps or sharp transitions",
+          "Precise mandrel or internal support to maintain lumen geometry during tapering",
+          "Accurate die temperature control to achieve clean surface finishes and edge quality",
+          "Axial force or insertion-depth calibration to produce repeatable taper lengths",
+          "Material-specific profiles for polymers such as LDPE, HDPE, PE copolymers, PP, PU blends, PEBAX, and FEP",
+          "Controlled cooling cycles to lock in taper geometry and prevent post-form deformation"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Gradual tapers, thin-walled tips, profiled ID transitions, stepped OD options" },
+          { "label": "Taper Lengths", "value": "1–90 mm depending on dilator design" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -36,8 +61,34 @@
       {
         "slug": "sheath-tip-forming",
         "name": "Sheath Tip Forming",
-        "description": "Used to produce distal sheath tips with gradual tapers for atraumatic insertion and controlled stiffness transition. Typically formed in Polyethylene or Polyurethane.",
-        "long_description": "",
+        "description": "A smooth, tapered distal tip engineered for easy vessel entry and reliable sheath–dilator pairing. Sheath tips require tight thermal control and precise geometry to ensure low-friction insertion and consistent clinical performance.",
+
+        "long_description": "Sheath tips are critical components in introducer systems, functioning as the first structure that enters the vessel and guiding the sheath–dilator assembly during advancement. Their geometry—typically tapered, rounded, or a blend of both—directly affects insertion force, vessel trauma, and clinician confidence. Achieving a consistent, smooth tip is far more complex than simply heating the distal end. Variations in polymer stiffness, wall thickness, lubricity, and sheath–dilator gap requirements demand a finely tuned forming process that maintains uniformity while preventing deformation or surface defects. Undersized gaps cause binding; oversized gaps compromise stability. ONEX addresses these challenges with RF-based thermal precision, engineered die shaping, and a development-first approach that ensures every sheath tip meets exact dimensional, surface, and taper requirements. The result is a tip that enters smoothly, tracks predictably, and pairs tightly with its dilator—without gaps, drag, or unwanted friction.",
+      
+        "use_cases": [
+          "Introducer sheaths requiring a smooth, atraumatic entry profile",
+          "Sheath–dilator systems where tight geometric pairing is essential",
+          "Vascular access devices used for PICC, CVC, and central line placement",
+          "Dilators, ureteral stents, and other access systems requiring controlled tapering",
+          "Applications needing low-friction guidance and precise gap matching between components"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to form consistent tapers without wall thinning or deformation",
+          "Precise die temperature control to achieve smooth surface finishes",
+          "Mandrel stabilization or support to maintain lumen geometry during forming",
+          "Accurate insertion depth or axial force control to achieve exact taper lengths",
+          "Material-specific thermal settings for PVC, PEBAX, PU, PP, LDPE, PA, and other polymers",
+          "Cooling control to preserve final geometry and prevent post-form distortion or surface hazing"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Tapered sheath tips, rounded access profiles, thin-walled transitions, profiled ID geometries" },
+          { "label": "Tip Forming Lengths", "value": "0.5–15 mm depending on sheath design" },
+          { "label": "Materials", "value": "PVC, PEBAX, PU, PP, LDPE, HDPE, PA, FEP, and other thermoplastic polymers" }
+        ],
+      
         "related": {
           "products": [
             "catheter-tipper",
@@ -105,7 +156,8 @@
         "details": [
           { "label": "Tube OD Range", "value": "2Fr to 40+Fr equivalent" },
           { "label": "Geometry Types", "value": "Thin-walled tips, stepped ODs, uniform tapers, profiled ID transitions, thick-walled constructions" },
-          { "label": "Taper Lengths", "value": "1–90 mm" }],
+          { "label": "Taper Lengths", "value": "1–90 mm" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -132,8 +184,33 @@
           "Sealed Tip",
           "Closed Distal Tip"
         ],
-        "description": "Forms a sealed distal tip for catheters or tubing requiring a fluid-tight termination. Used in diagnostic or balloon catheters where a guidewire lumen ends distally.",
-        "long_description": "",
+        "description": "A fully sealed, rounded distal end designed to provide atraumatic insertion and controlled fluid flow. Closed end tips require precise thermal forming to maintain lumen integrity and consistent geometry.",
+
+        "long_description": "Closed end catheter tips may look simple, but producing a dependable distal seal requires precise thermal control, smooth material flow, and consistent lumen support. When forming a closed end, the catheter material must be heated, shaped, and rounded without collapsing the internal channel or compromising the distal profile. Variations in catheter diameter, wall construction, polymer stiffness, and tip geometry make the process highly sensitive to heat distribution and mandrel positioning. ONEX addresses these challenges with RF-driven precision and engineered process control, enabling manufacturers to produce smooth, atraumatic, and fully sealed tips with repeatable consistency across a wide range of thermoplastic materials and catheter designs.",
+      
+        "use_cases": [
+          "IV, PICC, CVC, Foley, and drainage catheter closed-end designs",
+          "Applications requiring a fully sealed distal opening for controlled fluid direction",
+          "Guidewire retention or containment at the distal tip",
+          "Occlusion-type catheters used for controlled vessel or cavity blockage",
+          "Catheters that require smooth, rounded, atraumatic insertion profiles"
+        ],
+      
+        "process_requirements": [
+          "Controlled RF heating profile to seal the distal end without deforming the lumen",
+          "Precise mandrel stabilization to preserve internal geometry during forming",
+          "Smooth material redistribution to eliminate sharp edges or surface imperfections",
+          "Consistent axial compression for uniform rounding and seal integrity",
+          "Proper cooling control to lock in geometry and bond strength",
+          "Material-specific tuning for polymers such as PEBAX, PU, PE, PP, FEP, PVC, and blends"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "End Configurations", "value": "Rounded seals, thin-wall closed ends, stepped ODs, profiled ID transitions" },
+          { "label": "Closed-End Lengths", "value": "1–25 mm depending on catheter design" },
+          { "label": "Materials", "value": "PE, PU & PU blends, PEBAX, LDPE, HDPE, PP, PA, FEP, PVC, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -159,8 +236,33 @@
           "Tube Neckdown",
           "Diameter Transition"
         ],
-        "description": "Reduces tube diameter to create a transition zone between two different lumen sizes or to attach components. Often applied before bonding or overmolding operations.",
-        "long_description": "",
+        "description": "A reduced-diameter distal section used to position marker bands or interface with other catheter components. Neckdown tips require precise thermal control to maintain concentricity and lumen integrity.",
+
+        "long_description": "Neckdown tips create a controlled reduction in catheter diameter that enables accurate fitment of marker bands, sleeves, and downstream components. Although the shape appears simple, forming a stable and dimensionally consistent neck requires fine control over material flow, heat distribution, and internal support. Variations in tube diameter, wall construction, durometer, and polymer response introduce significant challenges in maintaining concentricity and preventing lumen collapse. ONEX addresses these challenges with RF-driven precision and engineered process control, helping manufacturers produce consistent, reliable neckdown features that integrate seamlessly into larger catheter assemblies.",
+      
+        "use_cases": [
+          "Creating reduced-diameter sections for marker band placement",
+          "Preparing catheter ends for bonding or over-molding operations",
+          "Forming transition points for multi-component catheter assemblies",
+          "Producing diameter reductions for guidewire management",
+          "Catheters requiring precise fitment between adjoining components"
+        ],
+      
+        "process_requirements": [
+          "Controlled RF heating to reduce outer diameter without collapsing the lumen",
+          "Mandrel support to preserve internal geometry during neckdown",
+          "Uniform axial compression to produce a smooth, concentric reduction",
+          "Accurate die alignment to achieve predictable geometric transitions",
+          "Material-specific thermal tuning for soft and high-durometer polymers",
+          "Controlled cooling to lock in final dimensions and minimize distortion"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Reduced ODs, thin-walled transitions, stepped profiles, profiled ID changes" },
+          { "label": "Neckdown Lengths", "value": "1–15 mm depending on catheter design" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -186,8 +288,33 @@
           "Distal End Forming",
           "Catheter End Shaping"
         ],
-        "description": "General category covering the shaping, rounding, or flaring of catheter ends for clinical performance and safety. Applied to distal or proximal ends depending on function.",
-        "long_description": "",
+        "description": "A specialized category of catheter tip and end geometries that includes non-symmetrical, profiled, and multi-feature designs. These forms require precise RF-controlled shaping to achieve consistent performance, dimensional accuracy, and smooth integration with downstream components.",
+
+        "long_description": "Advanced catheter applications increasingly rely on non-symmetrical, multi-feature, or highly customized tip and end geometries to enhance navigation, improve device functionality, or enable downstream assembly steps. These designs may include angled features, asymmetric wall structures, stepped transitions, specialized openings, or uniquely shaped distal profiles. Achieving these shapes is significantly more complex than standard tapering or rounding—each feature must be formed with exact dimensional control while preserving lumen integrity, wall thickness, and surface finish. Variations in tubing size, multi-lumen layouts, durometer, and polymer chemistry further increase the forming challenge. ONEX addresses this complexity through RF-driven thermal precision, engineered dies crafted for asymmetric and multi-feature shaping, and application-specific process development that ensures every tip or end is formed consistently and repeatably. The result is a controllable, production-ready process capable of delivering even the most intricate catheter geometries with confidence.",
+      
+        "use_cases": [
+          "Custom distal geometries required for advanced or specialized catheter designs",
+          "Non-symmetrical tips for directional control or targeted device placement",
+          "Tips and ends with stepped ODs or profiled ID transitions",
+          "Catheters requiring contoured openings or unique functional features",
+          "Applications where precise dimensional matching to downstream components is essential"
+        ],
+      
+        "process_requirements": [
+          "Highly uniform RF heating to support complex or asymmetric geometry formation",
+          "Precision die alignment to define multi-feature and non-symmetrical profiles",
+          "Lumen preservation throughout intricate forming sequences",
+          "Controlled material redistribution to avoid thinning, distortion, or rough edges",
+          "Material-specific thermal profiles for LDPE, HDPE, PE copolymers, PP, PU blends, PEBAX, FEP, and others",
+          "Stable, repeatable cooling to maintain dimensional accuracy across production runs"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "4Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Non-symmetrical tips, multi-feature ends, thin-walled designs, stepped ODs, profiled ID transitions" },
+          { "label": "Tip / End Lengths", "value": "1–25 mm depending on design requirements" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -214,8 +341,33 @@
           "Rounded Tip",
           "Smooth Tip"
         ],
-        "description": "Creates a rounded distal end with a controlled radius for atraumatic entry into vessels. Often used in dilator and introducer designs.",
-        "long_description": "",
+        "description": "A rounded, smooth distal tip designed to reduce trauma during navigation and improve control through tortuous pathways. Radius tips require precise thermal forming to maintain consistent curvature and lumen integrity.",
+
+        "long_description": "Radius tips feature a rounded distal geometry that allows catheters to track more gently through vessels while minimizing shear forces on delicate tissue. Despite their simple appearance, forming a consistent radius requires tightly controlled heat distribution, stable lumen support, and precise die alignment to achieve the intended curvature without deforming the tube’s internal diameter. Differences in polymer stiffness, wall thickness, and bend radius add further complexity, making repeatability essential for clinical performance and downstream assembly. ONEX supports manufacturers with RF-driven thermal precision and engineered forming processes that ensure radius tips are smooth, concentric, and geometrically consistent—critical attributes for safe navigation through tortuous vessels and effective use in interventional procedures.",
+
+        "use_cases": [
+          "Catheters requiring a smooth, rounded tip for atraumatic vessel entry",
+          "Interventional cardiology and electrophysiology procedures",
+          "Neurological and neurovascular navigation through curved pathways",
+          "Vascular access where reduced friction and shear force are important",
+          "Catheters that benefit from enhanced steerability and tip control"
+        ],
+
+        "process_requirements": [
+          "Controlled RF thermal profiling to achieve a uniform radius without lumen collapse",
+          "Mandrel stabilization to preserve internal diameter during curvature formation",
+          "Smooth shaping and material redistribution to eliminate sharp transitions or edges",
+          "Precise die alignment to maintain consistent bend radius and tip symmetry",
+          "Material-specific heating adjustments to accommodate flexible and semi-rigid polymers",
+          "Uniform cooling to stabilize curvature and ensure long-term dimensional integrity"
+        ],
+
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Rounded tips, thin-walled ends, stepped profiles, profiled ID transitions" },
+          { "label": "Radius Tip Lengths", "value": "1–10 mm depending on design requirements" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -241,8 +393,33 @@
           "Beveled Tip",
           "Angled Distal Tip"
         ],
-        "description": "Forms an angled or beveled distal end to aid navigation and selective access within anatomy. Used in angiographic and diagnostic catheters.",
-        "long_description": "",
+        "description": "A catheter tip formed at a controlled angle to improve navigation, access, and directional control during clinical use. Angle tips require precise thermal forming to maintain lumen integrity and consistent geometry.",
+
+        "long_description": "Angle tips introduce a purposeful, angled distal geometry that allows a catheter to track more effectively through curved vessels, reach targeted anatomical structures, and provide controlled directional guidance. Achieving a high-quality angle requires more than simply cutting or shaping the distal end—accurate forming demands controlled heat application, uniform material softening, and precise internal support to prevent lumen distortion. Variations in tube diameter, wall thickness, polymer behavior, and bevel type add additional complexity, making process consistency essential for safety and performance. ONEX supports manufacturers with RF-driven thermal stability and engineered forming methods that deliver angle tips with smooth transitions, clean edges, and repeatable geometry, enabling reliable catheter guidance in even the most challenging vascular pathways.",
+      
+        "use_cases": [
+          "Catheters requiring enhanced steerability for navigating curved or branching vessels",
+          "Interventional procedures where directional control or targeting is critical",
+          "Accessing difficult anatomical regions during vascular, neurological, or cardiac procedures",
+          "Catheters utilizing bevel, bisector, or specialty angled tips for puncture or insertion",
+          "Applications where angled geometry minimizes trauma and improves tracking through tortuous paths"
+        ],
+      
+        "process_requirements": [
+          "Controlled RF heating to soften the distal segment without collapsing the lumen",
+          "Precise mandrel stabilization to maintain internal diameter during angle formation",
+          "Accurate die or forming surface alignment to achieve the desired bevel or angle geometry",
+          "Consistent thermal gradients to prevent rough edges or asymmetric deformation",
+          "Material-specific tuning to accommodate polymers such as PVC, LDPE, HDPE, and PEBAX",
+          "Stable cooling to lock in final angle and ensure long-term dimensional accuracy"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "10Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Single bevel tips, double bevel tips, angled profiles, stepped ODs" },
+          { "label": "Angle Tip Lengths", "value": "1–20 mm depending on catheter design" },
+          { "label": "Materials", "value": "PVC, LDPE, HDPE, PEBAX, and other compatible thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -268,8 +445,33 @@
           "Multiple Lumen Tip",
           "Dual Lumen Tip"
         ],
-        "description": "Used for catheters with multiple lumens requiring uniform tip geometry and lumen alignment. Ensures consistent flow and bonding between lumens.",
-        "long_description": "",
+        "description": "A tip-forming application designed to selectively close specific lumens while keeping others open, enabling multi-function catheter designs. Multi-lumen tip forming requires precise heat control and geometry management to preserve separation walls and lumen integrity.",
+
+        "long_description": "Multi-lumen catheter tips involve one of the most technically demanding forming processes in catheter manufacturing. Each lumen within the tube must retain its internal geometry while specific lumens are selectively sealed, shaped, or tapered. Even minor variations in heat distribution, pressure balance, or material flow can distort septa, collapse individual lumens, or compromise the functional performance of the catheter. With the increasing use of multi-lumen designs in vascular access, drainage, monitoring, and drug delivery, manufacturers must rely on forming methods that consistently maintain separation walls and dimensional accuracy across a wide range of polymers and tube constructions. ONEX enables this precision through RF-driven thermal stability, engineered multi-lumen support strategies, and application-focused process development, ensuring each lumen remains functional, isolated, and geometrically consistent throughout the forming process.",
+      
+        "use_cases": [
+          "CVC, PICC, and dialysis catheters requiring selective lumen sealing",
+          "Multi-function catheters combining infusion, monitoring, and drainage capabilities",
+          "Catheters requiring lumen isolation for guidewire management or pressure channels",
+          "Pigtail, Foley, and sheath introducers with multi-lumen distal geometries",
+          "Applications where one or more lumens must remain open while others are tapered or closed"
+        ],
+      
+        "process_requirements": [
+          "Tightly controlled RF heating to prevent septum deformation or lumen collapse",
+          "Precise internal support mandrels to preserve geometry of multiple lumens simultaneously",
+          "Selective sealing techniques to close specific lumens without affecting adjacent channels",
+          "Uniform thermal gradients to avoid distortion in multi-layer or high-durometer materials",
+          "Consistent axial compression to maintain concentricity and wall separation",
+          "Polymer-specific tuning for PVC, PEBAX, PU, LDPE, PP, PA, FEP, and specialty blends"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Selective lumen closures, thin-wall transitions, stepped ODs, multi-lumen ID profiles" },
+          { "label": "Tip Forming Lengths", "value": "0.5–25 mm depending on catheter design" },
+          { "label": "Materials", "value": "PVC, PEBAX, PU, LDPE, HDPE, PP, PA, FEP, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -294,8 +496,33 @@
           "Flexible Tip",
           "Atraumatic Tip"
         ],
-        "description": "Applies a softer polymer at the distal end for improved patient comfort and reduced vessel trauma. Typically bonded or formed over a stiffer shaft.",
-        "long_description": "",
+        "description": "A soft, atraumatic distal tip thermally formed and bonded to the catheter shaft to enhance patient comfort and reduce tissue trauma. Soft tips require precise geometry and high-strength bonding to ensure reliable clinical performance.",
+
+        "long_description": "Soft catheter tips are designed to provide a gentle, patient-friendly interface during insertion and navigation, making them essential in a wide range of diagnostic and interventional applications. These tips are typically formed from soft, flexible polymers—such as PU, PU blends, or PEBAX—and bonded to a stiffer catheter shaft to combine comfort with control. Achieving this balance requires exceptional precision: the tip must maintain a smooth profile, preserve internal lumen geometry, and form a strong, reliable bond to the shaft. Any variation in heat distribution, alignment, or material flow can lead to weak bonding, inconsistent softness, rough edges, or lumen deformation, all of which directly affect device safety and usability. With catheter designs varying widely in diameter, wall structure, and required softness levels, manufacturers need a process capable of forming and bonding tips with high repeatability. ONEX meets this challenge through RF-based thermal accuracy, precision-engineered dies, and controlled bonding methods that ensure a uniform transition from soft tip to shaft and maximum bond integrity. Whether used for soft tip bonding, soft-tip guidewire assemblies, or fully formed soft distal segments, ONEX systems deliver consistent, high-quality results.",
+      
+        "use_cases": [
+          "Soft distal tips for minimizing trauma during catheter insertion",
+          "Soft tip bonding to stiffer shafts for combined flexibility and control",
+          "Soft guidewire tips requiring precise geometry and tactile responsiveness",
+          "Catheters used in sensitive anatomy where a compliant distal end is essential",
+          "Diagnostic and interventional devices needing soft, atraumatic distal profiles"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to achieve controlled softening without degrading material properties",
+          "Precise die alignment to form smooth, consistent soft tip geometries",
+          "High-strength thermal bonding between soft polymers and the catheter shaft",
+          "Material-specific forming strategies for PU, PU blends, PEBAX, and other soft thermoplastics",
+          "Internal support and alignment to preserve lumen shape during forming",
+          "Controlled cooling to stabilize softness and maintain surface smoothness"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Thin-walled soft tips, profiled ID transitions, thick-walled tips, stepped ODs, bonded soft segments" },
+          { "label": "Tip Lengths", "value": "1–15 mm depending on catheter design" },
+          { "label": "Materials", "value": "PU & PU blends, PEBAX, and other soft thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -321,8 +548,33 @@
           "Intravenous Tip",
           "Cannula Tip"
         ],
-        "description": "Forms the distal geometry of intravenous catheters and cannulas for smooth venous entry. Focuses on minimizing insertion resistance and tip burrs.",
-        "long_description": "",
+        "description": "A highly precise, thin-walled distal tip designed for IV catheters. IV tips require exceptional thermal control and micro-scale forming accuracy to maintain lumen geometry, wall uniformity, and smooth, atraumatic insertion profiles.",
+
+        "long_description": "IV catheter tips are among the most demanding geometries in catheter manufacturing due to their extremely small diameters, thin wall structures, and strict clinical performance requirements. The distal tip must be smooth, consistent, and dimensionally accurate to support reliable vessel entry and minimize patient discomfort. Even slight variations in heating, material flow, or die alignment can cause lumen collapse, wall thinning, or irregular profiles—failures that directly impact catheter performance. PTFE and similar high-performance polymers introduce additional complexity, as they require carefully managed thermal conditions to achieve proper forming without degrading mechanical properties. ONEX meets these challenges with RF-driven precision, micro-engineered dies, and process development practices tailored specifically for small-diameter, thin-wall IV tubing. This combination delivers consistent tip geometry, excellent surface finish, and repeatability suitable for high-volume IV catheter production.",
+      
+        "use_cases": [
+          "Peripheral IV catheter tips requiring thin-walled, atraumatic entry profiles",
+          "Small-diameter introducers and access catheters used in vascular access",
+          "PTFE-based IV systems requiring stable, repeatable tip geometries",
+          "Applications needing micro-scale dimensional control and high surface smoothness",
+          "IV catheter assemblies that rely on consistent lumen preservation during forming"
+        ],
+      
+        "process_requirements": [
+          "Highly uniform RF heating to prevent wall collapse or over-softening of thin tubing",
+          "Precise micro-alignment of dies to achieve clean, consistent tip shaping",
+          "Controlled thermal profiles suitable for PTFE and other high-performance polymers",
+          "Mandrel or internal support stabilization to maintain lumen diameter",
+          "Accurate axial positioning to produce consistent tip lengths and taper transitions",
+          "Rapid, stable cooling to lock in shape without inducing stress or deformation"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "22ga and larger" },
+          { "label": "Geometry Configurations", "value": "Thin-walled distal tips, profiled ID transitions, micro-tapered OD shapes" },
+          { "label": "Tip Lengths", "value": "1–10 mm depending on IV catheter design" },
+          { "label": "Materials", "value": "PTFE and other compatible high-performance polymers" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -348,8 +600,33 @@
           "Micro Guide Tip",
           "Wire Cover Tip"
         ],
-        "description": "Creates small, highly precise distal ends for guidewire covers or tubing. Designed for exceptional concentricity and flexibility at micro-scale diameters.",
-        "long_description": "",
+        "description": "A precisely formed distal end that shapes the polymer-coated guidewire tip for smooth navigation through tortuous vessels. Guidewire tip forming requires extremely tight thermal control to preserve core alignment, coating integrity, and tactile responsiveness.",
+
+        "long_description": "Guidewire tips are among the most demanding components to thermoform due to the combination of a metallic core, thin outer polymer sheath, and the need for a perfectly rounded, atraumatic distal geometry. Unlike standard catheter tips, guidewires rely on extremely small diameters, sensitive core–sheath interactions, and precise flexibility characteristics that directly affect clinical performance. Even slight variations in heat distribution or material flow can create surface imperfections, misalignment, or inconsistent stiffness—issues that compromise navigability and physician control. As guidewires must traverse highly tortuous vessels and reach complex anatomical targets, the tip must balance softness, resilience, and smooth surface finish. ONEX delivers this level of precision through RF-driven heating profiles, engineered micro-scale forming dies, and process strategies designed specifically for metal–polymer composite structures. The result is a repeatable, high-quality guidewire tip that maintains coating integrity, preserves core alignment, and provides the tactile feedback clinicians rely on during demanding interventions.",
+      
+        "use_cases": [
+          "Guidewires used in coronary, peripheral, and neurovascular navigation",
+          "Procedures requiring smooth passage through tortuous or narrow vessels",
+          "Interventions demanding specific tip softness and controlled tactile feedback",
+          "Metal–polymer composite guidewires requiring precise distal shaping",
+          "Applications where atraumatic, rounded tip geometry reduces vessel injury"
+        ],
+      
+        "process_requirements": [
+          "Highly uniform RF heating to prevent polymer burn-through or uneven melting",
+          "Precise positioning and stabilization of the wire core to maintain alignment",
+          "Micro-scale die geometry to shape rounded tips without damaging thin polymer coatings",
+          "Consistent thermal gradients to achieve required tip softness and flexibility",
+          "Material-specific tuning for PU, PEBAX, and other specialty elastomers",
+          "Controlled cooling to preserve coating adhesion and mechanical recovery of the tip"
+        ],
+      
+        "details": [
+          { "label": "OD Range", "value": "0.014” and larger" },
+          { "label": "Geometry Configurations", "value": "Rounded tips and soft distal shaping profiles" },
+          { "label": "Tip Lengths", "value": "1 mm and longer depending on guidewire design" },
+          { "label": "Materials", "value": "PU and PU blends, PEBAX, and other flexible polymer coatings" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -375,8 +652,33 @@
           "Central Venous Catheter Tip",
           "Vascular Access Tip"
         ],
-        "description": "Used for forming distal tips of central venous catheters (CVCs), offering smooth entry and biocompatibility for long-term vascular access.",
-        "long_description": "Central Venous Catheter (CVC) tips demand highly controlled geometries, strong and uniform distal bonds, and a tightly repeatable thermal-forming process to ensure safe, reliable clinical performance. Variations in tubing sizes, multi-lumen constructions, polymer blends, and tip profiles make CVC tip forming a complex manufacturing challenge that requires deep process understanding. ONEX specializes in supporting customers through this exact application, providing the expertise, purpose-built catheter tipping machines, precision-engineered tooling, and hands-on process development needed to achieve consistent, production-ready results.",
+        "description": "A thermally bonded distal tip engineered to provide a smooth, atraumatic entry profile and a strong, reliable bond to the main catheter shaft. CVC tip forming demands precise thermal control and repeatable bonding performance to ensure safety and clinical reliability.",
+
+        "long_description": "CVC catheter tips must meet demanding clinical and mechanical requirements—combining a smooth, rounded distal geometry with a strong, secure thermal bond to the main catheter shaft. These tips are often formed from a softer polymer to improve patient comfort and reduce vascular trauma, then bonded to a stiffer shaft for durability and control. Achieving this dual-function design requires a high level of process precision. Any inconsistency in heat application, material softening, or alignment can weaken the bond interface, distort the tip, or compromise lumen integrity. As CVC designs vary widely in diameter, polymer blends, durometers, and bond lengths, manufacturers need a forming process capable of producing repeatable geometries and maximum-strength thermal bonds across diverse configurations. ONEX provides this reliability through RF-driven heat accuracy, engineered tip-forming dies, and bonding processes that ensure smooth transitions, high strength, and tight dimensional control—critical for CVCs used in long-term medication delivery, dialysis, transfusion, and emergency care.",
+      
+        "use_cases": [
+          "Central venous catheters requiring a smooth, atraumatic distal tip",
+          "CVC systems that rely on strong thermal bonds between tip and main shaft",
+          "Long-term vascular access for chemotherapy, antibiotics, transfusion, or nutrition",
+          "PICC lines and tunneled central catheters requiring reliable distal geometry",
+          "Implantable ports and long-term access systems needing precise tip-shaft integration"
+        ],
+      
+        "process_requirements": [
+          "Consistent RF heating to bond tip materials without compromising lumen geometry",
+          "Precise die alignment to maintain smooth transitions between tip and catheter shaft",
+          "Material-specific thermal tuning for PU, PU blends, PEBAX, and other soft elastomers",
+          "Stable heating gradients to avoid weak bonding interfaces or uneven tip formation",
+          "Accurate control of bond length and insertion depth to ensure mechanical integrity",
+          "Controlled cooling to solidify the bond while maintaining a smooth, rounded distal shape"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr and larger" },
+          { "label": "Geometry Configurations", "value": "Rounded CVC tips thermally bonded to the catheter shaft" },
+          { "label": "Tip/Bond Lengths", "value": "1–15 mm depending on CVC design" },
+          { "label": "Materials", "value": "PU and PU blends, PEBAX, and other compatible thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -401,8 +703,33 @@
           "Foley Tip",
           "Urethral Tip"
         ],
-        "description": "Forms the smooth distal tips of urinary or Foley catheters for atraumatic urethral insertion and patient comfort.",
-        "long_description": "",
+        "description": "A smooth, patient-friendly distal tip designed for urinary drainage catheters. Urinary tips require exceptionally consistent forming and surface quality to ensure comfort, reduce trauma, and support reliable catheter performance.",
+
+        "long_description": "Urinary catheter tips are specialized closed-end or open-tip designs engineered to provide atraumatic insertion, reliable drainage, and maximum patient comfort. Variants such as bullet, Coude, and Tiemann tips each require precise geometric control to achieve the correct directionality, curvature, or taper needed for urological applications. Because these tips interact directly with sensitive tissue, the forming process must produce an ultra-smooth exterior surface with no roughness, steps, or asymmetry. Achieving this level of refinement is challenging—especially across a wide range of diameters, wall thicknesses, and polymers like PVC and PU. Any inconsistency in heat distribution or material flow can lead to surface defects, discomfort, or inaccurate tip geometry. ONEX solves these challenges through RF-driven thermal accuracy, precision-engineered dies, and a repeatable forming strategy that ensures each urinary tip maintains its intended shape, smoothness, and functional performance in clinical use.",
+      
+        "use_cases": [
+          "Foley catheters requiring a smooth, atraumatic distal tip",
+          "Closed-end urinary drainage catheters designed to promote sterile flow pathways",
+          "Coude and Tiemann directional tips used for navigating anatomical restrictions",
+          "Open-tip urinary catheters requiring precise ID and OD geometry",
+          "Urological devices where surface smoothness and patient comfort are critical"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to produce clean, rounded, tapered, or directional urinary tip shapes",
+          "Precise control of thermal gradients to avoid surface imperfections or rough edges",
+          "Lumen preservation during closed-end sealing or tapered tip formation",
+          "Material-specific temperature and timing profiles for PVC, PU, and other soft polymers",
+          "Accurate axial positioning to create consistent tip lengths and geometries",
+          "Stable cooling processes to lock in surface smoothness and prevent distortion"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "5Fr to 24Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Bullet tips, Coude tips, Tiemann tips, open-tip urinary catheter geometries" },
+          { "label": "Tip Lengths", "value": "1–25 mm depending on urinary catheter design" },
+          { "label": "Materials", "value": "PVC, PU, and other compatible thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -428,8 +755,33 @@
           "Angio Tip",
           "Diagnostic Tip"
         ],
-        "description": "Used in shaping distal ends of angiographic catheters with precise geometries to ensure optimal flow dynamics and navigation in vessels.",
-        "long_description": "",
+        "description": "A smooth, rounded distal tip designed for atraumatic vessel entry and precise contrast delivery. Angiographic tips require accurate thermal forming and strong, reliable bonding to the catheter shaft to ensure consistent clinical performance.",
+
+        "long_description": "Angiographic catheter tips must combine a smooth, radius-shaped geometry with a strong thermal bond to the main catheter shaft to ensure safe vessel entry and reliable contrast injection. These tips must maintain a precise profile that minimizes trauma during navigation while preserving lumen integrity for consistent flow rates and injection pressures. Because angiographic catheters vary widely in diameter, polymer blends, stiffness, and durometer, creating a dependable angiographic tip requires a forming process that can precisely manage heat, alignment, and bond strength. Inconsistent thermal distribution or suboptimal alignment during bonding can weaken the interface, distort the radius, or create uneven surfaces that compromise catheter tracking. ONEX delivers the repeatability and precision required through RF-driven thermal control, engineered forming dies, and bond integration methods that ensure uniform radius geometry, smooth transitions, and maximum-strength bonding for high-performance angiographic systems.",
+      
+        "use_cases": [
+          "Angiographic catheters used for diagnostic imaging and contrast delivery",
+          "Vascular navigation requiring a smooth, rounded distal profile",
+          "Devices needing reliable tip-to-shaft bonding for high-pressure injections",
+          "Catheters used in coronary, peripheral, or neurovascular angiography",
+          "Applications requiring consistent lumen geometry for controlled fluid delivery"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to form a smooth radius tip and ensure proper bond activation",
+          "Precise die alignment to maintain rounded geometry and avoid surface imperfections",
+          "Controlled material softening to prevent lumen deformation during bonding",
+          "Strong thermal bonding that maintains integrity under injection pressures",
+          "Material-specific forming parameters for PU, PU blends, PEBAX, and similar polymers",
+          "A stable cooling cycle to lock in radius shape and bond strength"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr and larger" },
+          { "label": "Geometry Configurations", "value": "Radius tips thermally bonded to the main catheter shaft" },
+          { "label": "Tip Lengths", "value": "1–15 mm depending on angiographic catheter design" },
+          { "label": "Materials", "value": "PU & PU blends, PEBAX, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -455,8 +807,33 @@
           "Endotracheal Tip",
           "Airway Tube Tip"
         ],
-        "description": "Forms smooth distal ends of tracheal and endotracheal tubes to minimize airway irritation. Often features rounded and radiused edges.",
-        "long_description": "",
+        "description": "A precisely formed angled or radiused distal tip designed for tracheal access and airway procedures. Tracheal tips require accurate thermal forming to maintain smooth surfaces, controlled angles, and consistent lumen geometry.",
+
+        "long_description": "Tracheal catheter tips are specialized angle-tip geometries engineered to guide the tube smoothly into the airway while minimizing tissue trauma. These tips may incorporate a defined bevel, an angled cut, or a radiused straight end—each requiring high precision to achieve reliable insertion characteristics. Because tracheal access involves delicate tissue and curved anatomical pathways, the tip must deliver a balance of directional control, smooth surface finish, and predictable stiffness. Achieving this consistently is challenging: variations in PVC durometer, wall thickness, and tip-angle geometry can easily produce sharp edges, asymmetry, or lumen distortion if thermal forming is not tightly controlled. ONEX ensures this precision through RF-driven thermal accuracy, engineered angle-forming dies, and a repeatable forming process that preserves lumen integrity while producing clean, smooth, clinically safe tip geometries. The result is a tracheal tip that advances comfortably, follows anatomical curves with minimal resistance, and provides clinicians with dependable performance across diverse airway procedures.",
+      
+        "use_cases": [
+          "Tracheal and endotracheal tubes requiring angled or radiused entry profiles",
+          "Airway access procedures where smooth insertion reduces trauma",
+          "Catheters needing directional guidance for navigating curved respiratory anatomy",
+          "Applications benefiting from consistent bevel accuracy and tip symmetry",
+          "PVC-based airway devices requiring repeatable angle-tip geometries"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to form angled or radiused ends without creating sharp edges",
+          "Precise die alignment to maintain consistent bevel angle and geometry",
+          "Lumen preservation during tip forming to prevent collapse or deformation",
+          "Material-specific temperature control for PVC and similar polymers",
+          "Accurate axial positioning to achieve repeatable tip lengths and taper profiles",
+          "Controlled cooling to stabilize the angle and ensure a smooth, safe surface finish"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "10Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Angled ends, single bevels, double bevels, straight ends with radiused edges" },
+          { "label": "Tip Lengths", "value": "1–20 mm depending on tracheal catheter design" },
+          { "label": "Materials", "value": "PVC and other compatible thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -482,8 +859,34 @@
           "PEEK Tube Tipping",
           "PEEK Tube Shaping"
         ],
-        "description": "Thermoforming of high-performance PEEK tubing for structural medical applications requiring rigidity, chemical resistance, and precision geometry.",
-        "long_description": "",
+        "description": "A high-performance tip-forming application designed for PEEK tubing—one of the most demanding materials in medical manufacturing. PEEK tips require extreme thermal precision, tight dimensional control, and repeatable forming to achieve reliable, defect-free geometries.",
+
+        "long_description": "PEEK catheter tips represent one of the most technically challenging thermoforming applications due to the material’s exceptionally high melting point, low fluidity, and strict biocompatibility requirements. PEEK must be processed at elevated temperatures while maintaining dimensional stability, wall uniformity, and mechanical strength. Even slight deviations in heating, cooling rate, or pressure control can lead to incomplete forming, uneven crystallization, internal voids, or brittle regions that compromise device safety. As PEEK tubing is widely used in advanced cardiovascular, neurological, urological, and implantable applications, manufacturers must achieve flawless tip geometry and surface finish to meet clinical performance expectations. ONEX delivers the precision required through RF-driven thermal accuracy, advanced temperature control strategies, and tooling engineered to support difficult-to-flow polymers like PEEK. Our process development ensures reliable shaping of mushroom tips, closed ends, tapered profiles, radius tips, and other high-performance geometries while preserving strength, chemical resistance, and biocompatibility—allowing manufacturers to confidently scale production in even the most demanding applications.",
+      
+        "use_cases": [
+          "PEEK catheter tips for high-temperature or high-pressure medical applications",
+          "Interventional cardiovascular and neurovascular devices requiring high mechanical strength",
+          "Urological and respiratory catheters that benefit from PEEK’s chemical resistance",
+          "Orthopedic and implantable devices requiring biocompatible, precision-formed tip geometries",
+          "Advanced surgical access systems requiring exceptional durability and dimensional accuracy"
+        ],
+      
+        "process_requirements": [
+          "Extremely accurate RF temperature control to manage PEEK’s high melting point (340–360°C)",
+          "Precise thermal gradients to prevent under-filling, bubble formation, or polymer degradation",
+          "Tooling engineered for complex shapes and low-fluidity molten polymer behavior",
+          "Controlled cooling profiles to avoid brittleness or uneven crystallization",
+          "Internal support strategies to maintain lumen geometry and wall uniformity",
+          "Process repeatability suitable for strict medical quality and biocompatibility requirements"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "Typically 0.5 mm to 25 mm (3–40Fr configurable depending on system)" },
+          { "label": "Geometry Configurations", "value": "Mushroom tips, nail-head tips, closed ends, tapered tips, radius tips, and other complex shapes" },
+          { "label": "Wall Thickness Range", "value": "0.1 mm to 5 mm depending on design and strength requirements" },
+          { "label": "Material Properties", "value": "PEEK with high thermal stability, chemical resistance, and biocompatibility" },
+          { "label": "Performance Characteristics", "value": "High mechanical strength (~90 MPa tensile), low fluidity, requires precise temperature and pressure control" }
+        ],
         "related": {
           "products": [
             "dual-catheter-tipper"
@@ -499,31 +902,6 @@
           ]
         },
         "image": "/images/examples/peek-tube-forming.jpg"
-      },
-      {
-        "slug": "peek-mushroom-forming",
-        "name": "PEEK Mushroom Forming",
-        "aliases": [
-          "PEEK Mushroom Tip",
-          "PEEK Flared End"
-        ],
-        "description": "Creates mushroom-shaped ends on PEEK tubing for secure mechanical retention or component interfacing. Used in high-strength catheter or connector assemblies.",
-        "long_description": "",
-        "related": {
-          "products": [
-            "dual-catheter-tipper"
-          ],
-          "materials": [
-            "peek"
-          ],
-          "tooling": [
-            "catheter-tipping-die"
-          ],
-          "support": [
-            "process-development"
-          ]
-        },
-        "image": "/images/examples/peek-mushroom-forming.jpg"
       },
       {
         "slug": "micro-catheter-tipping",
@@ -551,113 +929,6 @@
           ]
         },
         "image": "/images/examples/micro-catheter-tipping.jpg"
-      },
-      {
-        "slug": "balloon-catheter-tip",
-        "name": "Balloon Catheter Tip",
-        "aliases": [
-          "Balloon Tip Forming",
-          "Balloon Distal Tip"
-        ],
-        "description": "Forms or bonds distal tips on balloon catheters, ensuring strong adhesion and smooth transitions between balloon and shaft segments.",
-        "long_description": "",
-        "related": {
-          "products": [
-            "dual-catheter-tipper"
-          ],
-          "materials": [
-            "pebax",
-            "tpu",
-            "pe"
-          ],
-          "tooling": [
-            "catheter-tipping-die"
-          ],
-          "support": [
-            "process-development"
-          ]
-        },
-        "image": "/images/examples/balloon-catheter-tip.jpg"
-      },
-      {
-        "slug": "urethral-access-sheath",
-        "name": "Urethral Access Sheath",
-        "aliases": [
-          "Urology Sheath",
-          "Access Sheath Tip"
-        ],
-        "description": "Shapes and flares distal ends of urethral access sheaths to ease instrument passage and reduce patient discomfort during urological procedures.",
-        "long_description": "",
-        "related": {
-          "products": [
-            "catheter-tipper",
-            "dual-catheter-tipper",
-            "catheter-tipper-pro"
-          ],
-          "materials": [
-            "tpu",
-            "pvc"
-          ],
-          "tooling": [
-            "catheter-tipping-die"
-          ],
-          "support": [
-            "process-development"
-          ]
-        },
-        "image": "/images/examples/urethral-access-sheath.jpg"
-      },
-      {
-        "slug": "diameter-reduction",
-        "name": "Diameter Reduction",
-        "aliases": [
-          "Tube Reduction",
-          "Dimensional Constriction"
-        ],
-        "description": "Uniformly decreases catheter or tubing diameter to achieve tighter fits, bonding zones, or specialized transitions for multi-section assemblies.",
-        "long_description": "",
-        "related": {
-          "products": [
-            "dual-catheter-tipper"
-          ],
-          "materials": [
-            "pebax",
-            "pu"
-          ],
-          "tooling": [
-            "catheter-tipping-die"
-          ],
-          "support": [
-            "process-development"
-          ]
-        },
-        "image": "/images/examples/diameter-reduction.jpg"
-      },
-      {
-        "slug": "variable-lumen-diameter",
-        "name": "Variable Catheter Lumen Diameter",
-        "aliases": [
-          "Multi-Diameter Lumen",
-          "Tapered Lumen Catheter"
-        ],
-        "description": "Produces catheters with varying internal lumen diameters along their length for tailored flow dynamics or mechanical properties.",
-        "long_description": "",
-        "related": {
-          "products": [
-            "dual-catheter-tipper"
-          ],
-          "materials": [
-            "pebax",
-            "tpu"
-          ],
-          "tooling": [
-            "catheter-tipping-die"
-          ],
-          "support": [
-            "process-development"
-          ]
-        },
-        "image": "/images/examples/variable-lumen-diameter.jpg"
       }
     ],
     "related": {
@@ -698,8 +969,34 @@
       {
         "slug": "flared-conical-shape",
         "name": "Flared Conical Shape",
-        "description": "Creates a smooth, conical flare at the proximal end to mate with connectors or hubs. Provides mechanical strength and leak-proof assembly during bonding.",
-        "long_description": "Long description for Flared Conical Shape",
+        "description": "A precision-formed flared end designed to create a larger, reinforced opening for component interfaces, connectors, and fluid pathways. Flares require controlled thermal expansion and exact geometric shaping to ensure reliable fitment, sealing, and mechanical strength.",
+
+        "long_description": "Flared catheter ends are used across a wide range of medical devices to create enlarged openings that support fluid transfer, secure interconnections, prevent pullout, or interface with downstream assemblies. These flares must be formed with exceptional dimensional accuracy to ensure smooth transitions, strong mechanical engagement, and consistent flow characteristics. Because tubing materials, wall thicknesses, and flare geometries can vary dramatically—from simple straight enlargements to curved funnel profiles or stepped flares—the forming process must tightly manage heat, material expansion, and die alignment. Soft or low-durometer polymers may thin excessively if overheated, while high-performance materials like PTFE or PEEK require aggressive temperature control to prevent cracking or incomplete forming. ONEX RF systems address these challenges through uniform heating, force-controlled expansion, and precision-engineered flaring dies that deliver repeatable, symmetric flares across a broad polymer and size range. This ensures dependable sealing, enhanced flow dynamics, and strong mechanical engagement for both simple and advanced medical assemblies.",
+      
+        "use_cases": [
+          "Creating enlarged entry points for introducers, fittings, or connectors",
+          "Producing anti-pullout features for tapered or interlocking catheter components",
+          "Improving fluid flow dynamics at catheter inlets or access points",
+          "Facilitating leak-free interfaces with syringes, valves, or extension sets",
+          "Generating flared ends for IV, urinary, CVC, dialysis, and interventional catheters",
+          "Forming custom geometries for multi-lumen or high-pressure applications"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to expand tubing without thinning or material damage",
+          "Precision die geometry to shape straight, tapered, bell-shaped, or graduated flares",
+          "Controlled axial force or displacement to achieve consistent flare height and opening diameter",
+          "Material-specific forming parameters for PVC, PU, PTFE, PEBAX, HDPE, LDPE, PP, ETFE, nylon, and PEEK",
+          "Dimensional preservation of ID/OD to ensure reliable component fitment",
+          "Repeatable cooling profiles to stabilize flare geometry and maintain structural strength"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Straight flares, tapered flares, curved funnels, bell-shaped flares, straight ID/OD enlargements" },
+          { "label": "Flare Lengths", "value": "1 mm and longer depending on opening size, OD/ID, and material" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PEBAX, PU & PU blends, PVC, PTFE, FEP, ETFE, PA, PEEK, and other thermoplastic polymers" }
+        ],
         "related": {
           "products": [
             "catheter-tipper",
@@ -769,6 +1066,169 @@
           ]
         },
         "image": "/images/examples/Flaring 31F Bicaval Introducer Catheter.png"
+      },
+      {
+        "slug": "flange-tip",
+        "name": "Flange Tip",
+        "aliases": [
+          "Flanged End",
+          "Flange Forming"
+        ],
+        "description": "A mechanically reinforced distal or proximal enlargement designed to anchor catheter components, prevent pullout, and interface securely with interlocking hardware. Flanged ends require precise geometric forming to ensure consistent fitment and long-term mechanical reliability.",
+
+        "long_description": "Flanged catheter ends are engineered to create a secure mechanical interface between the tube and another component—whether that’s a connector, hub, valve, introducer system, or retention fixture. Unlike flares, which primarily widen an opening, flanges create a defined, right-angle or ring-shaped structure that provides anti-pullout strength, positional stability, and a repeatable engagement geometry. Because these features must withstand mechanical loading, repeated connection cycles, and sometimes elevated pressures, flange dimensions must be formed with exceptional accuracy. Variations in OD growth, thickness, flange height, or internal transitions can compromise fitment or lead to premature mechanical failure. The challenge intensifies when working across a broad range of tubing sizes, wall thicknesses, and polymer types—from flexible PU to rigid PEEK. ONEX RF systems provide the precise, repeatable heat control and forming stability needed to create consistent flange geometry, ensuring durable mechanical performance and compatibility with interlocking components across diverse catheter applications.",
+      
+        "use_cases": [
+          "Anti-pullout flanges for catheter-to-connector assemblies",
+          "Retention features for introducer systems or interlocking device components",
+          "Mechanical anchoring points for hubs, fittings, or molded interfaces",
+          "Proximal catheter sections requiring repeatable clamping or bolting engagement",
+          "Applications where dimensional stability and high-strength mechanical transitions are critical"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to expand and shape the flange without thinning or deforming the base tubing",
+          "Precision die geometry to form right-angle flange features with controlled OD and thickness",
+          "Material-specific forming strategies for soft, medium, and high-durometer thermoplastics",
+          "Internal lumen support to prevent collapse during radial expansion",
+          "Accurate axial positioning to ensure consistent flange height and symmetry",
+          "Controlled cooling to stabilize flange dimensions and maintain mechanical strength"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "22ga to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Right-angle flanges, ring-shaped flanges, mid flanges, nailheads, polygon shapes, varying OD and thickness profiles" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, PVC, nylon, and other thermoplastic polymers" }
+        ],
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pu",
+            "pebax"
+          ],
+          "tooling": [
+            "catheter-flaring-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/flange-tip.jpg"
+      },
+      {
+        "slug": "mushroom-tip",
+        "name": "Mushroom Tip",
+        "aliases": [
+          "Mushroom Tip",
+          "Mushroom Flaring"
+        ],
+        "description": "A rounded, enlarged distal end designed to provide reliable anchoring, secure positioning, and controlled retention within anatomical cavities or interlocking device components. Mushroom tips require precise thermal forming to achieve smooth contours, consistent expansion, and strong mechanical performance.",
+
+        "long_description": "Mushroom-style catheter tips are engineered to create a secure, atraumatic retention feature at the distal end of a catheter. The expanded, rounded profile helps anchor the device within an anatomical space—such as an abscess cavity—or within an interlocking component in a multi-part catheter system. These tips must be formed with smooth, controlled contours to prevent tissue irritation and ensure consistent drainage or device function. Achieving a uniform mushroom profile requires exceptional precision: uneven heating or material flow can lead to asymmetry, thin spots, or sharp edges that compromise both mechanical engagement and patient comfort. Because mushroom tips are manufactured in a wide range of diameters, wall structures, and polymer types—from soft PU blends to stiffer thermoplastics—consistent forming depends on tightly controlled RF heating and well-designed tooling. ONEX systems deliver this repeatability through precision die engineering, uniform thermal control, and process development focused on producing stable, symmetric, and reliable mushroom geometries for both drainage and retention applications.",
+      
+        "use_cases": [
+          "Abscess drainage catheters requiring a retention feature to stay anchored in place",
+          "Urinary mushroom catheters designed for continuous drainage and reduced migration",
+          "Interlocking catheter systems where a mushroom end engages with a secondary component",
+          "Retention mechanisms that require soft, atraumatic profiles for sensitive anatomy",
+          "Applications where a rounded expansion is needed to prevent pullout or device displacement"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to expand tubing into a smooth, symmetric mushroom profile",
+          "Precision die geometry to control OD growth, thickness, and contour shape",
+          "Material-specific forming parameters for PU, PE blends, PEBAX, PVC, and other thermoplastics",
+          "Internal support to prevent lumen collapse during radial expansion",
+          "Accurate axial positioning to maintain consistent mushroom height and curvature",
+          "Controlled cooling to stabilize the expanded geometry and preserve mechanical strength"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "22ga to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Rounded mushroom contours with varying OD sizes and wall thicknesses" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, PVC, and similar thermoplastics" }
+        ],
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pu",
+            "pebax"
+          ],
+          "tooling": [
+            "catheter-flaring-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/mushroom-tip.jpg"
+      },
+      {
+        "slug": "arrow-head-tip",
+        "name": "Arrow Head Tip",
+        "aliases": [
+          "Arrow Tip",
+          "Arrowhead Tip"
+        ],
+        "description": "A tapered or conical tip featuring a defined proximal shoulder, engineered to create precise mechanical interfaces with mating components. Arrow heads require highly controlled thermal forming to achieve consistent taper geometry, shoulder definition, and dimensional accuracy.",
+
+        "long_description": "Arrow head catheter tips are specialized tapered geometries designed with a proximal shoulder that enables secure engagement with connectors, valves, introducers, and other mating components. These tips must deliver both smooth navigation and mechanically reliable fitment, which requires precise control over taper angles, shoulder dimensions, wall thickness transitions, and overall profile symmetry. Because arrow heads are manufactured across a broad spectrum of sizes, materials, and structural configurations—from thin-walled flexible shafts to thick-walled multi-layer tubing—achieving consistent forming results demands a repeatable, tightly controlled thermal process. Variations in heat distribution, polymer flow, or die alignment can compromise the taper profile, deform the shoulder, or affect ID/OD tolerances needed for proper component engagement. ONEX RF forming systems provide the accuracy, die stability, and process repeatability required to reliably produce arrow head geometries at scale, ensuring dependable mechanical interfaces and smooth distal performance across a wide range of catheter assemblies.",
+      
+        "use_cases": [
+          "Catheter components requiring secure mechanical engagement with hubs, connectors, or introducers",
+          "Systems utilizing a tapered tip with defined shoulder for locking or anti-pullout functionality",
+          "Catheters where controlled taper geometry aids in atraumatic insertion",
+          "Applications requiring precise ID/OD transitions for downstream bonding or assembly",
+          "Advanced catheter designs needing strong dimensional consistency across production batches"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to form tapered bodies and defined proximal shoulders without deforming the tubing",
+          "Precision die design to control taper angle, shoulder definition, and wall transitions",
+          "Stable axial positioning to maintain consistent tip lengths from 1–90 mm",
+          "Internal mandrel support to preserve lumen geometry during forming",
+          "Material-specific thermal profiles compatible with LDPE, HDPE, PP, PU, PEBAX, FEP, and other thermoplastics",
+          "Controlled cooling to lock in taper and shoulder geometry while preventing internal stresses"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Thin-walled tapers, profiled ID transitions, thick-walled arrow heads, stepped ODs" },
+          { "label": "Taper Lengths", "value": "1–90 mm depending on design requirements" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, and similar thermoplastic polymers" }
+        ],
+        "related": {
+          "products": [
+            "catheter-tipper",
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pe",
+            "pu",
+            "pebax"
+          ],
+          "tooling": [
+            "catheter-flaring-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/arrow-head-tip.jpg"
       }
     ],
     "related": {
@@ -793,5 +1253,255 @@
       ]
     },
     "image": "/images/examples/Flaring 31F Bicaval Introducer Catheter.png"
+  },
+  {
+    "slug": "catheter-bonding",
+    "name": "Catheter Bonding",
+    "aliases": [],
+    "description": "Thermal bonding of catheter components to create strong, reliable connections between different catheter segments, tips, and assemblies. Commonly performed using ONEX systems with precision thermal control for high-strength, consistent bonds.",
+    "long_description": "",
+    "sub_applications": [
+      {
+        "slug": "soft-tip",
+        "name": "Soft Tip",
+        "aliases": [
+          "Flexible Tip",
+          "Atraumatic Tip"
+        ],
+        "description": "A soft, atraumatic distal tip thermally formed and bonded to the catheter shaft to enhance patient comfort and reduce tissue trauma. Soft tips require precise geometry and high-strength bonding to ensure reliable clinical performance.",
+
+        "long_description": "Soft catheter tips are designed to provide a gentle, patient-friendly interface during insertion and navigation, making them essential in a wide range of diagnostic and interventional applications. These tips are typically formed from soft, flexible polymers—such as PU, PU blends, or PEBAX—and bonded to a stiffer catheter shaft to combine comfort with control. Achieving this balance requires exceptional precision: the tip must maintain a smooth profile, preserve internal lumen geometry, and form a strong, reliable bond to the shaft. Any variation in heat distribution, alignment, or material flow can lead to weak bonding, inconsistent softness, rough edges, or lumen deformation, all of which directly affect device safety and usability. With catheter designs varying widely in diameter, wall structure, and required softness levels, manufacturers need a process capable of forming and bonding tips with high repeatability. ONEX meets this challenge through RF-based thermal accuracy, precision-engineered dies, and controlled bonding methods that ensure a uniform transition from soft tip to shaft and maximum bond integrity. Whether used for soft tip bonding, soft-tip guidewire assemblies, or fully formed soft distal segments, ONEX systems deliver consistent, high-quality results.",
+      
+        "use_cases": [
+          "Soft distal tips for minimizing trauma during catheter insertion",
+          "Soft tip bonding to stiffer shafts for combined flexibility and control",
+          "Soft guidewire tips requiring precise geometry and tactile responsiveness",
+          "Catheters used in sensitive anatomy where a compliant distal end is essential",
+          "Diagnostic and interventional devices needing soft, atraumatic distal profiles"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to achieve controlled softening without degrading material properties",
+          "Precise die alignment to form smooth, consistent soft tip geometries",
+          "High-strength thermal bonding between soft polymers and the catheter shaft",
+          "Material-specific forming strategies for PU, PU blends, PEBAX, and other soft thermoplastics",
+          "Internal support and alignment to preserve lumen shape during forming",
+          "Controlled cooling to stabilize softness and maintain surface smoothness"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr to 45Fr equivalent" },
+          { "label": "Geometry Configurations", "value": "Thin-walled soft tips, profiled ID transitions, thick-walled tips, stepped ODs, bonded soft segments" },
+          { "label": "Tip Lengths", "value": "1–15 mm depending on catheter design" },
+          { "label": "Materials", "value": "PU & PU blends, PEBAX, and other soft thermoplastic polymers" }
+        ],
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "tpu",
+            "pebax",
+            "pvc"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/soft-tip.jpg"
+      },
+      {
+        "slug": "butt-welding",
+        "name": "Butt Welding",
+        "aliases": [
+          "Butt Welding",
+          "Butt Joint Welding"
+        ],
+        "description": "A precise thermal joining method used to fuse two catheter tube segments into a single, continuous structure. Butt welds create high-strength, leak-resistant joints essential for multi-segment shafts, soft–to–rigid transitions, and balloon or braided integrations.",
+
+        "long_description": "Butt welding is a foundational process in advanced catheter manufacturing, enabling two tube segments—often with different materials, durometers, or structural properties—to be fused into a continuous, high-performance shaft. This technique is critical for multi-segment catheter designs used in vascular, urinary, gastrointestinal, and respiratory applications, where each tube segment must contribute a specific mechanical or functional characteristic. Unlike adhesive bonding, butt welds produce a sterile, high-strength connection without introducing foreign materials, reducing contamination risks and improving long-term durability. Achieving a clean, reliable weld requires precise control over heat, axial pressure, alignment, and material flow. Even slight deviations can lead to lumen deformation, weak joints, surface roughness, or internal flow disturbances. With a broad range of tubing sizes, polymer chemistries, and welded segment geometries, manufacturers need a forming system capable of delivering uniform, repeatable weld quality. ONEX RF welding platforms provide the accuracy needed to form smooth transitions, maintain lumen integrity, and produce consistent mechanical performance—whether welding soft tips to shafts, balloon segments to catheter bodies, or braided to non-braided sections.",
+      
+        "use_cases": [
+          "Creating multi-segment catheter shafts with varying flexibility or stiffness",
+          "Connecting soft tips to stiffer catheter bodies for improved navigation and patient comfort",
+          "Welding balloon segments to catheter shafts during balloon catheter assembly",
+          "Joining braided and non-braided tubing for enhanced pushability and kink resistance",
+          "Producing sterile, adhesive-free joints for vascular, urinary, GI, and respiratory catheters",
+          "Manufacturing catheter segments that require leak-proof, high-strength transitions"
+        ],
+      
+        "process_requirements": [
+          "Precise RF heating to melt polymer interfaces uniformly without degrading material properties",
+          "Accurate axial alignment of tube segments to maintain concentricity and prevent step formation",
+          "Controlled axial force to ensure fusion without collapsing lumens or distorting wall thickness",
+          "Material-specific thermal profiles compatible with LDPE, HDPE, PE copolymers, PP, PU blends, PEBAX, FEP, PVC, and other thermoplastics",
+          "Stable cooling to preserve weld integrity and maintain mechanical performance",
+          "Surface preparation and trimming strategies to ensure smooth external and internal transitions"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr and larger" },
+          { "label": "Geometry Configurations", "value": "Straight butt joints, radius-matched joints, soft-to-rigid welds, braided-to-non-braided transitions" },
+          { "label": "Segment Lengths", "value": "4 mm and longer depending on design requirements" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, PVC, and other thermoplastic polymers" }
+        ],
+        "related": {
+          "products": [
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pu",
+            "pebax",
+            "pe",
+            "pvc"
+          ],
+          "tooling": [
+            "catheter-tipping-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/butt-joint-welding.jpg"
+      },
+      {
+        "slug": "overlap-welding",
+        "name": "Overlap Welding",
+        "aliases": [
+          "Overlap Joint Welding",
+          "Lap Welding"
+        ],
+        "description": "A high-strength joining method where one tube segment overlaps another, creating an extended melt interface for superior bonding and structural durability. Overlap welds are essential for multi-segment catheters, balloon-to-shaft assemblies, and applications requiring smooth, reinforced transitions.",
+
+        "long_description": "Overlap welding is a critical technique in catheter manufacturing, used to fuse one tube segment onto another by creating an extended, overlapping melt interface. This configuration increases bond strength, improves load distribution, and delivers a smoother, more gradual transition compared to a standard butt weld. Overlap welds are especially important in balloon catheter assemblies, where thin film balloons must be securely joined to the catheter shaft without creating stress concentrations, rough edges, or irregularities that could impair inflation performance or damage vessel walls. Because the process involves melting two layers of material simultaneously while preserving lumen integrity and surface smoothness, it demands extremely precise thermal control and alignment. Variations in overlap length, tubing stiffness, or polymer melt behavior can significantly affect weld quality. ONEX RF-based welding systems address these challenges through uniform heating, optimized forming geometry, and process repeatability that ensures strong, clean, and reliable overlap joints across a wide range of catheter designs and materials.",
+      
+        "use_cases": [
+          "Balloon catheter manufacturing where balloon films must be securely welded to the shaft",
+          "Multi-segment catheter assemblies requiring smooth, reinforced transitions",
+          "Joining covering layers, coatings, or jackets to a catheter body",
+          "Applications requiring higher tensile strength than a simple bonded joint",
+          "Catheters that undergo cyclic loading, pulsation, or pressure fluctuations",
+          "Situations where a gradual OD transition is needed to maintain smooth tracking"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to melt both overlapping layers without degrading surface quality",
+          "Precise alignment of tube segments to maintain consistent overlap length",
+          "Material-specific thermal tuning for LDPE, HDPE, PP, PU blends, PEBAX, FEP, PVC, and other polymers",
+          "Controlled axial pressure to ensure intimate melt fusion while preserving lumen geometry",
+          "Clean, contamination-free welding environment to meet medical device safety standards",
+          "Mechanical testing (tensile, leak, pulsation fatigue) to validate joint strength and durability"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr and larger" },
+          { "label": "Geometry Configurations", "value": "Tapered overlap joints with controlled OD transitions" },
+          { "label": "Overlap Lengths", "value": "1 mm and longer depending on application requirements" },
+          { "label": "Materials", "value": "LDPE, HDPE, PE copolymers, PP, PU & PU blends, PEBAX, FEP, PVC, and other thermoplastic polymers" }
+        ],
+        "related": {
+          "products": [
+            "dual-catheter-tipper",
+            "catheter-tipper-pro"
+          ],
+          "materials": [
+            "pu",
+            "pebax",
+            "pe",
+            "pvc"
+          ],
+          "tooling": [
+            "catheter-tipping-die",
+            "catheter-tip-mandrel"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/overlap-welding.jpg"
+      },
+      {
+        "slug": "angiographic-tip",
+        "name": "Angiographic Tip",
+        "aliases": [
+          "Angio Tip",
+          "Diagnostic Tip"
+        ],
+        "description": "A smooth, rounded distal tip designed for atraumatic vessel entry and precise contrast delivery. Angiographic tips require accurate thermal forming and strong, reliable bonding to the catheter shaft to ensure consistent clinical performance.",
+
+        "long_description": "Angiographic catheter tips must combine a smooth, radius-shaped geometry with a strong thermal bond to the main catheter shaft to ensure safe vessel entry and reliable contrast injection. These tips must maintain a precise profile that minimizes trauma during navigation while preserving lumen integrity for consistent flow rates and injection pressures. Because angiographic catheters vary widely in diameter, polymer blends, stiffness, and durometer, creating a dependable angiographic tip requires a forming process that can precisely manage heat, alignment, and bond strength. Inconsistent thermal distribution or suboptimal alignment during bonding can weaken the interface, distort the radius, or create uneven surfaces that compromise catheter tracking. ONEX delivers the repeatability and precision required through RF-driven thermal control, engineered forming dies, and bond integration methods that ensure uniform radius geometry, smooth transitions, and maximum-strength bonding for high-performance angiographic systems.",
+      
+        "use_cases": [
+          "Angiographic catheters used for diagnostic imaging and contrast delivery",
+          "Vascular navigation requiring a smooth, rounded distal profile",
+          "Devices needing reliable tip-to-shaft bonding for high-pressure injections",
+          "Catheters used in coronary, peripheral, or neurovascular angiography",
+          "Applications requiring consistent lumen geometry for controlled fluid delivery"
+        ],
+      
+        "process_requirements": [
+          "Uniform RF heating to form a smooth radius tip and ensure proper bond activation",
+          "Precise die alignment to maintain rounded geometry and avoid surface imperfections",
+          "Controlled material softening to prevent lumen deformation during bonding",
+          "Strong thermal bonding that maintains integrity under injection pressures",
+          "Material-specific forming parameters for PU, PU blends, PEBAX, and similar polymers",
+          "A stable cooling cycle to lock in radius shape and bond strength"
+        ],
+      
+        "details": [
+          { "label": "Tube OD Range", "value": "2Fr and larger" },
+          { "label": "Geometry Configurations", "value": "Radius tips thermally bonded to the main catheter shaft" },
+          { "label": "Tip Lengths", "value": "1–15 mm depending on angiographic catheter design" },
+          { "label": "Materials", "value": "PU & PU blends, PEBAX, and other thermoplastic polymers" }
+        ],
+        "related": {
+          "products": [
+            "dual-catheter-tipper"
+          ],
+          "materials": [
+            "pebax",
+            "pa",
+            "pu"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/angiographic-tip.jpg"
+      }
+    ],
+    "related": {
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pebax",
+        "pa"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling",
+        "catheter-tipping-die",
+        "catheter-tip-mandrel"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development"
+      ]
+    },
+    "image": "/images/examples/soft-tip.jpg"
   }
 ]
