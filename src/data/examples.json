@@ -17,7 +17,7 @@
       "product": "catheter-tipper",
   
       "tooling": {
-        "die": "catheter-flaring-die",
+        "die": "catheter-tipping-die",
         "mandrel": null
       },
   
@@ -47,7 +47,7 @@
         "product": "dual-catheter-tipper",
     
         "tooling": {
-          "die": "catheter-flaring-die",
+          "die": "catheter-tipping-die",
           "mandrel": null
         },
     

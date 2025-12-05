@@ -38,25 +38,6 @@
       "cta": "Request a Custom Die"
     },
     {
-      "slug": "catheter-flaring-die",
-      "name": "Catheter Flaring Die",
-      "type": "component",
-      "parent": "catheter-tip-tooling",
-      "description": "Custom-engineered die for flaring catheter tips. Precision-machined for geometry accuracy and heat uniformity.",
-      "applications": ["catheter-flaring"],
-      "compatible_products": ["catheter-tipper", "dual-catheter-tipper"],
-      "materials_supported": ["polyethylene", "polyurethane"],
-      "process": [
-        "Geometry analysis and 3D CAD design",
-        "Precision machining and surface finishing",
-        "Validation and thermal characterization",
-        "Process development to optimize tipping parameters"
-      ],
-      "includes_process_development": true,
-      "related_services": ["process-development"],
-      "cta": "Request a Custom Die"
-    },
-    {
       "slug": "catheter-tip-mandrel",
       "name": "Catheter Mandrel",
       "type": "component",

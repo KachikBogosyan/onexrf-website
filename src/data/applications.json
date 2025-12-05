@@ -1007,7 +1007,7 @@
             "pu"
           ],
           "tooling": [
-            "catheter-flaring-die",
+            "catheter-tipping-die",
             "catheter-tip-mandrel"
           ],
           "support": [
@@ -1032,7 +1032,7 @@
             "pu"
           ],
           "tooling": [
-            "catheter-flaring-die",
+            "catheter-tipping-die",
             "catheter-tip-mandrel"
           ],
           "support": [
@@ -1058,7 +1058,7 @@
             "pebax"
           ],
           "tooling": [
-            "catheter-flaring-die",
+            "catheter-tipping-die",
             "catheter-tip-mandrel"
           ],
           "support": [
@@ -1112,7 +1112,7 @@
             "pebax"
           ],
           "tooling": [
-            "catheter-flaring-die",
+            "catheter-tipping-die",
             "catheter-tip-mandrel"
           ],
           "support": [
@@ -1166,7 +1166,7 @@
             "pebax"
           ],
           "tooling": [
-            "catheter-flaring-die",
+            "catheter-tipping-die",
             "catheter-tip-mandrel"
           ],
           "support": [
@@ -1221,7 +1221,7 @@
             "pebax"
           ],
           "tooling": [
-            "catheter-flaring-die",
+            "catheter-tipping-die",
             "catheter-tip-mandrel"
           ],
           "support": [
@@ -1243,7 +1243,7 @@
       "tooling": [
         "catheter-tipping-tooling",
         "catheter-tip-mandrel",
-        "catheter-flaring-die"
+        "catheter-tipping-die"
       ],
       "technologies": [
         "rf-induction"
