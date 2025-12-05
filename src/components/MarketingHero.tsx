@@ -1,6 +1,12 @@
 // components/MarketingHero.tsx
 import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
+
+type CTALink = {
+  label: string;
+  href: string;
+};
 
 type MarketingHeroProps = {
   heading: string;
@@ -9,6 +15,8 @@ type MarketingHeroProps = {
     src: string;
     alt?: string;
   };
+  primaryCTA?: CTALink;
+  secondaryCTA?: CTALink;
   className?: string;
 };
 
@@ -16,6 +24,8 @@ export function MarketingHero({
   heading,
   body,
   media,
+  primaryCTA,
+  secondaryCTA,
   className = "",
 }: MarketingHeroProps) {
   return (
@@ -30,6 +40,26 @@ export function MarketingHero({
         <div className="text-sm lg:text-base text-slate-700 leading-relaxed">
           {typeof body === "string" ? <p>{body}</p> : body}
         </div>
+        {(primaryCTA || secondaryCTA) && (
+          <div className="flex flex-wrap gap-3 pt-2">
+            {primaryCTA && (
+              <Link
+                href={primaryCTA.href}
+                className="inline-block bg-blue-600 text-white px-4 py-2 text-sm font-medium rounded hover:bg-blue-700 transition-colors"
+              >
+                {primaryCTA.label}
+              </Link>
+            )}
+            {secondaryCTA && (
+              <Link
+                href={secondaryCTA.href}
+                className="inline-block border border-blue-600 text-blue-600 px-4 py-2 text-sm font-medium rounded hover:bg-blue-50 transition-colors"
+              >
+                {secondaryCTA.label}
+              </Link>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Media Content - supports both images and GIFs */}
