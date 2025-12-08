@@ -4,7 +4,6 @@ import Link from "next/link";
 import { PageNav, type Section } from "@/components/PageNav";
 import { ContactCTA } from "@/components/ContactCTA";
 import { MarketingHero } from "@/components/MarketingHero";
-import { ComparisonTable } from "@/components/ComparisonTable";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { FeatureList } from "@/components/FeatureList";
 import { Gallery } from "@/components/Gallery";
@@ -17,13 +16,12 @@ export default async function CatheterTippingDiePage() {
 
   const sections: Section[] = [
     { id: 'why-choose', label: 'Why Choose ONEXRF' },
-    { id: 'advantages', label: 'Advantages' },
-    { id: 'manufacture', label: 'What We Manufacture' },
     { id: 'process', label: 'Development Process' },
-    { id: 'repair', label: 'Repair & Support' },
-    { id: 'quality', label: 'Quality Standards' },
+    { id: 'manufacture', label: 'What We Manufacture' },
+    { id: 'replacement', label: 'Replacement & Support' },
+    { id: 'quality', label: 'Quality & Verification' },
+    { id: 'mandrels', label: 'Mandrels' },
     { id: 'examples', label: 'Examples' },
-    { id: 'partner', label: 'Partnership' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -38,15 +36,16 @@ export default async function CatheterTippingDiePage() {
 
       {/* SECTION 1: HERO */}
       <MarketingHero
-        heading="Custom Catheter Tipping Dies Engineered for Consistency, Accuracy, and Fast Delivery"
+        heading="Custom Dies Manufactured, Tested, and Delivered Fast"
         body={
           <>
-            High-precision dies and{" "}
-            <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
-              mandrels
-            </Link>{" "}
-            built for your specific catheter geometry — delivered in 2–4 weeks with stable
-            performance and repeatable quality across development and production.
+            We design, manufacture, and validate catheter tipping dies for forming, bonding, and
+            flaring applications.
+            <br />
+            <br />
+            <span className="font-medium">Standard lead time: 4 weeks.</span>
+            <br />
+            <span className="font-medium">Expedite option: 2 weeks.</span>
           </>
         }
         media={
@@ -58,180 +57,102 @@ export default async function CatheterTippingDiePage() {
             : undefined
         }
         primaryCTA={{
-          label: "Request Quote",
+          label: "Request a Quote",
           href: `/contact?tooling=${encodeURIComponent(tooling.name)}`,
         }}
         secondaryCTA={{
-          label: "Send Your Drawing or Sample",
+          label: "Send a Drawing or Sample",
           href: `/contact?tooling=${encodeURIComponent(tooling.name)}&action=quote`,
         }}
       />
 
       <PageNav sections={sections} />
 
-      {/* SECTION 2: Why Engineers Choose ONEXRF Dies */}
+      {/* SECTION 2: Why Companies Select ONEXRF */}
       <section id="why-choose" className="scroll-mt-20">
-        <SectionWithImage
-          image="/images/tooling/placeholder-1.png"
-          imageAlt="Precision catheter tipping die"
-          imageRight={false}
-        >
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">
-              Why Engineers Choose ONEXRF Dies
-            </h2>
-            <p className="text-base text-slate-700 font-medium">
-              Reliable Performance. Predictable Results. Fast Turnaround.
-            </p>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Your catheter tip quality is only as good as the tooling shaping it.
-              ONEXRF dies are designed to give engineers:
-            </p>
-          </div>
-          <FeatureList
-            features={[
-              "Dimensional repeatability across production cycles",
-              "Smooth internal surfaces for controlled polymer flow and clean release",
-              <>
-                Precision-matched die +{" "}
-                <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
-                  mandrel
-                </Link>{" "}
-                sets
-              </>,
-              "Stable heating and cooling behavior",
-              "Consistent geometry that holds tolerance",
-            ]}
-          />
-          <p className="text-sm text-slate-600 leading-relaxed pt-2">
-            While competitors focus mainly on machining capability, ONEXRF focuses on
-            solving the catheter application — from the tooling to the process
-            parameters that make it work.
-          </p>
-        </SectionWithImage>
-      </section>
-
-      {/* SECTION 3: ONEXRF Advantages */}
-      <section id="advantages" className="scroll-mt-20 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">
-          ONEXRF Advantages
-        </h2>
-        <p className="text-sm text-slate-600 mb-4">
-          No hype — just the operational realities that matter to engineers with deadlines.
-        </p>
-        <ComparisonTable
-          rows={[
-            {
-              capability: "Die Delivery Lead Time",
-              onexrf: "2–4 weeks (2-week expedite)",
-              competitors: "6–8 weeks",
-            },
-            {
-              capability: (
-                <>
-                  <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
-                    Mandrel
-                  </Link>{" "}
-                  Delivery Lead Time
-                </>
-              ),
-              onexrf: "2–4 weeks",
-              competitors: "6–8 weeks",
-            },
-            {
-              capability: "Engineering Communication",
-              onexrf: "Direct access, no bureaucracy",
-              competitors: "Often routed through sales → engineering queues",
-            },
-            {
-              capability: "Process Development Included",
-              onexrf: "Yes — full recipe optimization",
-              competitors: "Limited or paid add-on",
-            },
-            {
-              capability: "Repair / Rebuild Services",
-              onexrf: "Yes",
-              competitors: "Limited",
-            },
-            {
-              capability: "Lifecycle Support",
-              onexrf: "R&D → qualification → production",
-              competitors: "Varies",
-            },
-          ]}
-        />
-      </section>
-
-      {/* SECTION 4: What We Manufacture */}
-      <section id="manufacture" className="scroll-mt-20">
-        <SectionWithImage
-          image="/images/tooling/placeholder-2.png"
-          imageAlt="Custom dies and mandrels for catheter manufacturing"
-          imageRight={true}
-        >
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">
-              What We Manufacture
-            </h2>
-            <p className="text-base font-medium text-slate-700">
-              Custom Dies and{" "}
-              <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
-                Mandrels
-              </Link>{" "}
-              for Every Catheter Geometry
-            </p>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              We manufacture tooling for OD ranges starting at 2Fr and above, including:
-            </p>
-          </div>
+        <div className="space-y-6">
+          <h2 className="text-2xl font-semibold text-slate-900">
+            Why Companies Select ONEXRF for Catheter Dies
+          </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <FeatureList
-                title="Die Types"
-                features={[
-                  "Tip forming (closed-end, tapered, conical, radius, neckdown, step transitions)",
-                  "Soft tip bonding dies",
-                  "Flaring and dilator geometries",
-                  "Multi-lumen dies",
-                  "Balloon catheter end forms",
-                  "CVC, sheath, and introducer tip geometries",
-                  "Guidewire tip dies (0.014\"–0.038\")",
-                ]}
-              />
-            </div>
-            <div className="space-y-4">
-              <FeatureList
-                title="Material Options"
-                features={[
-                  "Stainless steel",
-                  "Heat-treated tool steels",
-                  "Carbide for high-wear applications",
-                  "Optional coatings for release improvement",
-                ]}
-              />
-              <div className="pt-4">
-                <h3 className="text-base font-semibold text-slate-900 mb-3">Precision</h3>
+              <div className="p-4 border border-slate-200 rounded-lg bg-white">
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Fast Manufacturing</h3>
                 <ul className="space-y-2 text-sm text-slate-700">
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
-                    <span>Tolerances down to ±0.01 mm</span>
+                    <span>Standard delivery in 4 weeks</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
-                    <span>Concentricity held for uniform wall thickness</span>
+                    <span>Expedite available in 2 weeks</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
-                    <span>Mirror-polished forming cavities</span>
+                    <span>Faster than most industry suppliers</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-4 border border-slate-200 rounded-lg bg-white">
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Cost-Effective</h3>
+                <ul className="space-y-2 text-sm text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                    <span>Advantageous pricing compared to large tooling manufacturers</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                    <span>Lean operations allow lower cost without sacrificing precision</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="p-4 border border-slate-200 rounded-lg bg-white">
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                  Application-Level Verification
+                </h3>
+                <ul className="space-y-2 text-sm text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                    <span>We test the die using your catheter</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                    <span>
+                      We confirm geometry, forming behavior, and release characteristics
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                    <span>
+                      You receive parameter guidance to reduce trial-and-error on your end
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-4 border border-slate-200 rounded-lg bg-white">
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Direct Engineer Access</h3>
+                <ul className="space-y-2 text-sm text-slate-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                    <span>Communicate directly with ONEXRF engineers</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                    <span>Support throughout design, testing, and production</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </SectionWithImage>
+          <p className="text-sm text-slate-600 leading-relaxed pt-2">
+            This combination reduces development time, risk, and scrap.
+          </p>
+        </div>
       </section>
 
-      {/* SECTION 5: Tooling Development Process */}
+      {/* SECTION 3: Tooling Development Process */}
       <section id="process" className="scroll-mt-20">
         <SectionWithImage
           image="/images/tooling/placeholder-3.png"
@@ -240,7 +161,7 @@ export default async function CatheterTippingDiePage() {
         >
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold text-slate-900">
-              Tooling Development Process
+              Our Tooling Development Process
             </h2>
             <ProcessSteps
               steps={[
@@ -248,62 +169,61 @@ export default async function CatheterTippingDiePage() {
                   number: 1,
                   title: "Application Review",
                   description:
-                    "You send a drawing, sample catheter, or sample die. We evaluate geometry, materials, and functional requirements.",
+                    "We evaluate your catheter design, required tip geometry, and process goals. You may provide a drawing or a physical sample.",
                 },
                 {
                   number: 2,
-                  title: "Tooling Design",
+                  title: "Die and Mandrel Design",
                   description: (
                     <>
-                      We design or reverse-engineer the die +{" "}
+                      We design a matched die/{" "}
                       <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
                         mandrel
                       </Link>{" "}
                       set to achieve:
                       <ul className="list-disc list-inside mt-2 ml-4 space-y-1">
-                        <li>consistent melt profile</li>
-                        <li>controlled polymer flow</li>
-                        <li>predictable release</li>
-                        <li>accurate dimensional transitions</li>
+                        <li>dimensional accuracy</li>
+                        <li>uniform wall transitions</li>
+                        <li>stable forming behavior</li>
+                        <li>reliable removal after cooling</li>
                       </ul>
                     </>
                   ),
                 },
                 {
                   number: 3,
-                  title: "Precision Manufacturing",
+                  title: "Manufacturing",
                   description:
-                    "Each die is machined, EDM-cut if required, heat treated, and polished by specialists.",
+                    "Dies are CNC-machined, EDM-shaped when needed, heat treated, and polished to the required finish level.",
                 },
                 {
                   number: 4,
-                  title: "Process Development",
+                  title: "Testing With Your Catheter",
                   description: (
                     <>
-                      Unlike most tooling suppliers, ONEXRF validates each die with a full
-                      parameter search:
+                      We verify:
                       <ul className="list-disc list-inside mt-2 ml-4 space-y-1">
-                        <li>heat levels</li>
-                        <li>dwell time</li>
-                        <li>pull distance</li>
-                        <li>pressure</li>
-                        <li>cooling</li>
+                        <li>melt profile</li>
+                        <li>dimensional outcome</li>
+                        <li>release behavior</li>
+                        <li>mandrel interaction</li>
+                        <li>overall forming consistency</li>
                       </ul>
-                      You receive a working process recipe, not just a die.
+                      We provide guidance on forming parameters based on these tests.
                     </>
                   ),
                 },
                 {
                   number: 5,
-                  title: "Sample Production",
+                  title: "Sample Parts",
                   description:
-                    "We produce samples for engineering evaluation and qualification studies.",
+                    "Upon request, sample catheter tips can be produced for review or qualification.",
                 },
                 {
                   number: 6,
-                  title: "Long-Term Support",
+                  title: "Ongoing Support",
                   description:
-                    "Direct access to the engineers who built your tooling — during R&D and through production scale-up.",
+                    "The engineers who designed your tooling remain available during R&D, pilot, and production stages.",
                 },
               ]}
             />
@@ -311,91 +231,145 @@ export default async function CatheterTippingDiePage() {
         </SectionWithImage>
       </section>
 
-      {/* SECTION 6: Repair & Reverse Engineering */}
-      <section id="repair" className="scroll-mt-20">
+      {/* SECTION 4: What We Manufacture */}
+      <section id="manufacture" className="scroll-mt-20">
         <SectionWithImage
-          image="/images/tooling/placeholder-1.png"
-          imageAlt="Die repair and reverse engineering services"
+          image="/images/tooling/placeholder-2.png"
+          imageAlt="Custom dies for catheter manufacturing"
           imageRight={true}
         >
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">
-              Repair, Reverse Engineering & Emergency Support
-            </h2>
-            <p className="text-base font-medium text-slate-700">
-              Need a replacement quickly? Need to duplicate or repair an existing die?
+            <h2 className="text-2xl font-semibold text-slate-900">What We Manufacture</h2>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              ONEXRF produces dies for the following applications:
             </p>
-            <p className="text-sm text-slate-600 leading-relaxed mb-4">
-              We provide:
+            <FeatureList
+              features={[
+                "Tip forming (closed end, radius, taper, conical, neckdown)",
+                "Soft-tip bonding",
+                "Flaring and dilator geometries",
+                "Multi-lumen tip forming",
+                "CVC, introducer, and sheath geometries",
+                "Guidewire forming dies (0.014\"–0.038\")",
+              ]}
+            />
+            <p className="text-sm text-slate-600 leading-relaxed pt-4">
+              Size capability starts at 2Fr and above.
             </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <FeatureList
-                features={[
-                  "Die repair and refurbishment",
-                  "Surface restoration and re-polishing",
-                  <>
-                    <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
-                      Mandrel
-                    </Link>{" "}
-                    straightening or replacement
-                  </>,
-                  "Reverse engineering from a sample die",
-                  "2-week expedited manufacturing options",
-                ]}
-              />
-            </div>
-            <p className="text-sm text-slate-600 leading-relaxed pt-2">
-              If a repair isn't feasible, we recreate the die exactly — geometry, fit, and
-              performance — in under 3 weeks.
+            <p className="text-sm text-slate-600 leading-relaxed">
+              If you have a sample or drawing, we can match it. If not, we can create the design
+              from your catheter.
             </p>
           </div>
         </SectionWithImage>
       </section>
 
-      {/* SECTION 7: Quality Standards */}
-      <section id="quality" className="scroll-mt-20">
+      {/* SECTION 5: Replacement and Reverse Engineering */}
+      <section id="replacement" className="scroll-mt-20">
         <SectionWithImage
-          image="/images/tooling/placeholder-2.png"
-          imageAlt="Quality standards and inspection"
+          image="/images/tooling/placeholder-1.png"
+          imageAlt="Die replacement and reverse engineering services"
           imageRight={false}
         >
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">Quality Standards</h2>
-            <p className="text-sm text-slate-600 leading-relaxed mb-4">
-              Every die undergoes:
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Replacement and Reverse Engineering
+            </h2>
+            <p className="text-sm text-slate-600 leading-relaxed mb-4">We offer:</p>
+            <FeatureList
+              features={[
+                "Replacements for worn or damaged tooling",
+                "Reverse engineering from a physical sample",
+                "Fast-turn replacements (standard 4 weeks, expedite 2 weeks)",
+              ]}
+            />
+            <p className="text-sm text-slate-600 leading-relaxed pt-2">
+              This minimizes downtime and maintains process consistency.
             </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <FeatureList
-                features={[
-                  "Dimensional inspection",
-                  "Concentricity verification",
-                  "Material hardness confirmation",
-                  "Optical-grade surface finish",
-                  "Functional validation during process trials",
-                ]}
-              />
-            </div>
-            <div className="mt-6 p-4 bg-slate-50 rounded-lg border border-slate-200">
-              <p className="text-sm font-semibold text-slate-900 mb-2">You receive:</p>
-              <ul className="space-y-1 text-sm text-slate-700">
-                <li>• Inspection report</li>
-                <li>• Material specs</li>
-                <li>• Process parameters (if process development is included)</li>
-              </ul>
-              <p className="text-sm text-slate-600 mt-3">
-                This ensures your die integrates into manufacturing with minimal
-                trial-and-error.
-              </p>
-            </div>
           </div>
         </SectionWithImage>
       </section>
 
-      {/* SECTION 8: Example Die Forms Gallery */}
+      {/* SECTION 6: Quality and Verification */}
+      <section id="quality" className="scroll-mt-20">
+        <SectionWithImage
+          image="/images/tooling/placeholder-2.png"
+          imageAlt="Quality standards and verification"
+          imageRight={true}
+        >
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold text-slate-900">Quality and Verification</h2>
+            <p className="text-sm text-slate-600 leading-relaxed mb-4">
+              Each die is measured and inspected for:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <FeatureList
+                features={[
+                  "ID/OD dimensions",
+                  "Concentricity",
+                  "Surface finish",
+                  "Feature accuracy",
+                  "Material and hardness compliance",
+                ]}
+              />
+            </div>
+            <div className="mt-6">
+              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                When application testing is performed, we also verify:
+              </p>
+              <FeatureList
+                features={[
+                  "forming consistency",
+                  "repeatability",
+                  "tip geometry accuracy",
+                ]}
+              />
+            </div>
+            <p className="text-sm text-slate-600 leading-relaxed pt-4">
+              Documentation is provided on request.
+            </p>
+          </div>
+        </SectionWithImage>
+      </section>
+
+      {/* SECTION 7: Mandrels */}
+      <section id="mandrels" className="scroll-mt-20">
+        <SectionWithImage
+          image="/images/tooling/placeholder-3.png"
+          imageAlt="Catheter mandrels"
+          imageRight={false}
+        >
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold text-slate-900">Mandrels</h2>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Mandrels provide the internal support required during tip forming, bonding, and
+              flaring. ONEXRF manufactures{" "}
+              <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
+                mandrels
+              </Link>{" "}
+              alongside the die so both tools work as a matched set, ensuring stable lumen support
+              and consistent forming behavior.
+            </p>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              We supply straight, tapered, stepped, and shaped mandrels in stainless steel, tool
+              steel, or Nitinol, with optional low-friction coatings.
+            </p>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Lead time matches die manufacturing: 4 weeks, with 2-week expedite available.
+            </p>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Mandrels can be produced from drawings or reverse engineered from an existing tool or
+              catheter sample.
+            </p>
+          </div>
+        </SectionWithImage>
+      </section>
+
+      {/* SECTION 8: Examples of Common Die Forms */}
       <section id="examples" className="scroll-mt-20 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Example Die Forms</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Examples of Common Die Forms</h2>
         <p className="text-sm text-slate-600 mb-4">
-          Visual gallery of die types we manufacture
+          Examples include:
         </p>
         <Gallery
           items={[
@@ -406,13 +380,13 @@ export default async function CatheterTippingDiePage() {
             },
             {
               src: "/images/tooling/placeholder-2.png",
-              alt: "Taper die",
-              caption: "Taper dies",
+              alt: "Taper forming die",
+              caption: "Taper forming dies",
             },
             {
               src: "/images/tooling/placeholder-3.png",
-              alt: "Multi-lumen forming die",
-              caption: "Multi-lumen forming dies",
+              alt: "Bonding die",
+              caption: "Bonding dies",
             },
             {
               src: "/images/tooling/placeholder-1.png",
@@ -421,95 +395,44 @@ export default async function CatheterTippingDiePage() {
             },
             {
               src: "/images/tooling/placeholder-2.png",
-              alt: "Bonding die",
-              caption: "Bonding dies",
+              alt: "Multi-lumen die",
+              caption: "Multi-lumen and shaped cavity dies",
             },
             {
               src: "/images/tooling/placeholder-3.png",
-              alt: "Balloon forming die",
-              caption: "Balloon forming dies",
+              alt: "Guidewire die",
+              caption: "Guidewire dies",
             },
           ]}
           columns={3}
         />
       </section>
 
-      {/* SECTION 9: Partner in Entire Application */}
-      <section id="partner" className="scroll-mt-20">
-        <SectionWithImage
-          image="/images/tooling/placeholder-3.png"
-          imageAlt="Partnership in catheter application development"
-          imageRight={true}
-        >
-          <div className="space-y-6">
-            <h2 className="text-2xl font-semibold text-slate-900">
-              A Partner in the Entire Catheter Application
-            </h2>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Rather than simply machining tooling, ONEXRF supports your entire catheter
-              application from:
-            </p>
-            <div className="grid md:grid-cols-3 gap-4">
-              <div className="p-4 border border-slate-200 rounded-lg bg-white">
-                <h3 className="font-semibold text-slate-900 mb-2">Prototype development</h3>
-              </div>
-              <div className="p-4 border border-slate-200 rounded-lg bg-white">
-                <h3 className="font-semibold text-slate-900 mb-2">
-                  Pre-clinical and clinical builds
-                </h3>
-              </div>
-              <div className="p-4 border border-slate-200 rounded-lg bg-white">
-                <h3 className="font-semibold text-slate-900 mb-2">
-                  Scale-up into production
-                </h3>
-              </div>
-            </div>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              Because we develop the machine, tooling, and process together, engineers get:
-            </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <FeatureList
-                features={[
-                  "faster development cycles",
-                  "fewer iterations",
-                  "predictable production results",
-                  "lower scrap and rework",
-                ]}
-              />
-            </div>
-            <p className="text-sm text-slate-600 leading-relaxed pt-2">
-              This integration is the core ONEXRF differentiator — and it's what keeps
-              engineers coming back.
-            </p>
-            <div className="pt-6 border-t border-slate-200">
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                Need a die designed, repaired, or replaced?
-              </h3>
-              <p className="text-sm text-slate-600 mb-4">
-                Send us your drawing or sample. We'll take it from there.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href={`/contact?tooling=${encodeURIComponent(tooling.name)}`}
-                  className="inline-block bg-blue-600 text-white px-4 py-2 text-sm font-medium rounded hover:bg-blue-700 transition-colors"
-                >
-                  Request Quote
-                </Link>
-                <Link
-                  href={`/contact?tooling=${encodeURIComponent(tooling.name)}&action=expedite`}
-                  className="inline-block border border-blue-600 text-blue-600 px-4 py-2 text-sm font-medium rounded hover:bg-blue-50 transition-colors"
-                >
-                  Expedite My Project
-                </Link>
-              </div>
-            </div>
+      {/* SECTION 9: Contact */}
+      <section id="contact" className="scroll-mt-20">
+        <div className="border-t border-slate-200 pt-6">
+          <h2 className="text-2xl font-semibold text-slate-900 mb-2">
+            Need a die designed, tested, repaired, or replaced?
+          </h2>
+          <p className="text-sm text-slate-600 mb-4">
+            Send us a drawing or sample and we will provide a timeline and quotation.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href={`/contact?tooling=${encodeURIComponent(tooling.name)}`}
+              className="inline-block bg-blue-600 text-white px-4 py-2 text-sm font-medium rounded hover:bg-blue-700 transition-colors"
+            >
+              Request a Quote
+            </Link>
+            <Link
+              href={`/contact?tooling=${encodeURIComponent(tooling.name)}&action=expedite`}
+              className="inline-block border border-blue-600 text-blue-600 px-4 py-2 text-sm font-medium rounded hover:bg-blue-50 transition-colors"
+            >
+              Expedite My Project
+            </Link>
           </div>
-        </SectionWithImage>
+        </div>
       </section>
-
-      {/* CONTACT SECTION */}
-      <ContactCTA context={tooling.name} contextType="tooling" />
     </div>
   );
 }
-
