@@ -7,7 +7,14 @@ export default function MaterialsPage() {
   const materials = getAllMaterials();
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-8">
+      <nav className="text-xs text-slate-500 mb-2">
+        <Link href="/resources" className="hover:underline">
+          Resources
+        </Link>{" "}
+        / <span className="text-slate-700">Materials</span>
+      </nav>
+
       <MarketingHero
         heading="Materials"
         body="ONEX RF forming systems work with a wide variety of catheter materials, from common polymers to specialized high-performance materials. Explore our material compatibility and expertise."

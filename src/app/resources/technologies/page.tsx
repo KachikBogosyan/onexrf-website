@@ -7,7 +7,14 @@ export default function TechnologiesPage() {
   const technologies = getAllTechnologies();
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-8">
+      <nav className="text-xs text-slate-500 mb-2">
+        <Link href="/resources" className="hover:underline">
+          Resources
+        </Link>{" "}
+        / <span className="text-slate-700">Technologies</span>
+      </nav>
+
       <MarketingHero
         heading="Technologies"
         body="ONEX leverages advanced technologies to deliver precise, consistent catheter forming solutions. Explore our core technologies that power our manufacturing systems."

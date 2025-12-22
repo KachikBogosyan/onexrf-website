@@ -32,22 +32,40 @@
     {
       "slug": "pebax",
       "name": "Polyether Block Amide",
-      "aliases": ["PEBAX"],
-      "description": "Thermoplastic elastomer used in soft-tip bonding of catheters.",
+      "aliases": ["PEBAX", "PEBA"],
+      "description": "A thermoplastic elastomer family widely used in catheter shafts and distal features, valued for tunable stiffness and consistent performance in RF-based forming and joining.",
+      "long_description": "PEBAX (also referred to as PEBA) is a block-copolymer thermoplastic elastomer made from polyether and polyamide segments. In catheter development, it’s frequently selected because grades span from very flexible to relatively stiff, enabling soft distal features, supportive proximal sections, and controlled transitions along the device. In RF-driven processes—such as catheter tipping, flaring, and segment-to-segment joining—PEBAX offers predictable softening and re-solidification behavior that supports repeatable geometry and smooth surface finish when heat input, alignment, and cooling are well controlled. Sterilization suitability and biocompatibility are grade- and supplier-dependent, so medical-device programs typically confirm these through supplier documentation and device-level validation.",
+      "properties": {
+        "durometer_range": "Shore D 25–72 (grade-dependent)",
+        "melting_point": "133–174°C (grade-dependent)",
+        "elongation": "360–790% (grade-dependent)",
+        "tensile_strength": "4,210–8,990 psi (grade-dependent)",
+        "density": "1.01–1.02 g/cc (typical)",
+        "sterilization_methods": ["EtO", "Gamma", "Steam (grade-dependent)"],
+        "water_absorption_24h": "0.9–1.2% (typical, grade-dependent)",
+        "radiopacity": "Often compounded with radiopaque fillers such as barium sulfate or tungsten (formulation-dependent)"
+      },
+      "applications": [
+        "Catheter tipping (soft or atraumatic distal features)",
+        "Catheter flaring (expanded ends for interfaces and assemblies)",
+        "Joining catheter segments (PEBAX-to-PEBAX transitions and assemblies)",
+        "Forming smooth transitions between catheter sections"
+      ],
+      "process_notes": {
+        "thermal_processability": "Responds well to controlled RF heating for forming and joining, supporting consistent geometry across production when the process window is dialed in.",
+        "bonding_behavior": "Typically joins well to itself; joining to dissimilar polymers is application-dependent and may require a compatible intermediate layer or surface preparation.",
+        "tooling_considerations": "Some grades can become tacky during forming; development often focuses on heat input, dwell, release strategy, and cooling to prevent sticking and maintain concentricity."
+      },
+      "biocompatibility": {
+        "certifications": [],
+        "usage_scope": "PEBAX is offered in medical-grade formulations by major suppliers. Biocompatibility and regulatory suitability depend on the specific grade, additives, and supplier documentation, and should be confirmed as part of the device’s validation plan."
+      },
       "related": {
-        "applications": ["catheter-tipping", "catheter-flaring"],
+        "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
         "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
       }
     },
-    {
-      "slug": "silicone",
-      "name": "Silicone",
-      "description": "A highly biocompatible material that is flexible and clear. It is a common choice for long-term use and is latex-free.",
-      "related": {
-        "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["catheter-tipper", "dual-catheter-tipper"]
-      }
-    },
+    
     {
       "slug": "tpu",
       "name": "Thermoplastic Polyurethane",
@@ -90,11 +108,21 @@
     },
     {
       "slug": "pa",
-      "name": "Polyimide",
-      "aliases": ["PA"],
-      "description": "A high-performance plastic polymer, prized for their strength, flexibility, and smooth surface.",
+      "name": "Polyamide (Nylon)",
+      "aliases": ["PA", "Nylon"],
+      "description": "A strong, semi-rigid polymer commonly used in catheter shafts and heat-formed tips. Polyamide offers excellent tensile strength, good kink resistance, smooth surfaces, and precise thermal-forming behavior, making it suitable for tip forming and tapering applications.",
       "related": {
-        "applications": ["catheter-tipping", "catheter-flaring"],
+        "applications": ["catheter-tipping"],
+        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      }
+    },
+    {
+      "slug": "polyimide",
+      "name": "Polyimide",
+      "aliases": ["PI"],
+      "description": "A high-performance, rigid polymer used in thin-wall tubing for catheter shafts. Polyimide provides exceptional tensile strength, high heat resistance, precise dimensional stability, and extremely smooth internal diameters, making it ideal for micro-catheters, hypotubes, and reinforcement layers.",
+      "related": {
+        "applications": ["catheter-shaft-reinforcement", "micro-catheter-construction"],
         "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
       }
     },

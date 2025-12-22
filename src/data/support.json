@@ -15,7 +15,19 @@
   {
     "slug": "training",
     "name": "Training Seminars",
-    "description": "Operator and engineer training programs on ONEX equipment."
+    "description": "Operator and engineer training programs on ONEX equipment.",
+    "seminars": [
+      {
+        "slug": "catheter-forming-rf",
+        "name": "RF Catheter Forming Seminar",
+        "description": "Fundamentals of RF heating, coil tuning, and process development for tipping and flaring."
+      },
+      {
+        "slug": "rf-welding",
+        "name": "RF Welding Seminar",
+        "description": "Technical training on RF welding principles, material compatibility, and joint design."
+      }
+    ]
   },
   {
     "slug": "machine-servicing",

@@ -1,5 +1,12 @@
 import supportData from "@/data/support.json";
 
+export type Seminar = {
+  slug: string;
+  name: string;
+  description: string;
+  image?: string;
+};
+
 export type Support = {
   slug: string;
   name: string;
@@ -8,6 +15,7 @@ export type Support = {
   included_with?: string[];
   available_as_standalone?: boolean;
   process_steps?: string[];
+  seminars?: Seminar[];
   related?: {
     applications?: string[];
     products?: string[];
