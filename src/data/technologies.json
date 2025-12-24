@@ -19,15 +19,25 @@
       },
       "image": "/images/technologies/rf-welding.png"
     },
-    {
-      "slug":"catheter-tip-forming-theory",
-      "name": "Catheter Tip Forming Theory",
-      "description": "Catheter tip forming theory is the science behind the process of forming the distal ends of thermoplastic catheters to achieve smooth, atraumatic tips for device insertion. It is a complex process that requires a deep understanding of the materials, the equipment, and the process parameters.",
-      "related": {
-        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-        "applications": ["catheter-tipping", "catheter-flaring", "bonding", "catheter-bonding"]
-      },
-      "image": "/images/technologies/catheter-tip-forming-theory.png"
-    }
-  ]
+  {
+    "slug":"catheter-tip-theory",
+    "name": "Catheter Tip Forming Theory",
+    "description": "Catheter tip forming theory is the science behind the process of forming the distal ends of thermoplastic catheters to achieve smooth, atraumatic tips for device insertion. It is a complex process that requires a deep understanding of the materials, the equipment, and the process parameters.",
+    "related": {
+      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
+      "applications": ["catheter-tipping", "catheter-flaring", "bonding", "catheter-bonding"]
+    },
+    "image": "/images/technologies/catheter-tip-theory.png"
+  },
+  {
+    "slug": "hybrid-rf-generator",
+    "name": "Hybrid RF Generator Technology",
+    "description": "Hybrid RF generator technology for RF welding and RF heat sealing machines: fast arc shut-down, closed-loop power control, and automatic impedance matching for repeatable seals.",
+    "related": {
+      "products": [],
+      "applications": []
+    },
+    "image": "/images/technologies/hybrid-rf-generator.png"
+  }
+]
   

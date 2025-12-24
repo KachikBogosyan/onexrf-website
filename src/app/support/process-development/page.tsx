@@ -138,8 +138,19 @@ export default async function ProcessDevelopmentPage() {
                 {
                   number: 2,
                   title: "Tooling (if required)",
-                  description:
-                    "If tooling does not exist, ONEXRF designs and manufactures the required die and mandrel. If tooling exists, it is evaluated and modified if necessary.",
+                  description: (
+                    <>
+                      If tooling does not exist, ONEXRF designs and manufactures the required{" "}
+                      <Link href="/tooling/catheter-tipping-die" className="text-blue-600 hover:underline">
+                        die
+                      </Link>{" "}
+                      and{" "}
+                      <Link href="/tooling/catheter-tip-mandrel" className="text-blue-600 hover:underline">
+                        mandrel
+                      </Link>
+                      . If tooling exists, it is evaluated and modified if necessary.
+                    </>
+                  ),
                 },
                 {
                   number: 3,
