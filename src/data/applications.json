@@ -1503,5 +1503,166 @@
       ]
     },
     "image": "/images/examples/soft-tip.jpg"
+  },
+  {
+    "slug": "medical-bags-pouches-inflatables",
+    "name": "Medical Bags, Pouches, and Inflatables",
+    "aliases": ["Flexible Medical Film Devices"],
+    "description": "Flexible medical film devices are products formed by sealing thin polymer films into leak-tight shapes—bags, pouches, and inflatable bladders. These assemblies often include welded features like ports, hang holes, and reinforced patches. Manufacturing is typically RF welded for polar films (PVC, TPU, EVA) for fast, repeatable hermetic seams, and heat sealed for non-polar films and laminates (commonly PE/PP structures) where RF welding is not suitable.",
+    "long_description": "",
+    "sub_applications": [
+      {
+        "slug": "fluid-bags-and-reservoirs",
+        "name": "Fluid Bags and Reservoirs",
+        "aliases": [
+          "Medical Bags"
+        ],
+        "description": "A soft, atraumatic distal tip thermally formed and bonded to the catheter shaft to enhance patient comfort and reduce tissue trauma. Soft tips require precise geometry and high-strength bonding to ensure reliable clinical performance.",
+
+        "long_description": "Soft catheter tips are designed to provide a gentle, patient-friendly interface during insertion and navigation, making them essential in a wide range of diagnostic and interventional applications. These tips are typically formed from soft, flexible polymers—such as PU, PU blends, or PEBAX—and bonded to a stiffer catheter shaft to combine comfort with control. Achieving this balance requires exceptional precision: the tip must maintain a smooth profile, preserve internal lumen geometry, and form a strong, reliable bond to the shaft. Any variation in heat distribution, alignment, or material flow can lead to weak bonding, inconsistent softness, rough edges, or lumen deformation, all of which directly affect device safety and usability. With catheter designs varying widely in diameter, wall structure, and required softness levels, manufacturers need a process capable of forming and bonding tips with high repeatability. ONEX meets this challenge through RF-based thermal accuracy, precision-engineered dies, and controlled bonding methods that ensure a uniform transition from soft tip to shaft and maximum bond integrity. Whether used for soft tip bonding, soft-tip guidewire assemblies, or fully formed soft distal segments, ONEX systems deliver consistent, high-quality results.",
+      
+        "use_cases": [
+          "IV Infusion, Dialysis, Nutritional Bags",
+          "Blood, Plasma, Cryogenic Bags",
+          "Drainage & Urine Bags",
+          "Ostomy Bags",
+          "Butterfly, Insulation Bags"
+        ],
+      
+        "process_requirements": [
+        ],
+      
+        "details": [
+         
+        ],
+        "related": {
+          "product_lines": [
+            "rf-welders","heat-sealers"
+          ],
+          "materials": [
+            "tpu",
+            "eva",
+            "pvc",
+            "pu",
+            "pe",
+            "pp"
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/soft-tip.jpg"
+      },
+      {
+        "slug": "wearables-and-inflatables",
+        "name": "Wearables and Inflatables",
+        "aliases": [
+
+        ],
+        "description": "",
+
+        "long_description": "",
+      
+        "use_cases": [
+          "Blood Pressure Cuffs",
+          "Tourniquet Cuffs",
+          "Compression Therapy Bladders",
+          "Straps"
+        ],
+      
+        "process_requirements": [
+
+        ],
+      
+        "details": [
+        ],
+        "related": {
+          "product_lines": [
+            "rf-welders","heat-sealers"
+          ],
+          "materials": [
+            "tpu",
+            "eva",
+            "pvc",
+            "pu",
+            "pe",
+            "pp"
+          ],
+          "tooling": [
+            "rf-welding-die",
+            "heat-sealing-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/butt-joint-welding.jpg"
+      },
+      {
+        "slug": "pouches-with-ports",
+        "name": "Pouches with Ports",
+        "aliases": [
+        ],
+        "description": "A smooth, rounded distal tip designed for atraumatic vessel entry and precise contrast delivery. Angiographic tips require accurate thermal forming and strong, reliable bonding to the catheter shaft to ensure consistent clinical performance.",
+
+        "long_description": "Angiographic catheter tips must combine a smooth, radius-shaped geometry with a strong thermal bond to the main catheter shaft to ensure safe vessel entry and reliable contrast injection. These tips must maintain a precise profile that minimizes trauma during navigation while preserving lumen integrity for consistent flow rates and injection pressures. Because angiographic catheters vary widely in diameter, polymer blends, stiffness, and durometer, creating a dependable angiographic tip requires a forming process that can precisely manage heat, alignment, and bond strength. Inconsistent thermal distribution or suboptimal alignment during bonding can weaken the interface, distort the radius, or create uneven surfaces that compromise catheter tracking. ONEX delivers the repeatability and precision required through RF-driven thermal control, engineered forming dies, and bond integration methods that ensure uniform radius geometry, smooth transitions, and maximum-strength bonding for high-performance angiographic systems.",
+      
+        "use_cases": [
+          "Port Patch Welding",
+          "Multi-port Pouches",
+          "Reinforced Hang Holes / Features"
+        ],
+      
+        "process_requirements": [
+        ],
+      
+        "details": [
+        ],
+        "related": {
+          "products": [
+          ],
+          "materials": [
+
+          ],
+          "tooling": [
+            "catheter-tipping-die"
+          ],
+          "support": [
+            "process-development"
+          ]
+        },
+        "image": "/images/examples/angiographic-tip.jpg"
+      }
+    ],
+    "related": {
+      "product_lines": [
+        "rf-welders","heat-sealers"
+      ],
+      "materials": [
+        "tpu",
+        "eva",
+        "pvc",
+        "pu",
+        "pe",
+        "pp"
+      ],
+      "tooling": [
+        "rf-welding-die",
+        "heat-sealing-die"
+      ],
+      "technologies": [
+        "rf-welding",
+        "heat-sealing"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "image": "/images/examples/soft-tip.jpg"
   }
 ]

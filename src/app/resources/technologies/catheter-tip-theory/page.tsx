@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { PageNav, type Section } from '@/components/PageNav';
 
 export const metadata: Metadata = {
   title: 'RF Induction Catheter Tip Forming | ONEXRF',
@@ -8,6 +9,19 @@ export const metadata: Metadata = {
 };
 
 export default function CatheterTipFormingPage() {
+  const sections: Section[] = [
+    { id: 'overview', label: 'Overview' },
+    { id: 'how-it-works', label: 'How It Works' },
+    { id: 'process-variables', label: 'Process Variables' },
+    { id: 'tooling', label: 'Tooling' },
+    { id: 'process-control', label: 'Process Control' },
+    { id: 'defects', label: 'Common Defects' },
+    { id: 'materials', label: 'Materials' },
+    { id: 'safety', label: 'Safety' },
+    { id: 'faq', label: 'FAQ' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Breadcrumb Navigation */}
@@ -20,6 +34,8 @@ export default function CatheterTipFormingPage() {
         </Link>{" "}
         / <span className="text-slate-700">Catheter Tip Forming Theory</span>
       </nav>
+
+      <PageNav sections={sections} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8">
@@ -52,7 +68,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="overview" className="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Overview: what tip forming is</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -62,7 +78,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="how-it-works" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">How RF tip forming works</h2>
           
@@ -146,7 +162,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* Critical Process Variables Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="process-variables" className="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Critical process variables (and why they matter)</h2>
 
@@ -251,7 +267,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* Tooling & Mold Engineering Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="tooling" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Tooling & mold engineering considerations</h2>
 
@@ -326,7 +342,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* Process Control Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="process-control" className="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Process control & repeatability</h2>
 
@@ -374,7 +390,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* Common Defects Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="defects" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Common defects & root causes</h2>
 
@@ -462,7 +478,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* Material Considerations Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="materials" className="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Material considerations (general guidance)</h2>
           <div className="space-y-4 text-gray-700">
@@ -491,7 +507,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* Safety & Ergonomics Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="safety" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Safety & ergonomics considerations</h2>
           <div className="space-y-4 text-gray-700">
@@ -520,7 +536,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section id="faq" className="py-16 px-4 sm:px-6 lg:px-8 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">
@@ -600,7 +616,7 @@ export default function CatheterTipFormingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
+      <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-700 text-white scroll-mt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to optimize your catheter tip forming process?</h2>
           <p className="text-lg mb-8 text-blue-50">

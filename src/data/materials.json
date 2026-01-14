@@ -375,97 +375,125 @@
       "products": ["catheter-flaring-system", "soft-tip-bonding-system"]
     }
   },
-    {
-      "slug": "hdpe",
-      "name": "High-Density Polyethylene",
-      "aliases": ["HDPE"],
-      "description": "A linear, high-crystallinity polyethylene known for its higher stiffness and strength, used in more rigid catheter sections or flares, valued for its durability and stable performance in RF thermal forming and welding.",
-      "long_description": "HDPE (High-Density Polyethylene) is a polyethylene grade with minimal branching in its polymer chains, resulting in higher crystallinity, density (~0.94–0.96 g/cc), and a melting point around 130–137°C, all higher than those of LDPE. This structure gives HDPE significantly greater rigidity, tensile strength, and chemical resistance. In catheter manufacturing, HDPE is utilized for components that need more support or pushability – for example, stiffer proximal shaft sections, flared tube ends that must hold their shape for connections, or other parts where a harder polymer is beneficial. While not as flexible as LDPE or elastomers, HDPE provides structural integrity and is often used in combination with softer segments in multi-layer or multi-durometer catheter designs. In RF-based thermal forming and bonding, HDPE requires more energy (higher temperature) to soften due to its higher melting point, but once heated it can be molded into precise shapes (such as robust flares or tip forms) and welded to itself reliably. It cools into a firm shape; because of its crystallinity, some shrinkage can occur upon cooling, so process parameters and tool design account for this to maintain final dimensions. HDPE’s inertness gives it excellent chemical compatibility and it withstands EtO sterilization easily. It can also be gamma sterilized, though high radiation doses may induce slight embrittlement over time (a common trait of polyolefins). HDPE is not suitable for high-temperature steam sterilization, as it will soften or deform near autoclave temperatures. Medical-grade HDPE resins (including certain FDA/USP Class VI compliant grades) are widely used in healthcare products; nevertheless, each specific formulation’s biocompatibility and regulatory compliance should be confirmed through supplier documentation and device-level testing, especially if any fillers or additives are present.",
-      "properties": {
-        "durometer_range": "Shore D ~55–70 (grade-dependent)",
-        "melting_point": "130–137°C (grade-dependent)",
-        "elongation": "50–600% (grade-dependent)",
-        "tensile_strength": "3,000–6,500 psi (grade-dependent)",
-        "density": "0.94–0.96 g/cc (typical)",
-        "sterilization_methods": ["EtO", "Gamma (radiation-tolerant in single use)", "Steam (not suitable at standard autoclave temps)"],
-        "water_absorption_24h": "<0.1% (extremely low)",
-        "radiopacity": "Not intrinsically radiopaque; often requires blending with radiopaque fillers (e.g., barium sulfate or tungsten) if fluoroscopic visibility is needed"
-      },
-      "applications": [
-        "Catheter proximal sections (using HDPE tubing for stiff, supportive shaft sections to improve pushability)",
-        "Catheter flaring (forming rigid, durable flares on HDPE tubing ends for connector interfaces or strain reliefs)",
-        "Joining HDPE segments (thermal welding of HDPE-to-HDPE tubing in catheter assembly)",
-        "Forming tapered or stepped transitions in catheter shafts where a more rigid segment is required"
-      ],
-      "process_notes": {
-        "thermal_processability": "Needs higher heat input than LDPE to reach melt, but responds predictably to RF heating; once softened, HDPE can be formed and welded with good repeatability, then solidifies into a rigid shape upon cooling.",
-        "bonding_behavior": "Thermal welding of HDPE to itself produces strong bonds. Like other polyethylenes, its low surface energy and crystallinity make adhesive bonding or bonding to different polymers difficult without special surface treatments or adhesive intermediates.",
-        "tooling_considerations": "HDPE’s higher stiffness means less risk of sticking than very soft plastics, but its tendency to shrink upon cooling (due to crystallization) means molds should be designed for proper shrink allowance and even cooling. Securing the part in the tool until it sufficiently cools helps ensure the formed geometry (e.g., flare or tip) retains its intended dimensions and shape without warping or stress cracks."
-      },
-      "biocompatibility": {
-        "certifications": [],
-        "usage_scope": "HDPE is widely used for medical device components and packaging, and many grades are available in medical/food-safe formulations. The polymer’s inherent inertness and history of use (including in implants like UHMWPE) suggest good biocompatibility for appropriately chosen grades. Still, any specific HDPE grade used in a device should have supporting biocompatibility documentation (such as ISO 10993 or USP Class VI test results) from the supplier, and final device testing should confirm that it meets all required biocompatibility and regulatory standards for its intended use."
-      },
-      "related": {
-        "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
-      }
+  {
+    "slug": "hdpe",
+    "name": "High-Density Polyethylene",
+    "aliases": ["HDPE"],
+    "description": "A linear, high-crystallinity polyethylene known for its higher stiffness and strength, used in more rigid catheter sections or flares, valued for its durability and stable performance in RF thermal forming and welding.",
+    "long_description": "HDPE (High-Density Polyethylene) is a polyethylene grade with minimal branching in its polymer chains, resulting in higher crystallinity, density (~0.94–0.96 g/cc), and a melting point around 130–137°C, all higher than those of LDPE. This structure gives HDPE significantly greater rigidity, tensile strength, and chemical resistance. In catheter manufacturing, HDPE is utilized for components that need more support or pushability – for example, stiffer proximal shaft sections, flared tube ends that must hold their shape for connections, or other parts where a harder polymer is beneficial. While not as flexible as LDPE or elastomers, HDPE provides structural integrity and is often used in combination with softer segments in multi-layer or multi-durometer catheter designs. In RF-based thermal forming and bonding, HDPE requires more energy (higher temperature) to soften due to its higher melting point, but once heated it can be molded into precise shapes (such as robust flares or tip forms) and welded to itself reliably. It cools into a firm shape; because of its crystallinity, some shrinkage can occur upon cooling, so process parameters and tool design account for this to maintain final dimensions. HDPE’s inertness gives it excellent chemical compatibility and it withstands EtO sterilization easily. It can also be gamma sterilized, though high radiation doses may induce slight embrittlement over time (a common trait of polyolefins). HDPE is not suitable for high-temperature steam sterilization, as it will soften or deform near autoclave temperatures. Medical-grade HDPE resins (including certain FDA/USP Class VI compliant grades) are widely used in healthcare products; nevertheless, each specific formulation’s biocompatibility and regulatory compliance should be confirmed through supplier documentation and device-level testing, especially if any fillers or additives are present.",
+    "properties": {
+      "durometer_range": "Shore D ~55–70 (grade-dependent)",
+      "melting_point": "130–137°C (grade-dependent)",
+      "elongation": "50–600% (grade-dependent)",
+      "tensile_strength": "3,000–6,500 psi (grade-dependent)",
+      "density": "0.94–0.96 g/cc (typical)",
+      "sterilization_methods": ["EtO", "Gamma (radiation-tolerant in single use)", "Steam (not suitable at standard autoclave temps)"],
+      "water_absorption_24h": "<0.1% (extremely low)",
+      "radiopacity": "Not intrinsically radiopaque; often requires blending with radiopaque fillers (e.g., barium sulfate or tungsten) if fluoroscopic visibility is needed"
     },
-    {
-      "slug": "etfe",
-      "name": "Ethylene Tetrafluoroethylene",
-      "aliases": ["ETFE"],
-      "description": "ETFE combines high mechanical strength, abrasion resistance, and chemical stability, often used as a liner or jacket for catheters requiring durability and biocompatibility.",
-      "related": {
-        "applications": ["catheter-tipping", "catheter-flaring"],
-        "products": ["dual-catheter-tipper", "catheter-tipper-pro"]
-      }
+    "applications": [
+      "Catheter proximal sections (using HDPE tubing for stiff, supportive shaft sections to improve pushability)",
+      "Catheter flaring (forming rigid, durable flares on HDPE tubing ends for connector interfaces or strain reliefs)",
+      "Joining HDPE segments (thermal welding of HDPE-to-HDPE tubing in catheter assembly)",
+      "Forming tapered or stepped transitions in catheter shafts where a more rigid segment is required"
+    ],
+    "process_notes": {
+      "thermal_processability": "Needs higher heat input than LDPE to reach melt, but responds predictably to RF heating; once softened, HDPE can be formed and welded with good repeatability, then solidifies into a rigid shape upon cooling.",
+      "bonding_behavior": "Thermal welding of HDPE to itself produces strong bonds. Like other polyethylenes, its low surface energy and crystallinity make adhesive bonding or bonding to different polymers difficult without special surface treatments or adhesive intermediates.",
+      "tooling_considerations": "HDPE’s higher stiffness means less risk of sticking than very soft plastics, but its tendency to shrink upon cooling (due to crystallization) means molds should be designed for proper shrink allowance and even cooling. Securing the part in the tool until it sufficiently cools helps ensure the formed geometry (e.g., flare or tip) retains its intended dimensions and shape without warping or stress cracks."
     },
-    {
-      "slug": "ldpe",
-      "name": "Low-Density Polyethylene",
-      "aliases": ["LDPE"],
-      "description": "A branched, low-density form of polyethylene known for its softness and flexibility, often used in pliable catheter tips and sections, valued for its low melting point and ease of RF tip forming.",
-      "long_description": "LDPE (Low-Density Polyethylene) is a polyethylene variant characterized by a high degree of long-chain branching, which yields a lower density, lower crystallinity, and a melting point around 105–115°C. This structure makes LDPE a very soft and flexible polymer. In catheter manufacturing, LDPE is selected for applications that require a very pliable material, such as atraumatic distal tips, soft sleeves, or flexible tubing sections. Its low durometer and melting temperature allow it to form smooth, atraumatic tips or flares at relatively low RF energy, though its lower strength means it’s generally used in less mechanically demanding portions of a device. During RF-based tipping or flaring, LDPE softens quickly and flows easily into molds, and with proper cooling it re-solidifies to a smooth finish. Because it is so soft when molten, process control (minimal heat input, short dwell time, and supportive mandrels or molds) is important to maintain concentricity and prevent over-melting or sticking. LDPE is chemically inert and compatible with common gas sterilization (EtO) and usually tolerant of gamma sterilization for single-use products (though radiation may cause some embrittlement). It cannot withstand standard steam autoclaving due to its low melting point. Medical-grade LDPE resins are available for use in healthcare products, but the specific grade’s biocompatibility and any additives should be verified via supplier documentation and device-level testing.",
-      "properties": {
-        "durometer_range": "Shore D ~42–50 (grade-dependent)",
-        "melting_point": "105–115°C (typical)",
-        "elongation": "300–700% (grade-dependent)",
-        "tensile_strength": "1,000–2,400 psi (grade-dependent)",
-        "density": "0.91–0.925 g/cc (typical)",
-        "sterilization_methods": ["EtO", "Gamma (possible slight embrittlement)", "Steam (not recommended due to low melt point)"],
-        "water_absorption_24h": "<0.1% (extremely low, hydrophobic)",
-        "radiopacity": "Not inherently radiopaque; can be compounded with radiopaque fillers (e.g., barium sulfate or tungsten) if X-ray visibility is required"
-      },
-      "applications": [
-        "Catheter tipping (atraumatic soft tips formed from LDPE for gentle distal ends)",
-        "Catheter flaring (creating flared ends on LDPE tubing for connector interfaces or soft transitions)",
-        "Joining LDPE segments (thermal welding of LDPE tube sections in catheter assemblies)",
-        "Forming flexible transitions or tapers in multi-durometer catheter shafts using LDPE"
-      ],
-      "process_notes": {
-        "thermal_processability": "Very low melting point and softening temperature, which means LDPE responds quickly to RF heating and is easily formed; precise low heat input and short dwell ensure controlled molding without overheating.",
-        "bonding_behavior": "Fuses readily to itself under heat (LDPE-to-LDPE bonds), but like all polyethylene it has a non-polar, low-energy surface, making adhesive or thermal bonding to other plastics difficult without primers or surface activation.",
-        "tooling_considerations": "Because LDPE becomes extremely soft and pliable when molten, it can stick to tooling or deform under its own weight. Molds/dies often use polished surfaces or release coatings, and the process may include immediate cooling or supportive mandrels to preserve shape and concentricity as the part solidifies."
-      },
-      "biocompatibility": {
-        "certifications": [],
-        "usage_scope": "LDPE is commonly used in medical tubing, bags, and disposable device components. Medical-grade LDPE (with FDA or ISO 10993 compliance) should be used for body-contact applications. The base polymer is chemically inert and generally biocompatible for temporary contact, but any additives (antioxidants, colorants) and the specific grade’s certifications must be verified to ensure it meets the necessary biocompatibility and regulatory standards for the intended use."
-      },
-      "related": {
-        "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
-      }
+    "biocompatibility": {
+      "certifications": [],
+      "usage_scope": "HDPE is widely used for medical device components and packaging, and many grades are available in medical/food-safe formulations. The polymer’s inherent inertness and history of use (including in implants like UHMWPE) suggest good biocompatibility for appropriately chosen grades. Still, any specific HDPE grade used in a device should have supporting biocompatibility documentation (such as ISO 10993 or USP Class VI test results) from the supplier, and final device testing should confirm that it meets all required biocompatibility and regulatory standards for its intended use."
     },
-    {
-      "slug": "peek",
-      "name": "Polyether Ether Ketone",
-      "aliases": ["PEEK"],
-      "description": "PEEK is a high-performance polymer offering exceptional strength, stiffness, and temperature resistance. It is used in demanding catheter components where precision and durability are critical.",
-      "related": {
-        "applications": ["catheter-flaring"],
-        "products": ["dual-catheter-tipper", "catheter-tipper-pro"]
-      }
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
+      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
     }
+  },
+  {
+    "slug": "etfe",
+    "name": "Ethylene Tetrafluoroethylene",
+    "aliases": ["ETFE"],
+    "description": "ETFE combines high mechanical strength, abrasion resistance, and chemical stability, often used as a liner or jacket for catheters requiring durability and biocompatibility.",
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring"],
+      "products": ["dual-catheter-tipper", "catheter-tipper-pro"]
+    }
+  },
+  {
+    "slug": "ldpe",
+    "name": "Low-Density Polyethylene",
+    "aliases": ["LDPE"],
+    "description": "A branched, low-density form of polyethylene known for its softness and flexibility, often used in pliable catheter tips and sections, valued for its low melting point and ease of RF tip forming.",
+    "long_description": "LDPE (Low-Density Polyethylene) is a polyethylene variant characterized by a high degree of long-chain branching, which yields a lower density, lower crystallinity, and a melting point around 105–115°C. This structure makes LDPE a very soft and flexible polymer. In catheter manufacturing, LDPE is selected for applications that require a very pliable material, such as atraumatic distal tips, soft sleeves, or flexible tubing sections. Its low durometer and melting temperature allow it to form smooth, atraumatic tips or flares at relatively low RF energy, though its lower strength means it’s generally used in less mechanically demanding portions of a device. During RF-based tipping or flaring, LDPE softens quickly and flows easily into molds, and with proper cooling it re-solidifies to a smooth finish. Because it is so soft when molten, process control (minimal heat input, short dwell time, and supportive mandrels or molds) is important to maintain concentricity and prevent over-melting or sticking. LDPE is chemically inert and compatible with common gas sterilization (EtO) and usually tolerant of gamma sterilization for single-use products (though radiation may cause some embrittlement). It cannot withstand standard steam autoclaving due to its low melting point. Medical-grade LDPE resins are available for use in healthcare products, but the specific grade’s biocompatibility and any additives should be verified via supplier documentation and device-level testing.",
+    "properties": {
+      "durometer_range": "Shore D ~42–50 (grade-dependent)",
+      "melting_point": "105–115°C (typical)",
+      "elongation": "300–700% (grade-dependent)",
+      "tensile_strength": "1,000–2,400 psi (grade-dependent)",
+      "density": "0.91–0.925 g/cc (typical)",
+      "sterilization_methods": ["EtO", "Gamma (possible slight embrittlement)", "Steam (not recommended due to low melt point)"],
+      "water_absorption_24h": "<0.1% (extremely low, hydrophobic)",
+      "radiopacity": "Not inherently radiopaque; can be compounded with radiopaque fillers (e.g., barium sulfate or tungsten) if X-ray visibility is required"
+    },
+    "applications": [
+      "Catheter tipping (atraumatic soft tips formed from LDPE for gentle distal ends)",
+      "Catheter flaring (creating flared ends on LDPE tubing for connector interfaces or soft transitions)",
+      "Joining LDPE segments (thermal welding of LDPE tube sections in catheter assemblies)",
+      "Forming flexible transitions or tapers in multi-durometer catheter shafts using LDPE"
+    ],
+    "process_notes": {
+      "thermal_processability": "Very low melting point and softening temperature, which means LDPE responds quickly to RF heating and is easily formed; precise low heat input and short dwell ensure controlled molding without overheating.",
+      "bonding_behavior": "Fuses readily to itself under heat (LDPE-to-LDPE bonds), but like all polyethylene it has a non-polar, low-energy surface, making adhesive or thermal bonding to other plastics difficult without primers or surface activation.",
+      "tooling_considerations": "Because LDPE becomes extremely soft and pliable when molten, it can stick to tooling or deform under its own weight. Molds/dies often use polished surfaces or release coatings, and the process may include immediate cooling or supportive mandrels to preserve shape and concentricity as the part solidifies."
+    },
+    "biocompatibility": {
+      "certifications": [],
+      "usage_scope": "LDPE is commonly used in medical tubing, bags, and disposable device components. Medical-grade LDPE (with FDA or ISO 10993 compliance) should be used for body-contact applications. The base polymer is chemically inert and generally biocompatible for temporary contact, but any additives (antioxidants, colorants) and the specific grade’s certifications must be verified to ensure it meets the necessary biocompatibility and regulatory standards for the intended use."
+    },
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
+      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+    }
+  },
+  {
+    "slug": "peek",
+    "name": "Polyether Ether Ketone",
+    "aliases": ["PEEK"],
+    "description": "PEEK is a high-performance polymer known for exceptional stiffness, strength, and high-temperature resistance. It is used in demanding medical devices (including certain catheters) where dimensional stability, durability, and biocompatibility are critical.",
+    "long_description": "PEEK (polyether ether ketone) is a semi-crystalline thermoplastic valued for very high mechanical strength and thermal stability. Medical-grade PEEK is used where high strength and biocompatibility are required, including long-term medical applications. Unlike more flexible catheter polymers (e.g. PEBAX), PEEK is relatively rigid (around Shore D ~85 in many unfilled grades) and is used in parts that require stiffness and dimensional stability. In catheter design, PEEK often serves as an inner support liner or structural segment where pushability and durability are needed. Because PEEK has a melting point around 343°C, thermal forming processes (such as induction heating of a metal die) require very high tooling temperatures, commonly in the 350–500°C range depending on geometry and process. With precise control, PEEK can be thermoformed into stiff catheter tips, flares, or connector components. PEEK is chemically resistant and is compatible with common medical sterilization methods such as steam autoclave, gamma, and EtO when appropriate grades are selected. It is inherently radiolucent, so radiopaque fillers (e.g. barium sulfate or tungsten) are often added when X-ray visibility is required. PEEK’s high stiffness and melt viscosity make it unsuitable for highly flexible catheter distal segments and it is not used for RF-welded packaging films; it is typically reserved for structural segments and components.",
+    "properties": {
+      "durometer_range": "Shore D ~85 (unfilled medical grades)",
+      "melting_point": "343°C",
+      "elongation": "25–40% (grade-dependent)",
+      "tensile_strength": "98–110 MPa (~14,000–16,000 psi)",
+      "density": "1.30 g/cc (typical)",
+      "sterilization_methods": ["EtO", "Gamma", "Steam (autoclave)"],
+      "water_absorption_24h": "0.1% (typical)",
+      "radiopacity": "Low (requires radiopaque fillers such as barium sulfate or tungsten for X-ray visibility)"
+    },
+    "applications": [
+      "Catheter inner-liners/support segments (to increase pushability and strength)",
+      "Dilator and introducer catheter tips (providing rigid, durable ends)",
+      "Catheter hubs and connector components (mechanical reinforcement)",
+      "Radiopaque segments in catheters (PEEK compounded with radiopaque fillers)",
+      "Other structural medical components needing heat resistance and strength"
+    ],
+    "process_notes": {
+      "thermal_processability": "PEEK has a very high melting point (~343°C). Induction heating of a metal die can shape PEEK, but equipment must be capable of very high tool temperatures (often 350–500°C depending on the process and part geometry). PEEK’s high melt viscosity and crystallinity require precise control of temperature and dwell time to form parts consistently without voids, poor replication, or thermal damage. Rapid cooling or uneven heat distribution can introduce residual stresses or warpage, and the cooling profile can influence crystallinity and final dimensions.",
+      "bonding_behavior": "PEEK is chemically resistant and generally has poor adhesion to dissimilar materials without surface preparation. PEEK-to-PEEK joining can be performed with high-temperature thermal welding approaches (process-dependent), but it typically requires specialized tooling and careful control. In practice, PEEK components are often joined using mechanical retention features, secondary operations, or adhesives selected for the specific substrate and sterilization environment; bonding to other polymers usually requires surface preparation or an intermediate tie-layer approach.",
+      "tooling_considerations": "Tooling must tolerate high operating temperatures (often above 350°C) and maintain dimensional stability. Molten PEEK can stick to tool surfaces, so polished or coated mold surfaces and release-friendly geometries help repeatability. Uniform heat distribution and controlled cooling are important to achieve consistent dimensions and manage crystallinity-related shrinkage."
+    },
+    "biocompatibility": {
+      "certifications": [],
+      "usage_scope": "PEEK is available in medical-grade formulations (commonly supplied in grades intended to support USP Class VI and/or ISO 10993 testing programs) and is widely used in long-term implantable and interventional medical components. Biocompatibility depends on the exact grade, additives, pigments, and processing history, so medical device programs should verify compliance for the selected material and finished component."
+    },
+    "related": {
+      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
+      "product": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+    }
+  }
+    
   ]
   

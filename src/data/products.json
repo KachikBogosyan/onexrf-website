@@ -781,5 +781,430 @@
       "technologies": ["rf-induction"],
       "support": ["process-development", "machine-servicing", "training"]
     }
-  }  
+  },
+  {
+    "slug": "small-rotary-rf-welder",
+    "line": "rf-welders",
+    "name": "Small Rotary RF Welder",
+    "aliases": ["RF-Roto-S3-D60 10x20"],
+    "category": "RF Welders",
+    "description": "The Small Rotary RF Welder is designed to RF-seal medical pouches with ports made from RF-sealable materials such as PVC, TPU, or EVA. ONEX RF sealers use No-Arc Hybrid Technology for stable process control.",
+    "image": "/images/products/rf-welder/rf-roto-s3/RF-Roto-S3-PNG.png",
+    "is_new": false,
+    "order": 5,
+    "specs_short": {
+      "model_number": "RF-Roto-S3",
+      "applications": "RF Welding medical disposable pouches, ports and small sample bags",
+      "rf_seal_area": "@specs_long.small_rotary_rf_welding_system.rf_seal_area",
+      "rf_generator": "4-6 kW Hybrid Generator",
+      "rf_frequency": "@specs_long.hybrid_rf_generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint_welder": "@specs_long.dimensions.rotary_rf_welder",
+      "footprint_generator": "@specs_long.dimensions.rf_generator",
+      "shipping_weight": "@specs_long.system_weight.total_shipping_weight",
+      "compliance": "@specs_long.compliance.certifications",
+      "validation_support": "Documents available for IQ, DOE and Die FAI, OQ at customer site per request",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "operating_humidity": "@specs_long.operating_environment.humidity",
+      "operating_elevation": "@specs_long.operating_environment.elevation"  
+    },
+  
+  "specs_long": {
+    "small_rotary_rf_welding_system": {
+      "model_number": "RF-Roto-S3-D60-10x20 4-6KW",
+      "rf_seal_area": "10 × 20 in / 390 × 780 mm",
+      "index_dial_size": "60 in / 1525 mm",
+      "rf_sealing_power": "4–6 kW",
+      "press_force": "1000 lb / 4,448 N (single cylinder at 80 PSI)",
+      "press_stroke": "4 in / 100 mm (normal operation) — 8 in / 200 mm (maintenance)",
+      "press_daylight": "2.750 in / 70 mm (overall die height)",
+      "rf_switch": "2 or 3 cycle (optional)"
+    },
+
+    "hybrid_rf_generator": {
+      "model_number": "RFHG-10-27",
+      "generator_type": "Hybrid Amplifier (1st stage Solid State Driver with final stage Tube Amplifier)",
+      "rf_power": "10,000 W",
+      "frequency": "27.12 MHz",
+      "impedance": "50 Ω",
+      "duty_cycle": "100% at 20°C room temperature",
+      "utilities": "3 Phase 200–240 VAC / 50 A",
+      "dimensions": "24 × 36 × 72 in"
+    },
+
+    "rf_auto_tuner": {
+      "model_number": "RFMN-50-27-10",
+      "arc_detection": "5 VDC signal",
+      "controls": "Auto-start at RF signal detection",
+      "frequency": "27.12 MHz",
+      "impedance": "50 Ω",
+      "utilities": "120 VAC / 5 A"
+    },
+
+    "indexer_information": {
+      "manufacturer": "Sankyo",
+      "indexer_type": "Electric CAM Alfa Series High Precision Indexers",
+      "positions": "3, 4, 6, or 8 positions (optional)",
+      "dial_options": {
+        "19ad": "72–96 in diameter",
+        "23ad": "120 in diameter dials"
+      },
+      "controls": "ABB Variable Frequency Drive (VFD)",
+      "fast_stop": "Optional brake resistor"
+    },
+
+    "utilities": {
+      "electrical": "100–240 VAC / 60–70 A / 50–60 Hz",
+      "pneumatic": "80 PSI / 5 bar — Clean Dry Air (CDA)"
+    },
+
+    "control_system": {
+      "process_controller": "Allen Bradley PLC — CompactLogix",
+      "operator_interface": "12 in Touch Screen PC HMI",
+      "operating_system": "Windows 7 Pro",
+      "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+      "storage": "60–128 GB SSD",
+      "memory": "4 GB DDR4 2666 MHz SoDIMM",
+      "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+    },
+
+    "dimensions": {
+      "rf_generator": "24 × 32 × 72 in / 610 × 810 × 1830 mm",
+      "rotary_rf_welder": "103 × 96 × 87 in / 262 × 244 × 220 cm"
+    },
+
+    "system_weight": {
+      "rf_generator": "850 lb / 385 kg",
+      "rf_welding_station": "2500 lb / 1150 kg",
+      "indexing_dial": "175 lb / 79 kg",
+      "total_shipping_weight": "4500 lb / 2000 kg (crated)"
+    },
+
+    "operating_environment": {
+      "temperature": "65–95°F / 18–35°C",
+      "humidity": "68% maximum relative humidity, non-condensing",
+      "elevation": "Up to 2000 m"
+    },
+
+    "compliance": {
+      "machine_safety": "ISO 13849-1 / OSHA",
+      "certifications": "UL (per request)",
+      "software": "FDA 21 CFR Part 11"
+    },
+
+    "validation_support": {
+      "iq": "Documents available upon request (fee)",
+      "fai_and_doe": "Documents available upon request (fee)",
+      "oq": "Support available at customer site (per request)"
+    }
+  },
+  "key_features": [
+    "10x20 RF-sealable area",
+    "Process Consistency",
+    "4-6 kW Output Power",
+    "No-Arc Hybrid Technology",
+    "Closed-loop Process Control"
+  ],
+
+  "highlights": [
+    "90% Reduction of RF Sealing Arcs & Die-Burns when using ONEX RF sealers.",
+    "Increased production yields due to process consistency and RF Seal integrity.",
+    "50% more power efficiency when RF sealing with Hybrid RF Generator technology."
+  ],
+    "related": {
+      "applications": ["rf-sealing"],
+      "materials": ["pvc", "tpu", "eva"],
+      "tooling": ["rf-welding-die"],
+      "technologies": ["rf-welding"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "rotary-rf-welder-medium",
+    "line": "rf-welders",
+    "name": "Rotary RF Welder (Medium)",
+    "aliases": ["RF-Roto-M4-D96 20x30", "RF-Roto-M4-D96-20x30 10KW"],
+    "category": "RF Welders",
+    "description": "The Large Rotary RF Welding machine is designed to RF seal PVC, EVA & TPU / Coated Materials mainly used for the medical and automotive applications.",
+    "image": "/images/products/rf-welder/rf-roto-l6/RF-Roto-L6-PNG.png",
+    "is_new": false,
+    "order": 6,
+  
+    "specs_short": {
+      "model_number": "RF-Roto-M4",
+      "applications": "RF welding medical disposable pouches, ports, and medium-to-large bags",
+      "rf_seal_area": "@specs_long.medium_rotary_rf_welding_system.rf_seal_area",
+      "rf_generator": "6–10 kW Hybrid Generator",
+      "rf_frequency": "@specs_long.hybrid_rf_generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint_welder": "@specs_long.dimensions.rotary_rf_welder",
+      "footprint_generator": "@specs_long.dimensions.rf_generator",
+      "shipping_weight": "@specs_long.system_weight.total_shipping_weight",
+      "compliance": "@specs_long.compliance.certifications",
+      "validation_support": "Documents available for IQ, DOE and Die FAI; OQ support at customer site (per request)",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "operating_humidity": "@specs_long.operating_environment.humidity",
+      "operating_elevation": "@specs_long.operating_environment.elevation"
+    },
+  
+    "specs_long": {
+      "medium_rotary_rf_welding_system": {
+        "model_number": "RF-Roto-M4-D96-20x30 10KW",
+        "rf_seal_area": "20 × 30 in / 510 × 760 mm (15 × 44 in seal-area available as option)",
+        "index_dial_size": "96 in / 2440 mm",
+        "rf_sealing_power": "6–10 kW",
+        "press_force": "2000 lb / 8,896 N (single cylinder at 80 PSI) — dual-cylinder 4000 lb option",
+        "press_stroke": "4 in / 100 mm (normal operation) — 8 in / 200 mm (maintenance)",
+        "press_daylight": "2.750 in / 70 mm (overall die height)",
+        "rf_switch": "2 or 3 cycle (optional)"
+      },
+  
+      "hybrid_rf_generator": {
+        "model_number": "RFHG-10-27",
+        "generator_type": "Hybrid Amplifier (1st stage Solid State Driver with final stage Tube Amplifier)",
+        "rf_power": "10,000 W",
+        "frequency": "27.12 MHz",
+        "impedance": "50 Ω",
+        "duty_cycle": "100% at 20°C room temperature",
+        "utilities": "3 Phase 200–240 VAC / 50 A",
+        "dimensions": "24 × 36 × 72 in"
+      },
+  
+      "rf_auto_tuner": {
+        "model_number": "RFMN-50-27-10",
+        "arc_detection": "5 VDC signal",
+        "controls": "Auto-start at RF signal detection",
+        "frequency": "27.12 MHz",
+        "impedance": "50 Ω",
+        "utilities": "120 VAC / 5 A"
+      },
+  
+      "indexer_information": {
+        "manufacturer": "Sankyo",
+        "indexer_type": "Electric CAM Alfa Series High Precision Indexers",
+        "positions": "3, 4, 6, or 8 positions (optional)",
+        "dial_options": {
+          "19ad": "72–96 in diameter",
+          "23ad": "120 in diameter dials"
+        },
+        "controls": "ABB Variable Frequency Drive (VFD)",
+        "fast_stop": "Optional brake resistor"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 60–70 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar — Clean Dry Air (CDA)"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC — CompactLogix",
+        "operator_interface": "12 in Touch Screen PC HMI",
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "60–128 GB SSD",
+        "memory": "4 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "dimensions": {
+        "rf_generator": "24 × 32 × 72 in / 610 × 810 × 1830 mm",
+        "rotary_rf_welder": "103 × 96 × 87 in / 262 × 244 × 220 cm"
+      },
+  
+      "system_weight": {
+        "rf_generator": "850 lb / 385 kg",
+        "rf_welding_station": "5500 lb / 2500 kg",
+        "indexing_dial": "175 lb / 79 kg",
+        "total_shipping_weight": "7000 lb / 3175 kg (crated)"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum relative humidity, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "key_features": [
+      "20×30 RF seal area (15×44 option available)",
+      "6–10 kW sealing power range",
+      "High-precision rotary indexing (3/4/6/8 positions)",
+      "No-Arc Hybrid Technology for stable sealing",
+      "Closed-loop process control with PLC + PC HMI"
+    ],
+  
+    "highlights": [
+      "Reduced RF sealing arcs and die burns when using Hybrid RF Generator technology.",
+      "Improved yields through consistent process control and seal integrity.",
+      "Higher power efficiency during RF sealing with hybrid generator architecture."
+    ],
+  
+    "related": {
+      "applications": ["rf-sealing"],
+      "materials": ["pvc", "tpu", "eva"],
+      "tooling": ["rf-welding-die"],
+      "technologies": ["rf-welding"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  },
+  {
+    "slug": "rotary-rf-welder-large",
+    "line": "rf-welders",
+    "name": "Large Rotary RF Welder",
+    "aliases": ["RF-Roto-L6-D120 20x40", "RF-Roto-L6-D120-20x40 15KW"],
+    "category": "RF Welders",
+    "description": "The Large Rotary RF Welder is designed to RF-seal PVC, EVA, and TPU (and other RF-sealable coated materials) commonly used in medical and automotive applications. ONEX RF sealers use No-Arc Hybrid Technology for stable process control.",
+    "image": "/images/products/rf-welder/rf-roto-l6/RF-Roto-L6-PNG.png",
+    "is_new": false,
+    "order": 7,
+  
+    "specs_short": {
+      "model_number": "RF-Roto-L6",
+      "applications": "RF Welded Blood Pressure Cuffs, RF Heat Sealed Tourniquet Cuffs, RF Sealed Straps with hook & loop, RF Welding DVT Cuffs, Large air Bladders",
+      "rf_seal_area": "@specs_long.large_rotary_rf_welding_system.rf_seal_area",
+      "rf_generator": "10–15 kW Hybrid Generator",
+      "rf_frequency": "@specs_long.hybrid_rf_generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint_welder": "@specs_long.dimensions.rotary_rf_welder",
+      "footprint_generator": "@specs_long.dimensions.rf_generator",
+      "shipping_weight": "@specs_long.system_weight.total_shipping_weight",
+      "compliance": "@specs_long.compliance.certifications",
+      "validation_support": "Documents available for IQ, DOE and Die FAI; OQ support at customer site (per request)",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "operating_humidity": "@specs_long.operating_environment.humidity",
+      "operating_elevation": "@specs_long.operating_environment.elevation"
+    },
+  
+    "specs_long": {
+      "large_rotary_rf_welding_system": {
+        "model_number": "RF-Roto-L6-D120-20x40 15KW",
+        "rf_seal_area": "20 × 40 in / 510 × 1015 mm",
+        "index_dial_size": "120 in / 3050 mm",
+        "rf_sealing_power": "10–15 kW",
+        "press_force": "4000 lb / 17,800 N (single cylinder at 80 PSI)",
+        "press_stroke": "4 in / 100 mm (normal operation) — 8 in / 200 mm (maintenance)",
+        "press_daylight": "2.750 in / 70 mm (overall die height)",
+        "rf_switch": "2 or 3 cycle (optional)"
+      },
+  
+      "hybrid_rf_generator": {
+        "model_number": "RFHG-15-27",
+        "generator_type": "Hybrid Amplifier (1st stage Solid State Driver with final stage Tube Amplifier)",
+        "rf_power": "15,000 W",
+        "frequency": "27.12 MHz",
+        "impedance": "50 Ω",
+        "duty_cycle": "100% at 20°C room temperature",
+        "utilities": "3 Phase 200–240 VAC / 70 A",
+        "dimensions": "24 × 36 × 72 in"
+      },
+  
+      "rf_auto_tuner": {
+        "model_number": "RFMN-50-27-10",
+        "arc_detection": "5 VDC signal",
+        "controls": "Auto-start at RF signal detection",
+        "frequency": "27.12 MHz",
+        "impedance": "50 Ω",
+        "utilities": "120 VAC / 5 A"
+      },
+  
+      "indexer_information": {
+        "manufacturer": "Sankyo",
+        "indexer_type": "Electric CAM Alfa Series High Precision Indexers",
+        "positions": "3, 4, 6, or 8 positions (optional)",
+        "dial_options": {
+          "19ad": "72–96 in diameter",
+          "23ad": "120 in diameter dials"
+        },
+        "controls": "ABB Variable Frequency Drive (VFD)",
+        "fast_stop": "Optional brake resistor"
+      },
+  
+      "utilities": {
+        "electrical": "100–240 VAC / 60–70 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar — Clean Dry Air (CDA)"
+      },
+  
+      "control_system": {
+        "process_controller": "Allen Bradley PLC — CompactLogix",
+        "operator_interface": "12 in Touch Screen PC HMI",
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "60–128 GB SSD",
+        "memory": "4 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+  
+      "dimensions": {
+        "rf_generator": "24 × 32 × 72 in / 610 × 810 × 1830 mm",
+        "rotary_rf_welder": "103 × 96 × 87 in / 262 × 244 × 220 cm"
+      },
+  
+      "system_weight": {
+        "rf_generator": "850 lb / 385 kg",
+        "rf_welding_station": "5500 lb / 2500 kg",
+        "indexing_dial": "175 lb / 79 kg",
+        "total_shipping_weight": "7000 lb / 3175 kg (crated)"
+      },
+  
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum relative humidity, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+  
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+  
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+  
+    "key_features": [
+      "20×40 RF seal area for large-format bags and assemblies",
+      "10–15 kW sealing power range with 15 kW hybrid generator option",
+      "High press force (4000 lb) for demanding seals and thicker stacks",
+      "High-precision rotary indexing (3/4/6/8 positions)",
+      "No-Arc Hybrid Technology for stable sealing and reduced die damage",
+      "Closed-loop process control with PLC + PC HMI"
+    ],
+  
+    "highlights": [
+      "Reduced RF sealing arcs and die burns when using Hybrid RF Generator technology.",
+      "Improved yields through consistent process control and RF seal integrity.",
+      "Higher power efficiency during RF sealing with hybrid generator architecture."
+    ],
+  
+    "related": {
+      "applications": ["rf-sealing"],
+      "materials": ["pvc", "tpu", "eva"],
+      "tooling": ["rf-welding-die"],
+      "technologies": ["rf-welding"],
+      "support": ["process-development", "machine-servicing", "training"]
+    }
+  }
+  
 ]

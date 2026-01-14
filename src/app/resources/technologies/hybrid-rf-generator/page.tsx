@@ -110,6 +110,39 @@ export default function Page() {
             </div>
           </div>
 
+          <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <h2 className="text-lg font-semibold">Continuous-Duty Design for Production Environments</h2>
+            <p className="mt-3 text-zinc-700">
+              The ONEX Hybrid RF Generator is designed for 100% duty cycle operation when properly configured and maintained. This means the system can run continuously at rated power without thermal shutdown or output fluctuation, making it suitable for high-volume production.
+            </p>
+            
+            <h3 className="mt-6 text-sm font-semibold text-zinc-900">Key Features</h3>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              <div className="flex gap-3 text-sm text-zinc-700">
+                <Check /> <span><strong>100% duty cycle rating</strong> at specified output power</span>
+              </div>
+              <div className="flex gap-3 text-sm text-zinc-700">
+                <Check /> <span><strong>0–10 VDC analog control</strong> from PLC for linear power adjustment</span>
+              </div>
+              <div className="flex gap-3 text-sm text-zinc-700">
+                <Check /> <span><strong>Closed-loop feedback</strong> maintains set power despite load or supply variation</span>
+              </div>
+              <div className="flex gap-3 text-sm text-zinc-700">
+                <Check /> <span><strong>Fast arc shut-down</strong> minimizes die damage and scrap</span>
+              </div>
+              <div className="flex gap-3 text-sm text-zinc-700">
+                <Check /> <span><strong>50 Ω impedance compatibility</strong> for standard matching networks</span>
+              </div>
+              <div className="flex gap-3 text-sm text-zinc-700">
+                <Check /> <span><strong>Self-monitoring diagnostics</strong> track reflected power, current limits, and fault conditions</span>
+              </div>
+            </div>
+
+            <p className="mt-4 text-sm text-zinc-600">
+              These features combine to deliver stable, repeatable RF energy for welding and heat sealing applications in medical device manufacturing, automotive assembly, and industrial packaging.
+            </p>
+          </div>
+
           <div className="rounded-3xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm">
             <h2 className="text-lg font-semibold">Typical Benefits</h2>
 
@@ -160,7 +193,7 @@ export default function Page() {
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             <SpecCard title='24" × 32"' value="Footprint" detail="Compact cabinet footprint for integration into RF welding systems." />
             <SpecCard title="No Die Damage Guaranteed" value="Fast Arc Shut-Down" detail="Shuts down on arc detection to reduce scrap." />
-            <SpecCard title="4–10 kW" value="RF Output Power" detail="Typical power range for RF welding / heat sealing applications." />
+            <SpecCard title="4–10 kW" value="RF Output Power" detail="Model family covers 4 to 10 kW; 8–10 kW configurations are typical for many sealing and welding applications." />
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -168,16 +201,22 @@ export default function Page() {
               <h3 className="text-lg font-semibold">Perfect RF Sealing Process Control</h3>
               <ul className="mt-4 space-y-2 text-zinc-700">
                 <li className="flex gap-3">
-                  <Check /> <span>Fast arc shut-down</span>
+                  <Check /> <span>Fast arc shut-down circuit protects tooling and product</span>
                 </li>
                 <li className="flex gap-3">
-                  <Check /> <span>Consistent RF power (closed-loop regulation)</span>
+                  <Check /> <span>Closed-loop regulation holds power constant despite load drift</span>
                 </li>
                 <li className="flex gap-3">
-                  <Check /> <span>Repeatable seal quality through stable delivery</span>
+                  <Check /> <span>0–10 VDC analog input provides linear, repeatable control from PLC</span>
                 </li>
                 <li className="flex gap-3">
-                  <Check /> <span>Built-in self diagnostics and limits (reflection / current)</span>
+                  <Check /> <span>100% duty cycle design supports continuous production</span>
+                </li>
+                <li className="flex gap-3">
+                  <Check /> <span>Self-diagnostics monitor reflection, current, and fault conditions</span>
+                </li>
+                <li className="flex gap-3">
+                  <Check /> <span>Compatible with 50 Ω impedance matching networks</span>
                 </li>
               </ul>
 
