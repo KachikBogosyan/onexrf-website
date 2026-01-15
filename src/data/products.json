@@ -1,8 +1,8 @@
 [
   {
-    "slug": "catheter-tipper",
+    "slug": "catheter-tipper-air",
     "line": "catheter-tippers",
-    "name": "Catheter Tipper",
+    "name": "Catheter Tipper Air",
     "aliases": ["CTF-807-LX1"],
     "category": "Catheter Tippers",
     "description": "The LX model RF tipper provides the utmost consistency using closed-loop process control for RF energy and die temperature. The RF tipper can use two-style cassettes to form the catheter tube's distal or proximal end. Suitable for R&D and manufacturing use.",
@@ -115,9 +115,9 @@
     }
   },
   {
-    "slug": "catheter-tipper-pro",
+    "slug": "catheter-tipper-servo",
     "line": "catheter-tippers",
-    "name": "Catheter Tipper Pro",
+    "name": "Catheter Tipper Servo",
     "aliases": ["CTF-807-LXS1"],
     "category": "Catheter Tippers",
     "description": "Servo precision catheter tip forming machine for R&D and manufacturing use. The LXS Servo RF Tipper offers high-speed control and stroke precision. Ideal for forming short-tip catheters, sheaths, and long tapered introducers over 3\". Fully loaded for catheter tipping, flaring, and bonding applications.",
@@ -254,9 +254,9 @@
     }
   },
   {
-    "slug": "dual-catheter-tipper",
+    "slug": "dual-catheter-tipper-air",
     "line": "catheter-tippers",
-    "name": "Dual Catheter Tipper",
+    "name": "Dual Catheter Tipper Air",
     "aliases": ["CTF-807-LX2"],
     "category": "Catheter Tippers",
     "description": "The LX2 model is designed to form two standard-length catheters simultaneously with independent temperature control. Ideal for increasing throughput while maintaining precise forming consistency.",
@@ -369,9 +369,9 @@
     }
   },
   {
-    "slug": "dual-catheter-tipper-pro",
+    "slug": "dual-catheter-tipper-servo",
     "line": "catheter-tippers",
-    "name": "Dual Catheter Tipper Pro",
+    "name": "Dual Catheter Tipper Servo",
     "aliases": ["CTF-807-LXS2"],
     "category": "Catheter Tippers",
     "description": "The LXS2 model is designed to form two standard-length catheters simultaneously, each with independent temperature control. Its servo slide ensures precise speed and consistent results.",
