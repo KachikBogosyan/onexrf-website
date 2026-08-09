@@ -1,5 +1,18 @@
 "use client";
 
+/**
+ * The subset of HubSpot's jQuery-like form handle this component uses.
+ * HubSpot ships no types, so this is declared narrowly rather than as `any`.
+ */
+type HubSpotFormField = {
+  length: number;
+  val: (value: string) => void;
+};
+
+type HubSpotFormHandle = {
+  find: (selector: string) => HubSpotFormField;
+};
+
 import { useState, useEffect } from "react";
 import Script from "next/script";
 
@@ -138,7 +151,7 @@ export function HubSpotForm({ context }: Props) {
                 formId: HUBSPOT_FORM_ID,
                 target: `#hubspot-form-container`,
                 // Pre-fill fields if context is available
-                onFormReady: ($form: any) => {
+                onFormReady: ($form: HubSpotFormHandle) => {
                   if (context) {
                     // Pre-fill message field with context
                     const messageField = $form.find('textarea[name="message"]');
@@ -209,7 +222,7 @@ declare global {
           portalId: string;
           formId: string;
           target: string;
-          onFormReady?: ($form: any) => void;
+          onFormReady?: ($form: HubSpotFormHandle) => void;
           onFormSubmit?: () => void;
         }) => void;
       };

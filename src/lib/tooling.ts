@@ -5,7 +5,15 @@ export type Tooling = {
   name: string;
   type?: string;
   description?: string;
-  image?: string;
+  image?: string | null;
+  /** Flat forms used in tooling.json, alongside the nested `related` block. */
+  applications?: string[];
+  compatible_products?: string[];
+  components?: string[];
+  process?: string[];
+  includes_process_development?: boolean;
+  related_services?: string[];
+  cta?: string;
   related?: {
     applications?: string[];
     products?: string[];

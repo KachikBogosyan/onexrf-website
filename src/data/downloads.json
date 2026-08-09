@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "rf-welder-brochure",
+    "title": "RF Welder Brochure",
+    "description": "The full RF welding and heat sealing range — rotary, shuttle and automated platforms, with configurations and seal areas.",
+    "kind": "brochure",
+    "family": "welding",
+    "file": "/materials/Onex RF Welder Brochure 2023.pdf",
+    "cover": "/images/materials/RF Welder Brochure Cover Page.png",
+    "gated": true,
+    "available": true,
+    "year": "2023",
+    "needs": [
+      "A 2026 refresh — this edition predates the RF-Shuttle and Galaxy models now on the site"
+    ]
+  },
+  {
+    "slug": "catheter-tipping-brochure",
+    "title": "Catheter Forming Brochure",
+    "description": "The catheter tipping, flaring and bonding range, with tip geometries and the French sizes each platform covers.",
+    "kind": "brochure",
+    "family": "forming",
+    "file": null,
+    "cover": null,
+    "gated": true,
+    "available": false,
+    "needs": [
+      "The forming-side equivalent of the welder brochure. Referenced by the current site as \"View RF Catheter Tipping Brochure\" but not present in this repo."
+    ]
+  },
+  {
+    "slug": "tipping-die-design-guide",
+    "title": "Tipping Die & Mandrel Design Guide",
+    "description": "How die geometry, mandrel fit and material choice determine the formed tip — and what to send us to get a die designed.",
+    "kind": "guide",
+    "family": "forming",
+    "file": null,
+    "cover": null,
+    "gated": true,
+    "available": false,
+    "needs": [
+      "This is the highest-value gated asset the site could carry: it reaches engineers at the design stage, before a machine is specified.",
+      "Content largely exists across the tooling pages and could be assembled into a PDF."
+    ]
+  },
+  {
+    "slug": "material-selection-guide",
+    "title": "Material Selection Guide",
+    "description": "Which polymers can be RF welded, which must be formed by induction, which need thermal sealing — and why.",
+    "kind": "guide",
+    "family": null,
+    "file": null,
+    "cover": null,
+    "gated": true,
+    "available": false,
+    "needs": [
+      "The 14 materials already in materials.json cover most of this. Needs assembling and designing as a PDF."
+    ]
+  },
+  {
+    "slug": "validation-pack",
+    "title": "Validation Documentation Pack",
+    "description": "What ONEX supplies for IQ, OQ and die FAI, and how it fits a customer's validation plan.",
+    "kind": "guide",
+    "family": null,
+    "file": null,
+    "cover": null,
+    "gated": true,
+    "available": false,
+    "needs": [
+      "Quality and regulatory teams are a decision-maker ONEX does not currently speak to at all.",
+      "Confirm exactly what documentation is provided as standard versus on request."
+    ]
+  }
+]

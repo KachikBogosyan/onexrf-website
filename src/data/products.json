@@ -1,130 +1,16 @@
 [
   {
-    "slug": "catheter-tipper-air",
-    "line": "catheter-tippers",
-    "name": "Catheter Tipper Air",
-    "aliases": ["CTF-807-LX1"],
-    "category": "Catheter Tippers",
-    "description": "The LX model RF tipper provides the utmost consistency using closed-loop process control for RF energy and die temperature. The RF tipper can use two-style cassettes to form the catheter tube's distal or proximal end. Suitable for R&D and manufacturing use.",
-    "image": "/images/products/CTF-807-LX1-PNG.png",
-    "is_new": false,
-    "order": 3,
-  
-    "specs_short": {
-      "model_number": "@specs_long.rf_tipping_system.model_number",
-      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
-      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
-      "rf_power": "@specs_long.generator.rf_power",
-      "rf_frequency": "@specs_long.generator.frequency",
-      "control_system": "@specs_long.control_system.operator_interface",
-      "utilities_electrical": "@specs_long.utilities.electrical",
-      "utilities_air": "@specs_long.utilities.pneumatic",
-      "footprint": "@specs_long.dimensions.footprint",
-      "shipping_weight": "@specs_long.system_weight.shipping_weight",
-      "operating_temperature": "@specs_long.operating_environment.temperature",
-      "compliance": "@specs_long.compliance.certifications"
-    },
-  
-    "specs_long": {
-      "rf_tipping_system": {
-        "model_number": "CTF-807-LX1",
-        "amplifier_controller": "AC1-300",
-        "tipping_station": "TS-H12",
-        "number_of_dies": "1-up"
-      },
-  
-      "catheter_sizes_and_forming_lengths": {
-        "circumference": "2.8–34 Fr / 2.8–34 CH",
-        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
-        "forming_length": "Up to 1.5\" with standard cassette",
-        "max_temperature": "450°C"
-      },
-  
-      "utilities": {
-        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
-        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
-      },
-  
-      "generator": {
-        "rf_power": "30–300 Watts",
-        "frequency": "6.78 MHz",
-        "impedance": "50 Ω"
-      },
-  
-      "control_system": {
-        "process_controller": "Allen Bradley PLC",
-        "operator_interface": "7\" Touch Screen PC HMI"
-      },
-  
-      "pc_hmi": {
-        "operating_system": "Windows 7 Pro",
-        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
-        "storage": "2–4 GB SSD",
-        "memory": "2 GB DDR4 2666 MHz SoDIMM",
-        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
-      },
-  
-      "controller_io": [
-        "25-Pin D-Sub Connector",
-        "BNC Connector"
-      ],
-  
-      "cables": [
-        "25-Pin D-Sub I/O Cable",
-        "RG400 Coax Cable",
-        "Power Cable"
-      ],
-  
-      "dimensions": {
-        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
-        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
-        "footprint": "14\" × 24\" (356 × 610 mm)"
-      },
-  
-      "system_weight": {
-        "amplifier_controller": "22 lb / 11 kg",
-        "tipping_station": "20 lb / 10 kg",
-        "shipping_weight": "69 lb / 31 kg"
-      },
-  
-      "operating_environment": {
-        "temperature": "65–95°F / 18–35°C",
-        "humidity": "68% maximum, non-condensing",
-        "elevation": "Up to 2000 m"
-      },
-  
-      "compliance": {
-        "machine_safety": "ISO 13849-1 / OSHA",
-        "certifications": "CE / UL (per request)",
-        "software": "FDA 21 CFR Part 11"
-      },
-  
-      "validation_support": {
-        "iq": "Documents available upon request (fee)",
-        "fai_and_doe": "Documents available upon request (fee)",
-        "oq": "Support available at customer site (per request)"
-      }
-    },
-  
-    "related": {
-      "applications": ["catheter-tipping", "catheter-flaring"],
-      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
-      "tooling": ["catheter-tipping-tooling"],
-      "technologies": ["rf-induction"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
-  },
-  {
     "slug": "catheter-tipper-servo",
     "line": "catheter-tippers",
     "name": "Catheter Tipper Servo",
-    "aliases": ["CTF-807-LXS1"],
+    "aliases": [
+      "CTF-807-LXS1"
+    ],
     "category": "Catheter Tippers",
     "description": "Servo precision catheter tip forming machine for R&D and manufacturing use. The LXS Servo RF Tipper offers high-speed control and stroke precision. Ideal for forming short-tip catheters, sheaths, and long tapered introducers over 3\". Fully loaded for catheter tipping, flaring, and bonding applications.",
     "image": "/images/products/CTF-807-LXS1.png",
     "is_new": true,
     "order": 1,
-  
     "specs_short": {
       "model_number": "@specs_long.rf_tipping_system.model_number",
       "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
@@ -140,7 +26,6 @@
       "operating_temperature": "@specs_long.operating_environment.temperature",
       "compliance": "@specs_long.compliance.certifications"
     },
-  
     "specs_long": {
       "rf_tipping_system": {
         "model_number": "CTF-807-LXS1",
@@ -148,31 +33,26 @@
         "tipping_station": "TS-H12",
         "number_of_dies": "1-up"
       },
-  
       "catheter_sizes_and_forming_lengths": {
         "circumference": "2.8–34 Fr / 2.8–34 CH",
         "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
         "forming_length": "Up to 1.5\" with standard cassette",
         "max_temperature": "450°C"
       },
-  
       "utilities": {
         "electrical": "100–240 VAC / 15 A / 50–60 Hz",
         "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
       },
-  
       "generator": {
         "rf_power": "30–300 Watts",
         "frequency": "6.78 MHz",
         "impedance": "50 Ω"
       },
-  
       "control_system": {
         "process_controller": "Allen Bradley PLC L18ERM",
         "servo_controls": "AB Kinetix 350 Servo Drive",
         "operator_interface": "7\" Touch Screen PC HMI"
       },
-  
       "pc_hmi": {
         "operating_system": "Windows 7 Pro",
         "processor": "Intel Core i7-8700T vPro 2.40 GHz",
@@ -180,55 +60,46 @@
         "memory": "2 GB DDR4 2666 MHz SoDIMM",
         "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
       },
-  
       "controller_io": [
         "25-Pin D-Sub Connector",
         "BNC Connector"
       ],
-  
       "cables": [
         "25-Pin D-Sub I/O Cable",
         "RG400 Coax Cable",
         "Power Cable"
       ],
-  
       "servo_slide": {
         "servo_drive": "2097-V31PR0-LM AB Servo Drive",
         "servo_motor": "MPL-A1530 AB Servo Motor",
         "slide": "LX3010-S1-N1-200 / 5\" Stroke Slide"
       },
-  
       "dimensions": {
         "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
         "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
         "footprint": "14\" × 24\" (356 × 610 mm)"
       },
-  
       "system_weight": {
         "amplifier_controller": "22 lb / 11 kg",
         "tipping_station": "20 lb / 10 kg",
         "shipping_weight": "69 lb / 31 kg"
       },
-  
       "operating_environment": {
         "temperature": "65–95°F / 18–35°C",
         "humidity": "68% maximum, non-condensing",
         "elevation": "Up to 2000 m"
       },
-  
       "compliance": {
         "machine_safety": "ISO 13849-1 / OSHA",
         "certifications": "CE / UL (per request)",
         "software": "FDA 21 CFR Part 11"
       },
-  
       "validation_support": {
         "iq": "Documents available upon request (fee)",
         "fai_and_doe": "Documents available upon request (fee)",
         "oq": "Support available at customer site (per request)"
       }
     },
-  
     "key_features": [
       "Servo-driven precision control for consistent tip forming",
       "High-speed operation with stroke precision",
@@ -237,142 +108,51 @@
       "Suitable for short-tip catheters, sheaths, and long tapered introducers over 3\"",
       "FDA 21 CFR Part 11 compliant software"
     ],
-  
     "highlights": [
       "Ideal for both R&D and manufacturing environments",
       "Fully loaded for catheter tipping, flaring, and bonding applications",
       "Allen Bradley PLC with Kinetix 350 Servo Drive for reliable performance",
       "CE / UL certified (per request)"
     ],
-  
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
-      "tooling": ["catheter-tipping-tooling"],
-      "technologies": ["rf-induction"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
-  },
-  {
-    "slug": "dual-catheter-tipper-air",
-    "line": "catheter-tippers",
-    "name": "Dual Catheter Tipper Air",
-    "aliases": ["CTF-807-LX2"],
-    "category": "Catheter Tippers",
-    "description": "The LX2 model is designed to form two standard-length catheters simultaneously with independent temperature control. Ideal for increasing throughput while maintaining precise forming consistency.",
-    "image": "/images/products/CTF-807-LX2-Geo-PNG.png",
-    "is_new": false,
-    "order": 4,
-    "specs_short": {
-      "model_number": "@specs_long.rf_tipping_system.model_number",
-      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
-      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
-      "rf_power": "@specs_long.generators.rf_power",
-      "rf_frequency": "@specs_long.generators.frequency",
-      "control_system": "@specs_long.control_system.operator_interface",
-      "utilities_electrical": "@specs_long.utilities.electrical",
-      "utilities_air": "@specs_long.utilities.pneumatic",
-      "footprint": "@specs_long.dimensions.footprint",
-      "shipping_weight": "@specs_long.system_weight.shipping_weight",
-      "operating_temperature": "@specs_long.operating_environment.temperature",
-      "compliance": "@specs_long.compliance.certifications"
-    },
-  
-    "specs_long": {
-      "rf_tipping_system": {
-        "model_number": "CTF-807-LX2",
-        "amplifier_controller": "AC2-300",
-        "tipping_station": "TS-H22",
-        "number_of_dies": "1-up"
-      },
-  
-      "catheter_sizes_and_forming_lengths": {
-        "circumference": "2.8–34 Fr / 2.8–34 CH",
-        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
-        "forming_length": "Up to 1.5\" with standard cassette",
-        "max_temperature": "450°C"
-      },
-  
-      "utilities": {
-        "electrical": "100–240 VAC / 20 A / 50–60 Hz",
-        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
-      },
-  
-      "generators": {
-        "quantity": 2,
-        "rf_power": "30–300 Watts",
-        "frequency": "6.78 MHz",
-        "impedance": "50 Ω"
-      },
-  
-      "control_system": {
-        "process_controller": "Allen Bradley PLC",
-        "operator_interface": "7\" Touch Screen PC HMI"
-      },
-  
-      "pc_hmi": {
-        "operating_system": "Windows 7 Pro",
-        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
-        "storage": "2–4 GB SSD",
-        "memory": "2 GB DDR4 2666 MHz SoDIMM",
-        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
-      },
-  
-      "controller_io": [
-        "25-Pin D-Sub Connector",
-        "BNC Connector"
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
       ],
-  
-      "cables": [
-        "25-Pin D-Sub I/O Cable",
-        "RG400 Coax Cable",
-        "Power Cable"
+      "materials": [
+        "pe",
+        "pu",
+        "pvc",
+        "pebax",
+        "silicone",
+        "tpe",
+        "ptfe",
+        "fep",
+        "pa"
       ],
-  
-      "dimensions": {
-        "amplifier_controller": "17\" × 15\" × 20\" (420 × 370 × 520 mm)",
-        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
-        "footprint": "19\" × 28\" (490 × 720 mm)"
-      },
-  
-      "system_weight": {
-        "amplifier_controller": "22 lb / 11 kg",
-        "tipping_station": "20 lb / 10 kg",
-        "shipping_weight": "89 lb / 40 kg"
-      },
-  
-      "operating_environment": {
-        "temperature": "65–95°F / 18–35°C",
-        "humidity": "68% maximum, non-condensing",
-        "elevation": "Up to 2000 m"
-      },
-  
-      "compliance": {
-        "machine_safety": "ISO 13849-1 / OSHA",
-        "certifications": "CE / UL (per request)",
-        "software": "FDA 21 CFR Part 11"
-      },
-  
-      "validation_support": {
-        "iq": "Documents available upon request (fee)",
-        "fai_and_doe": "Documents available upon request (fee)",
-        "oq": "Support available at customer site (per request)"
-      }
+      "tooling": [
+        "catheter-tipping-tooling"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
     },
-  
-    "related": {
-      "applications": ["catheter-tipping", "catheter-flaring"],
-      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
-      "tooling": ["catheter-tipping-tooling"],
-      "technologies": ["rf-induction"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
+    "family": "forming",
+    "specs_status": "verified"
   },
   {
     "slug": "dual-catheter-tipper-servo",
     "line": "catheter-tippers",
     "name": "Dual Catheter Tipper Servo",
-    "aliases": ["CTF-807-LXS2"],
+    "aliases": [
+      "CTF-807-LXS2"
+    ],
     "category": "Catheter Tippers",
     "description": "The LXS2 model is designed to form two standard-length catheters simultaneously, each with independent temperature control. Its servo slide ensures precise speed and consistent results.",
     "image": "/images/products/CTF-807-LXS2.png",
@@ -399,7 +179,7 @@
         "servo_slide": "LX3010-S1-N1-200 / 5\" Stroke Slide"
       },
       "left_side_slide": {
-        "guided_cylinder":"1\" Stroke Guided Cylinder",
+        "guided_cylinder": "1\" Stroke Guided Cylinder",
         "gripper_mounting_bracket": "Flex Gripper Mounting Bracket"
       },
       "utilities": {
@@ -408,47 +188,75 @@
       },
       "dimensions": {
         "footprint": {
-            "inches": "20\" x 26\"",
-            "millimeters": "508mm x 660.4mm"
-            
+          "inches": "20\" x 26\"",
+          "millimeters": "508mm x 660.4mm"
         },
         "shipping_weight": {
-            "pounds": "105 lb",
-            "kilograms": "48 kg"
+          "pounds": "105 lb",
+          "kilograms": "48 kg"
         }
       },
-      "compliance": ["CE Marked", "UL (per request)"],
+      "compliance": [
+        "CE Marked",
+        "UL (per request)"
+      ],
       "validation_support": [
         "Documents available for IQ, FAI, DOE",
         "OQ at customer site (per request)"
       ],
       "operating_environment": {
         "temperature": {
-            "fahrenheit": "65–95°F",
-            "celsius":"18–35°C"
+          "fahrenheit": "65–95°F",
+          "celsius": "18–35°C"
         },
         "humidity": "68% max non-condensing",
         "altitude": "Max 2000 m elevation"
       }
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring","catheter-bonding"],
-      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
-      "tooling": ["catheter-tipping-tooling"],
-      "technologies": ["rf-induction"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pvc",
+        "pebax",
+        "silicone",
+        "tpe",
+        "ptfe",
+        "fep",
+        "pa"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "forming",
+    "specs_status": "needs_data"
   },
   {
-    "slug": "long-catheter-tipper",
+    "slug": "catheter-tipper-air",
     "line": "catheter-tippers",
-    "name": "Long Catheter Tipper",
-    "aliases": ["CTF-807-LX3"],
+    "name": "Catheter Tipper Air",
+    "aliases": [
+      "CTF-807-LX1"
+    ],
     "category": "Catheter Tippers",
-    "description": "The LX3 model is designed to form up to 4\" long tapered tip catheters. The process uses an RF induction coil uniformly wound around the die for even mold heating and controlled plastic formation.",
-    "image": "/images/products/CTF-807-LX3-PNG.png",
+    "description": "The LX model RF tipper provides the utmost consistency using closed-loop process control for RF energy and die temperature. The RF tipper can use two-style cassettes to form the catheter tube's distal or proximal end. Suitable for R&D and manufacturing use.",
+    "image": "/images/products/CTF-807-LX1-PNG.png",
     "is_new": false,
-    "order": 7,
+    "order": 3,
     "specs_short": {
       "model_number": "@specs_long.rf_tipping_system.model_number",
       "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
@@ -463,153 +271,32 @@
       "operating_temperature": "@specs_long.operating_environment.temperature",
       "compliance": "@specs_long.compliance.certifications"
     },
-  
     "specs_long": {
       "rf_tipping_system": {
-        "model_number": "CTF-807-LX3",
+        "model_number": "CTF-807-LX1",
         "amplifier_controller": "AC1-300",
-        "tipping_station": "TS-H14",
+        "tipping_station": "TS-H12",
         "number_of_dies": "1-up"
       },
-  
-      "catheter_sizes_and_forming_lengths": {
-        "circumference": "2.8–34 Fr / 2.8–34 CH",
-        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
-        "forming_length": "Up to 4.0\" with long cassette",
-        "max_temperature": "450°C"
-      },
-  
-      "utilities": {
-        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
-        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
-      },
-  
-      "generator": {
-        "rf_power": "30–300 Watts",
-        "frequency": "6.78 MHz",
-        "impedance": "50 Ω"
-      },
-  
-      "control_system": {
-        "process_controller": "Allen Bradley PLC",
-        "operator_interface": "7\" Touch Screen PC HMI"
-      },
-  
-      "pc_hmi": {
-        "operating_system": "Windows 7 Pro",
-        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
-        "storage": "2–4 GB SSD",
-        "memory": "2 GB DDR4 2666 MHz SoDIMM",
-        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
-      },
-  
-      "controller_io": [
-        "25-Pin D-Sub Connector",
-        "BNC Connector"
-      ],
-  
-      "cables": [
-        "25-Pin D-Sub I/O Cable",
-        "RG400 Coax Cable",
-        "Power Cable"
-      ],
-  
-      "dimensions": {
-        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
-        "tipping_station": "28\" × 9\" × 6\" (330 × 229 × 150 mm)",
-        "footprint": "28\" × 24\" (710 × 610 mm)"
-      },
-  
-      "system_weight": {
-        "amplifier_controller": "22 lb / 11 kg",
-        "tipping_station": "30 lb / 15 kg",
-        "shipping_weight": "80 lb / 39 kg"
-      },
-  
-      "operating_environment": {
-        "temperature": "65–95°F / 18–35°C",
-        "humidity": "68% maximum, non-condensing",
-        "elevation": "Up to 2000 m"
-      },
-  
-      "compliance": {
-        "machine_safety": "ISO 13849-1 / OSHA",
-        "certifications": "CE / UL (per request)",
-        "software": "FDA 21 CFR Part 11"
-      },
-  
-      "validation_support": {
-        "iq": "Documents available upon request (fee)",
-        "fai_and_doe": "Documents available upon request (fee)",
-        "oq": "Support available at customer site (per request)"
-      }
-    },
-  
-    "related": {
-      "applications": ["catheter-tipping", "catheter-flaring"],
-      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
-      "tooling": ["catheter-tipping-tooling"],
-      "technologies": ["rf-induction"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
-  },
-  {
-    "slug": "modular-catheter-tipper",
-    "line": "catheter-tippers",
-    "name": "Modular Catheter Tipper",
-    "aliases": ["MTF-807-LX1"],
-    "is_new": false,
-    "order": 6,
-    "category": "Catheter Tippers",
-    "description": "The MTF-807 is a modular tipping station designed for low budget applications and for integration with automated machines. A set of dies with standard shapes and sizes is also available for basic study of material behaviors in lab or R&D environments.",
-    "image": "/images/products/MTF-807-LX1-PNG.png",
-  
-    "specs_short": {
-      "model_number": "@specs_long.rf_tipping_system.model_number",
-      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
-      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
-      "rf_power": "@specs_long.generator.rf_power",
-      "rf_frequency": "@specs_long.generator.frequency",
-      "control_system": "@specs_long.control_system.operator_interface",
-      "utilities_electrical": "@specs_long.utilities.electrical",
-      "utilities_air": "@specs_long.utilities.pneumatic",
-      "footprint": "@specs_long.dimensions.footprint",
-      "shipping_weight": "@specs_long.system_weight.shipping_weight",
-      "operating_temperature": "@specs_long.operating_environment.temperature",
-      "compliance": "@specs_long.compliance.certifications"
-    },
-  
-    "specs_long": {
-      "rf_tipping_system": {
-        "model_number": "MTF-807-LX1",
-        "amplifier_controller": "AC1-300",
-        "tipping_station": "MTS-100",
-        "number_of_dies": "1-up"
-      },
-  
       "catheter_sizes_and_forming_lengths": {
         "circumference": "2.8–34 Fr / 2.8–34 CH",
         "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
         "forming_length": "Up to 1.5\" with standard cassette",
         "max_temperature": "450°C"
       },
-  
       "utilities": {
         "electrical": "100–240 VAC / 15 A / 50–60 Hz",
         "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
       },
-  
       "generator": {
         "rf_power": "30–300 Watts",
         "frequency": "6.78 MHz",
         "impedance": "50 Ω"
       },
-  
       "control_system": {
         "process_controller": "Allen Bradley PLC",
         "operator_interface": "7\" Touch Screen PC HMI"
       },
-  
       "pc_hmi": {
         "operating_system": "Windows 7 Pro",
         "processor": "Intel Core i7-8700T vPro 2.40 GHz",
@@ -617,62 +304,205 @@
         "memory": "2 GB DDR4 2666 MHz SoDIMM",
         "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
       },
-  
       "controller_io": [
         "25-Pin D-Sub Connector",
         "BNC Connector"
       ],
-  
       "cables": [
         "25-Pin D-Sub I/O Cable",
         "RG400 Coax Cable",
         "Power Cable"
       ],
-  
       "dimensions": {
         "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
         "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
         "footprint": "14\" × 24\" (356 × 610 mm)"
       },
-  
       "system_weight": {
         "amplifier_controller": "22 lb / 11 kg",
-        "tipping_station": "15 lb / 7 kg",
+        "tipping_station": "20 lb / 10 kg",
         "shipping_weight": "69 lb / 31 kg"
       },
-  
       "operating_environment": {
         "temperature": "65–95°F / 18–35°C",
         "humidity": "68% maximum, non-condensing",
         "elevation": "Up to 2000 m"
       },
-  
       "compliance": {
         "machine_safety": "ISO 13849-1 / OSHA",
         "certifications": "CE / UL (per request)",
         "software": "FDA 21 CFR Part 11"
       },
-  
       "validation_support": {
         "iq": "Documents available upon request (fee)",
         "fai_and_doe": "Documents available upon request (fee)",
         "oq": "Support available at customer site (per request)"
       }
     },
-  
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring"],
-      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
-      "tooling": ["catheter-tipping-tooling"],
-      "technologies": ["rf-induction"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pvc",
+        "pebax",
+        "silicone",
+        "tpe",
+        "ptfe",
+        "fep",
+        "pa"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "forming",
+    "specs_status": "verified"
+  },
+  {
+    "slug": "dual-catheter-tipper-air",
+    "line": "catheter-tippers",
+    "name": "Dual Catheter Tipper Air",
+    "aliases": [
+      "CTF-807-LX2"
+    ],
+    "category": "Catheter Tippers",
+    "description": "The LX2 model is designed to form two standard-length catheters simultaneously with independent temperature control. Ideal for increasing throughput while maintaining precise forming consistency.",
+    "image": "/images/products/CTF-807-LX2-Geo-PNG.png",
+    "is_new": false,
+    "order": 4,
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generators.rf_power",
+      "rf_frequency": "@specs_long.generators.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "CTF-807-LX2",
+        "amplifier_controller": "AC2-300",
+        "tipping_station": "TS-H22",
+        "number_of_dies": "1-up"
+      },
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 1.5\" with standard cassette",
+        "max_temperature": "450°C"
+      },
+      "utilities": {
+        "electrical": "100–240 VAC / 20 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+      "generators": {
+        "quantity": 2,
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+      "dimensions": {
+        "amplifier_controller": "17\" × 15\" × 20\" (420 × 370 × 520 mm)",
+        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "19\" × 28\" (490 × 720 mm)"
+      },
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "20 lb / 10 kg",
+        "shipping_weight": "89 lb / 40 kg"
+      },
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+    "related": {
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pvc",
+        "pebax",
+        "silicone",
+        "tpe",
+        "ptfe",
+        "fep",
+        "pa"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "forming",
+    "specs_status": "verified"
   },
   {
     "slug": "soft-tip-bonder",
     "line": "catheter-tippers",
     "name": "Soft Tip Bonder",
-    "aliases": ["STB-807-LX1"],
+    "aliases": [
+      "STB-807-LX1"
+    ],
     "category": "Catheter Tippers",
     "description": "The STB-807 is designed to form and bond soft tips to the catheter shaft distal end. The model includes a left-side air slide and gripper mechanism for bonding or cutting applications.",
     "image": "/images/products/STB-807-LX1.png",
@@ -692,7 +522,6 @@
       "operating_temperature": "@specs_long.operating_environment.temperature",
       "compliance": "@specs_long.compliance.certifications"
     },
-  
     "specs_long": {
       "rf_soft_tip_system": {
         "model_number": "STB-807-LX1",
@@ -700,30 +529,25 @@
         "tipping_station": "TS-H12",
         "number_of_dies": "1-up"
       },
-  
       "catheter_sizes_and_forming_lengths": {
         "circumference": "2.8–34 Fr / 2.8–34 CH",
         "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
         "forming_length": "Up to 1.5\" with standard cassette",
         "max_temperature": "450°C"
       },
-  
       "utilities": {
         "electrical": "100–240 VAC / 15 A / 50–60 Hz",
         "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
       },
-  
       "generator": {
         "rf_power": "30–300 Watts",
         "frequency": "6.78 MHz",
         "impedance": "50 Ω"
       },
-  
       "control_system": {
         "process_controller": "Allen Bradley PLC",
         "operator_interface": "7\" Touch Screen PC HMI"
       },
-  
       "pc_hmi": {
         "operating_system": "Windows 7 Pro",
         "processor": "Intel Core i7-8700T vPro 2.40 GHz",
@@ -731,62 +555,78 @@
         "memory": "2 GB DDR4 2666 MHz SoDIMM",
         "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
       },
-  
       "controller_io": [
         "25-Pin D-Sub Connector",
         "BNC Connector"
       ],
-  
       "cables": [
         "25-Pin D-Sub I/O Cable",
         "RG400 Coax Cable",
         "Power Cable"
       ],
-  
       "dimensions": {
         "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
         "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
         "footprint": "14\" × 24\" (356 × 610 mm)"
       },
-  
       "system_weight": {
         "amplifier_controller": "22 lb / 11 kg",
         "tipping_station": "20 lb / 10 kg",
         "shipping_weight": "69 lb / 31 kg"
       },
-  
       "operating_environment": {
         "temperature": "65–95°F / 18–35°C",
         "humidity": "68% maximum, non-condensing",
         "elevation": "Up to 2000 m"
       },
-  
       "compliance": {
         "machine_safety": "ISO 13849-1 / OSHA",
         "certifications": "CE / UL (per request)",
         "software": "FDA 21 CFR Part 11"
       },
-  
       "validation_support": {
         "iq": "Documents available upon request (fee)",
         "fai_and_doe": "Documents available upon request (fee)",
         "oq": "Support available at customer site (per request)"
       }
     },
-  
     "related": {
-      "applications": ["bonding"],
-      "materials": ["pe", "pu", "pvc", "pebax", "silicone", "tpe", "ptfe", "fep", "pa"],
-      "tooling": ["soft-tip-bonding-tooling"],
-      "technologies": ["rf-induction"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
+      "applications": [
+        "bonding"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pvc",
+        "pebax",
+        "silicone",
+        "tpe",
+        "ptfe",
+        "fep",
+        "pa"
+      ],
+      "tooling": [
+        "soft-tip-bonding-tooling"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "forming",
+    "specs_status": "verified"
   },
   {
     "slug": "small-rotary-rf-welder",
     "line": "rf-welders",
     "name": "Small Rotary RF Welder",
-    "aliases": ["RF-Roto-S3-D60 10x20"],
+    "aliases": [
+      "RF-Roto-S3-D60 10x20"
+    ],
     "category": "RF Welders",
     "description": "The Small Rotary RF Welder is designed to RF-seal medical pouches with ports made from RF-sealable materials such as PVC, TPU, or EVA. ONEX RF sealers use No-Arc Hybrid Technology for stable process control.",
     "image": "/images/products/rf-welder/rf-roto-s3/RF-Roto-S3-PNG.png",
@@ -808,130 +648,261 @@
       "validation_support": "Documents available for IQ, DOE and Die FAI, OQ at customer site per request",
       "operating_temperature": "@specs_long.operating_environment.temperature",
       "operating_humidity": "@specs_long.operating_environment.humidity",
-      "operating_elevation": "@specs_long.operating_environment.elevation"  
+      "operating_elevation": "@specs_long.operating_environment.elevation"
     },
-  
-  "specs_long": {
-    "small_rotary_rf_welding_system": {
-      "model_number": "RF-Roto-S3-D60-10x20 4-6KW",
-      "rf_seal_area": "10 × 20 in / 390 × 780 mm",
-      "index_dial_size": "60 in / 1525 mm",
-      "rf_sealing_power": "4–6 kW",
-      "press_force": "1000 lb / 4,448 N (single cylinder at 80 PSI)",
-      "press_stroke": "4 in / 100 mm (normal operation) — 8 in / 200 mm (maintenance)",
-      "press_daylight": "2.750 in / 70 mm (overall die height)",
-      "rf_switch": "2 or 3 cycle (optional)"
-    },
-
-    "hybrid_rf_generator": {
-      "model_number": "RFHG-10-27",
-      "generator_type": "Hybrid Amplifier (1st stage Solid State Driver with final stage Tube Amplifier)",
-      "rf_power": "10,000 W",
-      "frequency": "27.12 MHz",
-      "impedance": "50 Ω",
-      "duty_cycle": "100% at 20°C room temperature",
-      "utilities": "3 Phase 200–240 VAC / 50 A",
-      "dimensions": "24 × 36 × 72 in"
-    },
-
-    "rf_auto_tuner": {
-      "model_number": "RFMN-50-27-10",
-      "arc_detection": "5 VDC signal",
-      "controls": "Auto-start at RF signal detection",
-      "frequency": "27.12 MHz",
-      "impedance": "50 Ω",
-      "utilities": "120 VAC / 5 A"
-    },
-
-    "indexer_information": {
-      "manufacturer": "Sankyo",
-      "indexer_type": "Electric CAM Alfa Series High Precision Indexers",
-      "positions": "3, 4, 6, or 8 positions (optional)",
-      "dial_options": {
-        "19ad": "72–96 in diameter",
-        "23ad": "120 in diameter dials"
+    "specs_long": {
+      "small_rotary_rf_welding_system": {
+        "model_number": "RF-Roto-S3-D60-10x20 4-6KW",
+        "rf_seal_area": "10 × 20 in / 390 × 780 mm",
+        "index_dial_size": "60 in / 1525 mm",
+        "rf_sealing_power": "4–6 kW",
+        "press_force": "1000 lb / 4,448 N (single cylinder at 80 PSI)",
+        "press_stroke": "4 in / 100 mm (normal operation) — 8 in / 200 mm (maintenance)",
+        "press_daylight": "2.750 in / 70 mm (overall die height)",
+        "rf_switch": "2 or 3 cycle (optional)"
       },
-      "controls": "ABB Variable Frequency Drive (VFD)",
-      "fast_stop": "Optional brake resistor"
+      "hybrid_rf_generator": {
+        "model_number": "RFHG-10-27",
+        "generator_type": "Hybrid Amplifier (1st stage Solid State Driver with final stage Tube Amplifier)",
+        "rf_power": "10,000 W",
+        "frequency": "27.12 MHz",
+        "impedance": "50 Ω",
+        "duty_cycle": "100% at 20°C room temperature",
+        "utilities": "3 Phase 200–240 VAC / 50 A",
+        "dimensions": "24 × 36 × 72 in"
+      },
+      "rf_auto_tuner": {
+        "model_number": "RFMN-50-27-10",
+        "arc_detection": "5 VDC signal",
+        "controls": "Auto-start at RF signal detection",
+        "frequency": "27.12 MHz",
+        "impedance": "50 Ω",
+        "utilities": "120 VAC / 5 A"
+      },
+      "indexer_information": {
+        "manufacturer": "Sankyo",
+        "indexer_type": "Electric CAM Alfa Series High Precision Indexers",
+        "positions": "3, 4, 6, or 8 positions (optional)",
+        "dial_options": {
+          "19ad": "72–96 in diameter",
+          "23ad": "120 in diameter dials"
+        },
+        "controls": "ABB Variable Frequency Drive (VFD)",
+        "fast_stop": "Optional brake resistor"
+      },
+      "utilities": {
+        "electrical": "100–240 VAC / 60–70 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar — Clean Dry Air (CDA)"
+      },
+      "control_system": {
+        "process_controller": "Allen Bradley PLC — CompactLogix",
+        "operator_interface": "12 in Touch Screen PC HMI",
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "60–128 GB SSD",
+        "memory": "4 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+      "dimensions": {
+        "rf_generator": "24 × 32 × 72 in / 610 × 810 × 1830 mm",
+        "rotary_rf_welder": "103 × 96 × 87 in / 262 × 244 × 220 cm"
+      },
+      "system_weight": {
+        "rf_generator": "850 lb / 385 kg",
+        "rf_welding_station": "2500 lb / 1150 kg",
+        "indexing_dial": "175 lb / 79 kg",
+        "total_shipping_weight": "4500 lb / 2000 kg (crated)"
+      },
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum relative humidity, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
     },
-
-    "utilities": {
-      "electrical": "100–240 VAC / 60–70 A / 50–60 Hz",
-      "pneumatic": "80 PSI / 5 bar — Clean Dry Air (CDA)"
-    },
-
-    "control_system": {
-      "process_controller": "Allen Bradley PLC — CompactLogix",
-      "operator_interface": "12 in Touch Screen PC HMI",
-      "operating_system": "Windows 7 Pro",
-      "processor": "Intel Core i7-8700T vPro 2.40 GHz",
-      "storage": "60–128 GB SSD",
-      "memory": "4 GB DDR4 2666 MHz SoDIMM",
-      "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
-    },
-
-    "dimensions": {
-      "rf_generator": "24 × 32 × 72 in / 610 × 810 × 1830 mm",
-      "rotary_rf_welder": "103 × 96 × 87 in / 262 × 244 × 220 cm"
-    },
-
-    "system_weight": {
-      "rf_generator": "850 lb / 385 kg",
-      "rf_welding_station": "2500 lb / 1150 kg",
-      "indexing_dial": "175 lb / 79 kg",
-      "total_shipping_weight": "4500 lb / 2000 kg (crated)"
-    },
-
-    "operating_environment": {
-      "temperature": "65–95°F / 18–35°C",
-      "humidity": "68% maximum relative humidity, non-condensing",
-      "elevation": "Up to 2000 m"
-    },
-
-    "compliance": {
-      "machine_safety": "ISO 13849-1 / OSHA",
-      "certifications": "UL (per request)",
-      "software": "FDA 21 CFR Part 11"
-    },
-
-    "validation_support": {
-      "iq": "Documents available upon request (fee)",
-      "fai_and_doe": "Documents available upon request (fee)",
-      "oq": "Support available at customer site (per request)"
-    }
-  },
-  "key_features": [
-    "10x20 RF-sealable area",
-    "Process Consistency",
-    "4-6 kW Output Power",
-    "No-Arc Hybrid Technology",
-    "Closed-loop Process Control"
-  ],
-
-  "highlights": [
-    "90% Reduction of RF Sealing Arcs & Die-Burns when using ONEX RF sealers.",
-    "Increased production yields due to process consistency and RF Seal integrity.",
-    "50% more power efficiency when RF sealing with Hybrid RF Generator technology."
-  ],
+    "key_features": [
+      "10x20 RF-sealable area",
+      "Process Consistency",
+      "4-6 kW Output Power",
+      "No-Arc Hybrid Technology",
+      "Closed-loop Process Control"
+    ],
+    "highlights": [
+      "90% Reduction of RF Sealing Arcs & Die-Burns when using ONEX RF sealers.",
+      "Increased production yields due to process consistency and RF Seal integrity.",
+      "50% more power efficiency when RF sealing with Hybrid RF Generator technology."
+    ],
     "related": {
-      "applications": ["rf-sealing"],
-      "materials": ["pvc", "tpu", "eva"],
-      "tooling": ["rf-welding-die"],
-      "technologies": ["rf-welding"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
+      "applications": [
+        "rf-sealing"
+      ],
+      "materials": [
+        "pvc",
+        "tpu",
+        "eva"
+      ],
+      "tooling": [
+        "rf-welding-die"
+      ],
+      "technologies": [
+        "rf-welding"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "welding",
+    "specs_status": "verified"
+  },
+  {
+    "slug": "modular-catheter-tipper",
+    "line": "catheter-tippers",
+    "name": "Modular Catheter Tipper",
+    "aliases": [
+      "MTF-807-LX1"
+    ],
+    "is_new": false,
+    "order": 6,
+    "category": "Catheter Tippers",
+    "description": "The MTF-807 is a modular tipping station designed for low budget applications and for integration with automated machines. A set of dies with standard shapes and sizes is also available for basic study of material behaviors in lab or R&D environments.",
+    "image": "/images/products/MTF-807-LX1-PNG.png",
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generator.rf_power",
+      "rf_frequency": "@specs_long.generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "MTF-807-LX1",
+        "amplifier_controller": "AC1-300",
+        "tipping_station": "MTS-100",
+        "number_of_dies": "1-up"
+      },
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 1.5\" with standard cassette",
+        "max_temperature": "450°C"
+      },
+      "utilities": {
+        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+      "generator": {
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+      "dimensions": {
+        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
+        "tipping_station": "13\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "14\" × 24\" (356 × 610 mm)"
+      },
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "15 lb / 7 kg",
+        "shipping_weight": "69 lb / 31 kg"
+      },
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+    "related": {
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pvc",
+        "pebax",
+        "silicone",
+        "tpe",
+        "ptfe",
+        "fep",
+        "pa"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "forming",
+    "specs_status": "verified"
   },
   {
     "slug": "rotary-rf-welder-medium",
     "line": "rf-welders",
     "name": "Rotary RF Welder (Medium)",
-    "aliases": ["RF-Roto-M4-D96 20x30", "RF-Roto-M4-D96-20x30 10KW"],
+    "aliases": [
+      "RF-Roto-M4-D96 20x30",
+      "RF-Roto-M4-D96-20x30 10KW"
+    ],
     "category": "RF Welders",
     "description": "The Large Rotary RF Welding machine is designed to RF seal PVC, EVA & TPU / Coated Materials mainly used for the medical and automotive applications.",
     "image": "/images/products/rf-welder/rf-roto-l6/RF-Roto-L6-PNG.png",
     "is_new": false,
     "order": 6,
-  
     "specs_short": {
       "model_number": "RF-Roto-M4",
       "applications": "RF welding medical disposable pouches, ports, and medium-to-large bags",
@@ -950,7 +921,6 @@
       "operating_humidity": "@specs_long.operating_environment.humidity",
       "operating_elevation": "@specs_long.operating_environment.elevation"
     },
-  
     "specs_long": {
       "medium_rotary_rf_welding_system": {
         "model_number": "RF-Roto-M4-D96-20x30 10KW",
@@ -962,7 +932,6 @@
         "press_daylight": "2.750 in / 70 mm (overall die height)",
         "rf_switch": "2 or 3 cycle (optional)"
       },
-  
       "hybrid_rf_generator": {
         "model_number": "RFHG-10-27",
         "generator_type": "Hybrid Amplifier (1st stage Solid State Driver with final stage Tube Amplifier)",
@@ -973,7 +942,6 @@
         "utilities": "3 Phase 200–240 VAC / 50 A",
         "dimensions": "24 × 36 × 72 in"
       },
-  
       "rf_auto_tuner": {
         "model_number": "RFMN-50-27-10",
         "arc_detection": "5 VDC signal",
@@ -982,7 +950,6 @@
         "impedance": "50 Ω",
         "utilities": "120 VAC / 5 A"
       },
-  
       "indexer_information": {
         "manufacturer": "Sankyo",
         "indexer_type": "Electric CAM Alfa Series High Precision Indexers",
@@ -994,12 +961,10 @@
         "controls": "ABB Variable Frequency Drive (VFD)",
         "fast_stop": "Optional brake resistor"
       },
-  
       "utilities": {
         "electrical": "100–240 VAC / 60–70 A / 50–60 Hz",
         "pneumatic": "80 PSI / 5 bar — Clean Dry Air (CDA)"
       },
-  
       "control_system": {
         "process_controller": "Allen Bradley PLC — CompactLogix",
         "operator_interface": "12 in Touch Screen PC HMI",
@@ -1009,38 +974,32 @@
         "memory": "4 GB DDR4 2666 MHz SoDIMM",
         "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
       },
-  
       "dimensions": {
         "rf_generator": "24 × 32 × 72 in / 610 × 810 × 1830 mm",
         "rotary_rf_welder": "103 × 96 × 87 in / 262 × 244 × 220 cm"
       },
-  
       "system_weight": {
         "rf_generator": "850 lb / 385 kg",
         "rf_welding_station": "5500 lb / 2500 kg",
         "indexing_dial": "175 lb / 79 kg",
         "total_shipping_weight": "7000 lb / 3175 kg (crated)"
       },
-  
       "operating_environment": {
         "temperature": "65–95°F / 18–35°C",
         "humidity": "68% maximum relative humidity, non-condensing",
         "elevation": "Up to 2000 m"
       },
-  
       "compliance": {
         "machine_safety": "ISO 13849-1 / OSHA",
         "certifications": "UL (per request)",
         "software": "FDA 21 CFR Part 11"
       },
-  
       "validation_support": {
         "iq": "Documents available upon request (fee)",
         "fai_and_doe": "Documents available upon request (fee)",
         "oq": "Support available at customer site (per request)"
       }
     },
-  
     "key_features": [
       "20×30 RF seal area (15×44 option available)",
       "6–10 kW sealing power range",
@@ -1048,32 +1007,173 @@
       "No-Arc Hybrid Technology for stable sealing",
       "Closed-loop process control with PLC + PC HMI"
     ],
-  
     "highlights": [
       "Reduced RF sealing arcs and die burns when using Hybrid RF Generator technology.",
       "Improved yields through consistent process control and seal integrity.",
       "Higher power efficiency during RF sealing with hybrid generator architecture."
     ],
-  
     "related": {
-      "applications": ["rf-sealing"],
-      "materials": ["pvc", "tpu", "eva"],
-      "tooling": ["rf-welding-die"],
-      "technologies": ["rf-welding"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
+      "applications": [
+        "rf-sealing"
+      ],
+      "materials": [
+        "pvc",
+        "tpu",
+        "eva"
+      ],
+      "tooling": [
+        "rf-welding-die"
+      ],
+      "technologies": [
+        "rf-welding"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "welding",
+    "specs_status": "verified"
+  },
+  {
+    "slug": "long-catheter-tipper",
+    "line": "catheter-tippers",
+    "name": "Long Catheter Tipper",
+    "aliases": [
+      "CTF-807-LX3"
+    ],
+    "category": "Catheter Tippers",
+    "description": "The LX3 model is designed to form up to 4\" long tapered tip catheters. The process uses an RF induction coil uniformly wound around the die for even mold heating and controlled plastic formation.",
+    "image": "/images/products/CTF-807-LX3-PNG.png",
+    "is_new": false,
+    "order": 7,
+    "specs_short": {
+      "model_number": "@specs_long.rf_tipping_system.model_number",
+      "catheter_sizes": "@specs_long.catheter_sizes_and_forming_lengths.diameter",
+      "forming_length": "@specs_long.catheter_sizes_and_forming_lengths.forming_length",
+      "rf_power": "@specs_long.generator.rf_power",
+      "rf_frequency": "@specs_long.generator.frequency",
+      "control_system": "@specs_long.control_system.operator_interface",
+      "utilities_electrical": "@specs_long.utilities.electrical",
+      "utilities_air": "@specs_long.utilities.pneumatic",
+      "footprint": "@specs_long.dimensions.footprint",
+      "shipping_weight": "@specs_long.system_weight.shipping_weight",
+      "operating_temperature": "@specs_long.operating_environment.temperature",
+      "compliance": "@specs_long.compliance.certifications"
+    },
+    "specs_long": {
+      "rf_tipping_system": {
+        "model_number": "CTF-807-LX3",
+        "amplifier_controller": "AC1-300",
+        "tipping_station": "TS-H14",
+        "number_of_dies": "1-up"
+      },
+      "catheter_sizes_and_forming_lengths": {
+        "circumference": "2.8–34 Fr / 2.8–34 CH",
+        "diameter": "0.030\"–0.445\" / 0.9–11.3 mm",
+        "forming_length": "Up to 4.0\" with long cassette",
+        "max_temperature": "450°C"
+      },
+      "utilities": {
+        "electrical": "100–240 VAC / 15 A / 50–60 Hz",
+        "pneumatic": "80 PSI / 5 bar Clean Dry Air (CDA)"
+      },
+      "generator": {
+        "rf_power": "30–300 Watts",
+        "frequency": "6.78 MHz",
+        "impedance": "50 Ω"
+      },
+      "control_system": {
+        "process_controller": "Allen Bradley PLC",
+        "operator_interface": "7\" Touch Screen PC HMI"
+      },
+      "pc_hmi": {
+        "operating_system": "Windows 7 Pro",
+        "processor": "Intel Core i7-8700T vPro 2.40 GHz",
+        "storage": "2–4 GB SSD",
+        "memory": "2 GB DDR4 2666 MHz SoDIMM",
+        "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
+      },
+      "controller_io": [
+        "25-Pin D-Sub Connector",
+        "BNC Connector"
+      ],
+      "cables": [
+        "25-Pin D-Sub I/O Cable",
+        "RG400 Coax Cable",
+        "Power Cable"
+      ],
+      "dimensions": {
+        "amplifier_controller": "12.5\" × 10\" × 14.5\" (318 × 254 × 369 mm)",
+        "tipping_station": "28\" × 9\" × 6\" (330 × 229 × 150 mm)",
+        "footprint": "28\" × 24\" (710 × 610 mm)"
+      },
+      "system_weight": {
+        "amplifier_controller": "22 lb / 11 kg",
+        "tipping_station": "30 lb / 15 kg",
+        "shipping_weight": "80 lb / 39 kg"
+      },
+      "operating_environment": {
+        "temperature": "65–95°F / 18–35°C",
+        "humidity": "68% maximum, non-condensing",
+        "elevation": "Up to 2000 m"
+      },
+      "compliance": {
+        "machine_safety": "ISO 13849-1 / OSHA",
+        "certifications": "CE / UL (per request)",
+        "software": "FDA 21 CFR Part 11"
+      },
+      "validation_support": {
+        "iq": "Documents available upon request (fee)",
+        "fai_and_doe": "Documents available upon request (fee)",
+        "oq": "Support available at customer site (per request)"
+      }
+    },
+    "related": {
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring"
+      ],
+      "materials": [
+        "pe",
+        "pu",
+        "pvc",
+        "pebax",
+        "silicone",
+        "tpe",
+        "ptfe",
+        "fep",
+        "pa"
+      ],
+      "tooling": [
+        "catheter-tipping-tooling"
+      ],
+      "technologies": [
+        "rf-induction"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "forming",
+    "specs_status": "verified"
   },
   {
     "slug": "rotary-rf-welder-large",
     "line": "rf-welders",
     "name": "Large Rotary RF Welder",
-    "aliases": ["RF-Roto-L6-D120 20x40", "RF-Roto-L6-D120-20x40 15KW"],
+    "aliases": [
+      "RF-Roto-L6-D120 20x40",
+      "RF-Roto-L6-D120-20x40 15KW"
+    ],
     "category": "RF Welders",
     "description": "The Large Rotary RF Welder is designed to RF-seal PVC, EVA, and TPU (and other RF-sealable coated materials) commonly used in medical and automotive applications. ONEX RF sealers use No-Arc Hybrid Technology for stable process control.",
     "image": "/images/products/rf-welder/rf-roto-l6/RF-Roto-L6-PNG.png",
     "is_new": false,
     "order": 7,
-  
     "specs_short": {
       "model_number": "RF-Roto-L6",
       "applications": "RF Welded Blood Pressure Cuffs, RF Heat Sealed Tourniquet Cuffs, RF Sealed Straps with hook & loop, RF Welding DVT Cuffs, Large air Bladders",
@@ -1092,7 +1192,6 @@
       "operating_humidity": "@specs_long.operating_environment.humidity",
       "operating_elevation": "@specs_long.operating_environment.elevation"
     },
-  
     "specs_long": {
       "large_rotary_rf_welding_system": {
         "model_number": "RF-Roto-L6-D120-20x40 15KW",
@@ -1104,7 +1203,6 @@
         "press_daylight": "2.750 in / 70 mm (overall die height)",
         "rf_switch": "2 or 3 cycle (optional)"
       },
-  
       "hybrid_rf_generator": {
         "model_number": "RFHG-15-27",
         "generator_type": "Hybrid Amplifier (1st stage Solid State Driver with final stage Tube Amplifier)",
@@ -1115,7 +1213,6 @@
         "utilities": "3 Phase 200–240 VAC / 70 A",
         "dimensions": "24 × 36 × 72 in"
       },
-  
       "rf_auto_tuner": {
         "model_number": "RFMN-50-27-10",
         "arc_detection": "5 VDC signal",
@@ -1124,7 +1221,6 @@
         "impedance": "50 Ω",
         "utilities": "120 VAC / 5 A"
       },
-  
       "indexer_information": {
         "manufacturer": "Sankyo",
         "indexer_type": "Electric CAM Alfa Series High Precision Indexers",
@@ -1136,12 +1232,10 @@
         "controls": "ABB Variable Frequency Drive (VFD)",
         "fast_stop": "Optional brake resistor"
       },
-  
       "utilities": {
         "electrical": "100–240 VAC / 60–70 A / 50–60 Hz",
         "pneumatic": "80 PSI / 5 bar — Clean Dry Air (CDA)"
       },
-  
       "control_system": {
         "process_controller": "Allen Bradley PLC — CompactLogix",
         "operator_interface": "12 in Touch Screen PC HMI",
@@ -1151,38 +1245,32 @@
         "memory": "4 GB DDR4 2666 MHz SoDIMM",
         "ports": "2× USB 3.1 Gen2, 2× USB 3.1 Gen1, RJ45 (1 Gb Ethernet), HDMI"
       },
-  
       "dimensions": {
         "rf_generator": "24 × 32 × 72 in / 610 × 810 × 1830 mm",
         "rotary_rf_welder": "103 × 96 × 87 in / 262 × 244 × 220 cm"
       },
-  
       "system_weight": {
         "rf_generator": "850 lb / 385 kg",
         "rf_welding_station": "5500 lb / 2500 kg",
         "indexing_dial": "175 lb / 79 kg",
         "total_shipping_weight": "7000 lb / 3175 kg (crated)"
       },
-  
       "operating_environment": {
         "temperature": "65–95°F / 18–35°C",
         "humidity": "68% maximum relative humidity, non-condensing",
         "elevation": "Up to 2000 m"
       },
-  
       "compliance": {
         "machine_safety": "ISO 13849-1 / OSHA",
         "certifications": "UL (per request)",
         "software": "FDA 21 CFR Part 11"
       },
-  
       "validation_support": {
         "iq": "Documents available upon request (fee)",
         "fai_and_doe": "Documents available upon request (fee)",
         "oq": "Support available at customer site (per request)"
       }
     },
-  
     "key_features": [
       "20×40 RF seal area for large-format bags and assemblies",
       "10–15 kW sealing power range with 15 kW hybrid generator option",
@@ -1191,20 +1279,408 @@
       "No-Arc Hybrid Technology for stable sealing and reduced die damage",
       "Closed-loop process control with PLC + PC HMI"
     ],
-  
     "highlights": [
       "Reduced RF sealing arcs and die burns when using Hybrid RF Generator technology.",
       "Improved yields through consistent process control and RF seal integrity.",
       "Higher power efficiency during RF sealing with hybrid generator architecture."
     ],
-  
     "related": {
-      "applications": ["rf-sealing"],
-      "materials": ["pvc", "tpu", "eva"],
-      "tooling": ["rf-welding-die"],
-      "technologies": ["rf-welding"],
-      "support": ["process-development", "machine-servicing", "training"]
-    }
+      "applications": [
+        "rf-sealing"
+      ],
+      "materials": [
+        "pvc",
+        "tpu",
+        "eva"
+      ],
+      "tooling": [
+        "rf-welding-die"
+      ],
+      "technologies": [
+        "rf-welding"
+      ],
+      "support": [
+        "process-development",
+        "machine-servicing",
+        "training"
+      ]
+    },
+    "family": "welding",
+    "specs_status": "verified"
+  },
+  {
+    "slug": "butt-joint-welder",
+    "line": "catheter-tippers",
+    "family": "forming",
+    "name": "Butt Joint Welder",
+    "aliases": [
+      "BJW-807-V1"
+    ],
+    "category": "Catheter Bonding",
+    "description": "Joins two catheter shaft sections end to end, forming a continuous lumen without the stiffness step of an overlap joint. Used where a device has to change durometer or colour along its length.",
+    "image": null,
+    "is_new": false,
+    "order": 8,
+    "specs_short": {
+      "model_number": "BJW-807-V1",
+      "configuration": "Single station"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "four-up-catheter-tipper",
+    "line": "catheter-tippers",
+    "family": "forming",
+    "name": "Four-Up Catheter Tipper",
+    "aliases": [
+      "TF-803-X4"
+    ],
+    "category": "Catheter Tippers",
+    "description": "The original four-station tipper — four catheters formed per cycle. Still in production at customer sites and still supported.",
+    "image": null,
+    "is_new": false,
+    "order": 9,
+    "specs_short": {
+      "model_number": "TF-803-X4",
+      "configuration": "4-up"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography",
+      "Confirm current lifecycle status: actively sold, or supported-only legacy?"
+    ]
+  },
+  {
+    "slug": "rf-shuttle-small",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Small Shuttle RF Welder",
+    "aliases": [
+      "RF-Shuttle-S1"
+    ],
+    "category": "RF Welders",
+    "description": "A single-shuttle RF welder for smaller seal areas, where the operator loads at the front and the die closes on a fixed station. Suited to lower-volume pouch, bag and port sealing in RF-sealable materials.",
+    "image": null,
+    "is_new": false,
+    "order": 10,
+    "specs_short": {
+      "model_number": "RF-Shuttle-S1",
+      "rf_seal_area": "10 × 20 in",
+      "configuration": "Single front-load shuttle"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "rf-shuttle-standard",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Standard Shuttle RF Welder",
+    "aliases": [
+      "RF-Shuttle-M1"
+    ],
+    "category": "RF Welders",
+    "description": "The standard single-shuttle platform, sized for the majority of medical bag and pouch work. Front loading keeps the operator clear of the press while the seal cycle runs.",
+    "image": null,
+    "is_new": false,
+    "order": 11,
+    "specs_short": {
+      "model_number": "RF-Shuttle-M1",
+      "rf_seal_area": "20 × 30 in",
+      "configuration": "Single front-load shuttle"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "rf-shuttle-large",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Large Shuttle RF Welder",
+    "aliases": [
+      "RF-Shuttle-L1"
+    ],
+    "category": "RF Welders",
+    "description": "Extended seal area for long-format products — drainage and irrigation bags, large fluid reservoirs, and multi-cavity dies that would not fit a standard platen.",
+    "image": null,
+    "is_new": false,
+    "order": 12,
+    "specs_short": {
+      "model_number": "RF-Shuttle-L1",
+      "rf_seal_area": "20 × 60 in",
+      "configuration": "Single front-load shuttle"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "rf-shuttle-dual-standard",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Dual Shuttle RF Welder",
+    "aliases": [
+      "RF-Shuttle-M2-LR"
+    ],
+    "category": "RF Welders",
+    "description": "Two shuttles under one press: the operator loads one side while the other seals, so the RF cycle is never waiting on the operator. Roughly doubles throughput without doubling floor space.",
+    "image": null,
+    "is_new": false,
+    "order": 13,
+    "specs_short": {
+      "model_number": "RF-Shuttle-M2-LR",
+      "rf_seal_area": "20 × 30 in",
+      "configuration": "Dual shuttle, left / right"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "rf-shuttle-dual-precision",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Precision Dual Shuttle RF Welder",
+    "aliases": [
+      "RF-Shuttle-X2-FB"
+    ],
+    "category": "RF Welders",
+    "description": "A front-to-back dual shuttle arrangement for applications that need tighter registration between load position and die. Chosen where part placement, not cycle time, is the limiting factor.",
+    "image": null,
+    "is_new": false,
+    "order": 14,
+    "specs_short": {
+      "model_number": "RF-Shuttle-X2-FB",
+      "rf_seal_area": "20 × 30 in",
+      "configuration": "Dual shuttle, front / back"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "rf-shuttle-dual-large",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Large Dual Shuttle RF Welder",
+    "aliases": [
+      "RF-Shuttle-L2"
+    ],
+    "category": "RF Welders",
+    "description": "The long-format seal area of the L1 with dual-shuttle loading, for high-volume production of large-format bags and reservoirs.",
+    "image": null,
+    "is_new": false,
+    "order": 15,
+    "specs_short": {
+      "model_number": "RF-Shuttle-L2",
+      "rf_seal_area": "20 × 60 in",
+      "configuration": "Dual shuttle"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "rotary-rf-welder-print",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Rotary RF Welder with Print Station",
+    "aliases": [
+      "RFPS-Roto-X4"
+    ],
+    "category": "RF Welders",
+    "description": "Seals and prints in one indexed pass, so a bag leaves the machine already marked. Removes a downstream handling step — and with it a place for parts to be mixed up or damaged.",
+    "image": null,
+    "is_new": false,
+    "order": 16,
+    "specs_short": {
+      "model_number": "RFPS-Roto-X4",
+      "rf_seal_area": "15 × 20 in",
+      "configuration": "Rotary index, 4 station, with print"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography",
+      "Confirm print method (pad, hot stamp, inkjet) and what marking content is supported"
+    ]
+  },
+  {
+    "slug": "rotary-rf-welder-die-cut",
+    "line": "rf-welders",
+    "family": "welding",
+    "name": "Rotary RF Welder with Die-Cut Station",
+    "aliases": [
+      "RFDC-Roto-X4"
+    ],
+    "category": "RF Welders",
+    "description": "Seals and die-cuts on the same index, delivering a finished, trimmed part off the machine rather than a sealed blank that still needs converting.",
+    "image": null,
+    "is_new": false,
+    "order": 17,
+    "specs_short": {
+      "model_number": "RFDC-Roto-X4",
+      "rf_seal_area": "15 × 20 in",
+      "configuration": "Rotary index, 4 station, with die-cut"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "heat-sealer-shuttle-small",
+    "line": "heat-sealers",
+    "family": "welding",
+    "name": "Small Shuttle Heat Sealer",
+    "aliases": [
+      "HS-Shuttle-S1"
+    ],
+    "category": "Heat Sealers",
+    "description": "Thermal — not RF — sealing for materials that will not couple with a dielectric field, including polyolefin films. Same shuttle handling as the RF platform, so operators move between them without retraining.",
+    "image": null,
+    "is_new": false,
+    "order": 20,
+    "specs_short": {
+      "model_number": "HS-Shuttle-S1",
+      "rf_seal_area": "10 × 20 in",
+      "configuration": "Single front-load shuttle"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "heat-sealer-rotary-small",
+    "line": "heat-sealers",
+    "family": "welding",
+    "name": "Small Rotary Heat Sealer",
+    "aliases": [
+      "HS-Roto-S3"
+    ],
+    "category": "Heat Sealers",
+    "description": "Rotary indexed thermal sealing, for continuous production of pouches in films that cannot be RF welded.",
+    "image": null,
+    "is_new": false,
+    "order": 21,
+    "specs_short": {
+      "model_number": "HS-Roto-S3",
+      "rf_seal_area": "10 × 20 in",
+      "configuration": "Rotary index"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "heat-sealer-rotary-die-cut",
+    "line": "heat-sealers",
+    "family": "welding",
+    "name": "Rotary Heat Sealer with Die-Cut Station",
+    "aliases": [
+      "HSDC-Roto-X2"
+    ],
+    "category": "Heat Sealers",
+    "description": "Thermal sealing and die-cutting on one index, producing a finished part from film without a separate converting operation.",
+    "image": null,
+    "is_new": false,
+    "order": 22,
+    "specs_short": {
+      "model_number": "HSDC-Roto-X2",
+      "rf_seal_area": "15 × 20 in",
+      "configuration": "Rotary index with die-cut"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography"
+    ]
+  },
+  {
+    "slug": "rf-galaxy-automation-line",
+    "line": "automation",
+    "family": "automation",
+    "name": "RF Galaxy Automated Welding Line",
+    "aliases": [
+      "RF-Galaxy-X2"
+    ],
+    "category": "Automation",
+    "description": "A full indexed line rather than a single station: parts are fed, sealed, inspected and discharged without an operator at the press. Built for programmes where labour, not RF cycle time, sets the ceiling on output.",
+    "image": null,
+    "is_new": false,
+    "order": 30,
+    "specs_short": {
+      "model_number": "RF-Galaxy-X2",
+      "configuration": "Automated indexing line"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography",
+      "Needs a line diagram, station-by-station description, throughput figures and integration requirements"
+    ]
+  },
+  {
+    "slug": "atf-galaxy-tipping-line",
+    "line": "automation",
+    "family": "automation",
+    "name": "ATF Galaxy Automated Tipping Line",
+    "aliases": [
+      "ATF-Galaxy-X2"
+    ],
+    "category": "Automation",
+    "description": "Automated catheter tip forming with connector assembly in the same cell, removing the manual load that limits throughput on a standalone tipper.",
+    "image": null,
+    "is_new": false,
+    "order": 31,
+    "specs_short": {
+      "model_number": "ATF-Galaxy-X2",
+      "configuration": "Automated tipping and connector assembly"
+    },
+    "specs_long": {},
+    "specs_status": "needs_data",
+    "needs": [
+      "Full specification table (power, frequency, press force, footprint, utilities, compliance)",
+      "Product photography",
+      "Needs a line diagram, cycle time, and the range of catheter sizes and connector types supported"
+    ]
   }
-  
 ]

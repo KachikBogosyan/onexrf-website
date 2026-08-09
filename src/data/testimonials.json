@@ -1,0 +1,31 @@
+[
+  {
+    "id": "chris-tube-processing",
+    "approved": false,
+    "quote": "These guys really care.",
+    "author": "Chris",
+    "role": "Tube-processing professional",
+    "company": null,
+    "source": "Reported in the ONEX RF scoping note, August 2026",
+    "related": { "products": [], "applications": [] },
+    "needs": [
+      "Full name, company and job title",
+      "Written permission to publish, ideally with a photograph",
+      "A longer quote if he is willing — one sentence carries little weight on its own"
+    ]
+  },
+  {
+    "id": "responsiveness-account",
+    "approved": false,
+    "quote": null,
+    "author": "Chris",
+    "role": "Tube-processing professional",
+    "company": null,
+    "source": "Reported in the ONEX RF scoping note, August 2026",
+    "needs": [
+      "This is the customer whose account produced the quote/delivery/repair comparison against competitors.",
+      "A written, attributable version of that account would be the strongest single asset on the site.",
+      "Until it is confirmed, only ONEX's own commitments are published — never the competitor column."
+    ]
+  }
+]

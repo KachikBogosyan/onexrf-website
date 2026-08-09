@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "audit:placeholders": "node scripts/audit-placeholders.mjs > CONTENT-NEEDED.md",
+    "check:all": "npm run check:contrast && npx tsc --noEmit && npm run lint && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.554.0",

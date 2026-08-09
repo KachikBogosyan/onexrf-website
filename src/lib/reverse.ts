@@ -130,7 +130,8 @@ export function getApplicationsUsingTooling(toolingSlug: string): Application[] 
   // Check both directions:
   // 1. Applications that reference this tooling
   // 2. Tooling that references applications (check both related.applications and direct applications field)
-  const appSlugsFromTooling = (toolingItem as any).applications || toolingItem?.related?.applications || [];
+  const appSlugsFromTooling =
+    toolingItem.applications ?? toolingItem.related?.applications ?? [];
   
   return apps.filter((app) =>
     app.related.tooling?.includes(toolingSlug) ||
@@ -145,14 +146,15 @@ export function getProductsUsingTooling(toolingSlug: string): Product[] {
   if (!toolingItem) return [];
   
   // Check both related.products and compatible_products field
-  const productSlugs = (toolingItem as any).compatible_products || toolingItem?.related?.products || [];
+  const productSlugs =
+    toolingItem.compatible_products ?? toolingItem.related?.products ?? [];
   
   if (productSlugs.length === 0) {
     return [];
   }
 
   return productSlugs
-    .map((slug: string) => getProductBySlug(slug))
+    .map((slug) => getProductBySlug(slug))
     .filter((p: Product | undefined): p is Product => p !== undefined)
     .sort((a: Product, b: Product) => (a.order ?? 999) - (b.order ?? 999));
 }

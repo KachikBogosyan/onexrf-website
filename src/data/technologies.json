@@ -1,43 +1,110 @@
 [
-    {
-      "slug": "rf-induction",
-      "name": "RF Induction Technology",
-      "description": "ONEX RF heating provides precise, consistent energy delivery for repeatable catheter manufacturing processes.",
-      "related": {
-        "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-        "applications": ["catheter-tipping", "catheter-flaring", "bonding"]
-      },
-      "image": "/images/technologies/rf-induction.png"
-    },
-    {
-      "slug": "rf-welding",
-      "name": "RF Welding",
-      "description": "RF (radio frequency) welding is a process that uses high-frequency electromagnetic energy to join two layers of thermoplastic materials by creating an airtight and durable bond.",
-      "related": {
-        "products": [],
-        "applications": []
-      },
-      "image": "/images/technologies/rf-welding.png"
-    },
   {
-    "slug":"catheter-tip-theory",
-    "name": "Catheter Tip Forming Theory",
-    "description": "Catheter tip forming theory is the science behind the process of forming the distal ends of thermoplastic catheters to achieve smooth, atraumatic tips for device insertion. It is a complex process that requires a deep understanding of the materials, the equipment, and the process parameters.",
+    "slug": "rf-induction-heating",
+    "name": "RF Induction Heating",
+    "root_technology": true,
+    "order": 1,
+    "summary": "The field heats the tool. The tool heats the polymer.",
+    "description": "In RF induction heating, the radio-frequency field induces eddy currents in a conductive die. The die heats; the polymer is formed by conduction from the tool. Because the heat source is the metal, not the plastic, the process works on any thermoplastic — including materials that cannot be RF welded at all.",
+    "long_description": "An RF coil surrounds a conductive forming die. The alternating field induces circulating eddy currents in the die wall, and the die's own electrical resistance turns those currents into heat — directly in the tool, with no flame, no hot plate and no thermal mass waiting to come up to temperature.\n\nThe consequence matters more than the mechanism: because the polymer is heated by conduction from the die rather than by the field itself, the material's dielectric properties are irrelevant. Polyethylene, PTFE, PEEK, polyimide and nylon all form on the same machine as PVC and Pebax. This is why catheter tip forming, flaring and bonding at ONEX RF are induction processes, while bag and pouch sealing is dielectric.\n\nIt also explains the speed. A die with low thermal mass reaches forming temperature in seconds and cools just as fast, so a tipping cycle is measured in seconds rather than minutes, and the polymer spends the minimum possible time hot — which is what keeps degradation and tip discolouration under control.",
+    "applies_to": "Forming — catheter tipping, flaring, bonding, neckdown",
     "related": {
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"],
-      "applications": ["catheter-tipping", "catheter-flaring", "bonding", "catheter-bonding"]
+      "products": [
+        "catheter-tipper-air",
+        "catheter-tipper-servo",
+        "dual-catheter-tipper-air",
+        "long-catheter-tipper",
+        "modular-catheter-tipper",
+        "soft-tip-bonder"
+      ],
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ]
     },
-    "image": "/images/technologies/catheter-tip-theory.png"
+    "image": null
+  },
+  {
+    "slug": "dielectric-rf-heating",
+    "name": "Dielectric RF Heating",
+    "root_technology": true,
+    "order": 2,
+    "summary": "The field heats the polymer itself, from the inside out.",
+    "description": "In dielectric heating, a high-frequency field drives polar molecules in the plastic to reverse orientation millions of times per second. The resulting molecular friction generates heat throughout the material at once — not at the surface — producing a homogeneous weld through the full thickness of the seal.",
+    "long_description": "At 27.12 MHz, an alternating field applied across two layers of film forces polar molecules within the polymer to flip orientation with every cycle. The friction of that motion generates heat inside the material itself. Because the energy is deposited throughout the thickness rather than conducted in from a hot surface, both films reach welding temperature simultaneously and fuse into a single homogeneous section.\n\nThat is the defining advantage over thermal sealing: the seal is not two surfaces stuck together, it is one continuous piece of material. It is also why the weld is strongest in the middle of the section, where a conducted heat seal is weakest.\n\nThe constraint is material. Dielectric heating requires a polar polymer — PVC, polyurethane, EVA and a handful of others. Polyethylene, polypropylene and silicone are effectively non-polar and will not couple with the field at usable power levels, which is why they are sealed thermally instead. Material selection is therefore the first question on any welding enquiry, not the last.",
+    "applies_to": "Welding — bags, pouches, inflatables, ports and tube sets",
+    "related": {
+      "products": [
+        "small-rotary-rf-welder",
+        "rotary-rf-welder-medium",
+        "rotary-rf-welder-large",
+        "rf-shuttle-standard",
+        "rf-shuttle-dual-standard"
+      ],
+      "applications": [
+        "medical-bags-pouches-inflatables"
+      ]
+    },
+    "image": null
   },
   {
     "slug": "hybrid-rf-generator",
     "name": "Hybrid RF Generator Technology",
-    "description": "Hybrid RF generator technology for RF welding and RF heat sealing machines: fast arc shut-down, closed-loop power control, and automatic impedance matching for repeatable seals.",
+    "order": 3,
+    "summary": "Solid-state control with tube-amplifier power, and arc shutdown in milliseconds.",
+    "description": "A solid-state driver stage paired with a vacuum-tube output stage: precise, stable control from the first, high RF power from the second. Closed-loop power regulation and automatic impedance matching hold the seal constant as tubes age and line voltage drifts.",
     "related": {
-      "products": [],
-      "applications": []
+      "products": [
+        "small-rotary-rf-welder",
+        "rotary-rf-welder-medium",
+        "rotary-rf-welder-large"
+      ],
+      "applications": [
+        "medical-bags-pouches-inflatables"
+      ]
     },
-    "image": "/images/technologies/hybrid-rf-generator.png"
+    "image": "/images/technologies/RF Generator/Hybrid RF Generator .png"
+  },
+  {
+    "slug": "rf-welding",
+    "name": "RF Welding Process",
+    "order": 4,
+    "summary": "How a dielectric weld is actually set up, run and validated.",
+    "description": "The applied process: how power, time and pressure combine into a repeatable seal, how tooling determines the weld geometry, and where the process window sits for each material.",
+    "related": {
+      "products": [
+        "small-rotary-rf-welder",
+        "rotary-rf-welder-medium",
+        "rotary-rf-welder-large"
+      ],
+      "applications": [
+        "medical-bags-pouches-inflatables"
+      ]
+    },
+    "image": null
+  },
+  {
+    "slug": "catheter-tip-theory",
+    "name": "Catheter Tip Forming Theory",
+    "order": 5,
+    "summary": "What actually happens to the polymer inside the die.",
+    "description": "The science behind forming the distal end of a thermoplastic catheter into a smooth, atraumatic tip: how the material flows, why the die geometry and the mandrel determine the result, and which parameters have to be controlled to make it repeatable.",
+    "related": {
+      "products": [
+        "catheter-tipper-air",
+        "catheter-tipper-servo",
+        "dual-catheter-tipper-air",
+        "dual-catheter-tipper-servo",
+        "long-catheter-tipper",
+        "modular-catheter-tipper"
+      ],
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ]
+    },
+    "image": null
   }
 ]
-  

@@ -1,60 +1,55 @@
-// app/layout.tsx
 import "./globals.css";
-import Link from "next/link";
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
+import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { organizationSchema } from "@/lib/seo";
 
-export const metadata = {
-  title: "ONEX RF",
-  description: "Application-led catheter manufacturing solutions",
+/* Inter carries the whole UI — weight and size give the hierarchy, so a second
+   display face would only cost load time. Plex Mono is reserved for model and
+   part numbers (CTF-807-LX1), which are codes and read better monospaced. */
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-plex-mono",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.onexrf.com"),
+  title: {
+    default: "ONEX RF — RF heating for medical device manufacturing",
+    template: "%s | ONEX RF",
+  },
+  description:
+    "Vertically integrated RF welding, catheter forming and automation systems, built and supported by the engineers who design them.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
-        <header className="border-b bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-            <Link href="/" className="font-semibold tracking-tight text-lg">
-              ONEX RF
-            </Link>
-            <div className="flex items-center gap-6">
-              <nav className="flex gap-6 text-sm">
-                <Link href="/applications" className="hover:underline">
-                  Applications
-                </Link>
-                <Link href="/products" className="hover:underline">
-                  Products
-                </Link>
-                <Link href="/tooling" className="hover:underline">
-                  Tooling
-                </Link>
-                <Link href="/resources" className="hover:underline">
-                  Resources
-                </Link>
-                <Link href="/support" className="hover:underline">
-                  Support
-                </Link>
-              </nav>
-              <Link
-                href="/contact"
-                className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors"
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        </header>
-
-        <main className="flex-1">
-          <div className="w-full px-4 py-8">{children}</div>
-        </main>
-
-        <footer className="border-t bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-4 text-xs text-slate-500 flex justify-between">
-            <span>© {new Date().getFullYear()} ONEX RF</span>
-            <span>Application-led catheter manufacturing solutions</span>
-          </div>
-        </footer>
+    <html lang="en" className={`${inter.variable} ${plexMono.variable}`}>
+      <body className="min-h-screen bg-surface text-text antialiased">
+        <a
+          href="#main"
+          className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-4 focus-visible:z-50 focus-visible:rounded-md focus-visible:bg-action focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold focus-visible:text-text-on-accent"
+        >
+          Skip to content
+        </a>
+        {children}
+        {/* Organization schema sits once at the root; page-level Product and
+            Article schema is added by the templates that need it. */}
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema()),
+          }}
+        />
       </body>
     </html>
   );

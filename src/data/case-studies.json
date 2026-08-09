@@ -1,0 +1,126 @@
+[
+  {
+    "slug": "servo-tipper-project-1",
+    "draft": true,
+    "title": "Case study 1 — to be extracted",
+    "customer": null,
+    "customer_anonymised": null,
+    "industry": null,
+    "family": "forming",
+    "summary": "One of three customer projects already written up on the current Servo Tipper PRO page at onexrf.com. The narrative exists — it needs extracting, restructuring into challenge / approach / result, and clearing for publication.",
+    "challenge": null,
+    "approach": null,
+    "result": null,
+    "metrics": [],
+    "quote": null,
+    "images": [],
+    "related": {
+      "products": ["catheter-tipper-servo"],
+      "applications": ["catheter-tipping"]
+    },
+    "needs": [
+      "Extract the existing narrative from onexrf.com/catheter-tipping-flaring-system-overview-servo-tipper-pro",
+      "Customer name, or an agreed anonymised description (\"a top-10 interventional device OEM\")",
+      "Written permission to publish, including any named metrics",
+      "Before/after photography or part images"
+    ]
+  },
+  {
+    "slug": "servo-tipper-project-2",
+    "draft": true,
+    "title": "Case study 2 — to be extracted",
+    "customer": null,
+    "customer_anonymised": null,
+    "industry": null,
+    "family": "forming",
+    "summary": "Second of the three customer projects on the current Servo Tipper PRO page.",
+    "challenge": null,
+    "approach": null,
+    "result": null,
+    "metrics": [],
+    "quote": null,
+    "images": [],
+    "related": {
+      "products": ["catheter-tipper-servo"],
+      "applications": ["catheter-tipping"]
+    },
+    "needs": [
+      "Extract the existing narrative from the live Servo Tipper page",
+      "Customer name or agreed anonymisation, plus written permission"
+    ]
+  },
+  {
+    "slug": "servo-tipper-project-3",
+    "draft": true,
+    "title": "Case study 3 — to be extracted",
+    "customer": null,
+    "customer_anonymised": null,
+    "industry": null,
+    "family": "forming",
+    "summary": "Third of the three customer projects on the current Servo Tipper PRO page.",
+    "challenge": null,
+    "approach": null,
+    "result": null,
+    "metrics": [],
+    "quote": null,
+    "images": [],
+    "related": {
+      "products": ["catheter-tipper-servo"],
+      "applications": ["catheter-tipping"]
+    },
+    "needs": [
+      "Extract the existing narrative from the live Servo Tipper page",
+      "Customer name or agreed anonymisation, plus written permission"
+    ]
+  },
+  {
+    "slug": "welding-case-study-needed",
+    "draft": true,
+    "title": "A welding case study — none exists yet",
+    "customer": null,
+    "customer_anonymised": null,
+    "industry": null,
+    "family": "welding",
+    "summary": "Every case study ONEX currently has is a forming story. The scoping note's fifth finding is that welding sits in tipping's shadow; publishing three tipping case studies and no welding case study would restate exactly that problem on the new site. At least one bag, pouch or port-sealing project is needed before launch.",
+    "challenge": null,
+    "approach": null,
+    "result": null,
+    "metrics": [],
+    "quote": null,
+    "images": [],
+    "related": {
+      "products": ["rotary-rf-welder-medium"],
+      "applications": ["medical-bags-pouches-inflatables"]
+    },
+    "needs": [
+      "Identify a welding customer willing to be written up",
+      "Challenge / approach / result narrative and any measurable outcome",
+      "Written permission to publish"
+    ]
+  },
+  {
+    "slug": "automation-case-study-needed",
+    "draft": true,
+    "title": "An automation case study — none exists yet",
+    "customer": null,
+    "customer_anonymised": null,
+    "industry": null,
+    "family": "automation",
+    "summary": "Automation is named in the scoping note as something that must be told on equal footing with forming, and the RF-Galaxy and ATF-Galaxy lines exist. There is no published evidence of either running in production.",
+    "challenge": null,
+    "approach": null,
+    "result": null,
+    "metrics": [],
+    "quote": null,
+    "images": [],
+    "related": {
+      "products": ["rf-galaxy-automation-line"],
+      "applications": []
+    },
+    "needs": [
+      "A customer running an automated line, and permission to describe it",
+      "Throughput or labour figures that can be published",
+      "Video of the line running — the single most persuasive automation asset"
+    ]
+  }
+]

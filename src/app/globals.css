@@ -1,26 +1,309 @@
 @import "tailwindcss";
 
+/* ============================================================================
+   ONEX RF design system
+   ----------------------------------------------------------------------------
+   Colour is defined in OKLCH, which is perceptually uniform: equal steps in L
+   look equal to the eye, unlike HSL. Tailwind v4 ships its own palette in
+   OKLCH, so this stays idiomatic.
+
+   The brand anchor is ONEX blue #4885b8 = oklch(59.8% 0.101 245.7), which sits
+   at step 9 of a 12-step Radix-style scale. Every step has exactly one job.
+
+   ACCESSIBILITY RULE — read before using brand-9:
+   #4885b8 measures 3.94:1 on white. That passes WCAG 2.2 AA for large text
+   (>=24px, or >=18.66px bold), borders, icons, focus rings and chart marks.
+   It FAILS for body text and for button labels. So:
+       brand-9   identity only  — large display type, icons, marks, borders
+       brand-10  action fill    — 5.4:1 under white label text
+       brand-11  link/body text — 6.0:1 on white
+       brand-12  headings       — 14.4:1 on white
+   Target is WCAG 2.2 AA throughout: EN 301 549 (and therefore the European
+   Accessibility Act, enforceable since 2025-06-28) resolves to WCAG 2.1 AA
+   today and 2.2 AA in v4.1.1. APCA is NOT a standard — it was pulled from the
+   WCAG 3 draft — so do not build against it.
+   ========================================================================== */
+
+@theme {
+  /* --- Brand ramp — hue 245.7 ------------------------------------------- */
+  --color-brand-1: oklch(99.1% 0.004 245.7); /* page background            */
+  --color-brand-2: oklch(97.7% 0.010 245.7); /* subtle background          */
+  --color-brand-3: oklch(95.1% 0.023 245.7); /* component background       */
+  --color-brand-4: oklch(92.2% 0.035 245.7); /* component hover            */
+  --color-brand-5: oklch(89.0% 0.046 245.7); /* component active/selected  */
+  --color-brand-6: oklch(84.8% 0.055 245.7); /* subtle border              */
+  --color-brand-7: oklch(79.3% 0.066 245.7); /* border                     */
+  --color-brand-8: oklch(71.5% 0.085 245.7); /* strong border, focus ring  */
+  --color-brand-9: oklch(59.8% 0.101 245.7); /* ANCHOR — #4885b8 exactly   */
+  --color-brand-10: oklch(52.5% 0.104 245.7); /* action fill               */
+  --color-brand-11: oklch(50.0% 0.098 245.7); /* link / body-size text     */
+  --color-brand-12: oklch(28.5% 0.055 245.7); /* headings                  */
+
+  /* --- Neutrals — hue-matched to the brand, not pure grey ---------------- */
+  --color-neutral-1: oklch(99.3% 0.002 245.7);
+  --color-neutral-2: oklch(98.0% 0.003 245.7);
+  --color-neutral-3: oklch(95.5% 0.005 245.7);
+  --color-neutral-4: oklch(92.8% 0.007 245.7);
+  --color-neutral-5: oklch(90.0% 0.009 245.7);
+  --color-neutral-6: oklch(86.5% 0.010 245.7);
+  --color-neutral-7: oklch(80.5% 0.012 245.7);
+  --color-neutral-8: oklch(71.0% 0.015 245.7);
+  --color-neutral-9: oklch(60.5% 0.016 245.7);
+  --color-neutral-10: oklch(55.5% 0.015 245.7);
+  --color-neutral-11: oklch(48.0% 0.013 245.7); /* muted text — 6.5:1      */
+  --color-neutral-12: oklch(22.0% 0.008 245.7); /* primary text — 17.3:1   */
+
+  /* --- Semantic hues, matched in lightness so they read as siblings ------ */
+  --color-success-3: oklch(95.5% 0.030 145);
+  --color-success-7: oklch(79.5% 0.080 145);
+  --color-success-9: oklch(59.8% 0.110 145);
+  --color-success-11: oklch(48.0% 0.095 145);
+
+  --color-warning-3: oklch(95.5% 0.034 75);
+  --color-warning-7: oklch(79.5% 0.105 75);
+  --color-warning-9: oklch(59.8% 0.110 75);
+  --color-warning-11: oklch(48.0% 0.090 75);
+
+  --color-danger-3: oklch(95.5% 0.018 27);
+  --color-danger-7: oklch(79.5% 0.095 27);
+  --color-danger-9: oklch(59.8% 0.150 27);
+  --color-danger-11: oklch(48.0% 0.140 27);
+
+  /* --- Typography -------------------------------------------------------- */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
+
+  /* Fluid modular scale. Body sits at 17px and grows to 18px; measure is
+     capped at 68ch by .prose-measure below. */
+  --text-2xs: clamp(0.6875rem, 0.67rem + 0.09vw, 0.75rem);
+  --text-xs: clamp(0.75rem, 0.73rem + 0.11vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.85rem + 0.12vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.97rem + 0.16vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.08rem + 0.23vw, 1.3125rem);
+  --text-xl: clamp(1.3125rem, 1.24rem + 0.36vw, 1.5625rem);
+  --text-2xl: clamp(1.5rem, 1.38rem + 0.6vw, 1.9375rem);
+  --text-3xl: clamp(1.8125rem, 1.6rem + 1.07vw, 2.5rem);
+  --text-4xl: clamp(2.0625rem, 1.79rem + 1.36vw, 2.875rem);
+  --text-5xl: clamp(2.4375rem, 2.04rem + 1.99vw, 3.625rem);
+
+  /* --- Motion ------------------------------------------------------------ */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================================================
+   Semantic aliases. Components reference THESE, never the raw ramp — that is
+   what makes dark mode a re-mapping rather than a rewrite.
+   ========================================================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --surface: var(--color-neutral-1);
+  --surface-sunken: var(--color-neutral-2);
+  --surface-raised: #fff;
+  --surface-accent: var(--color-brand-2);
+  --surface-inverse: var(--color-brand-12);
+
+  /* Ornament — dividers, card edges. WCAG 1.4.11 covers boundaries needed to
+     identify a control, not decoration, so no 3:1 floor applies here. */
+  --border-subtle: var(--color-neutral-5);
+  --border: var(--color-neutral-6);
+  --border-accent: var(--color-brand-7);
+  /* Boundaries that identify an interactive control DO need 3:1. */
+  --border-strong: var(--color-neutral-9);
+  --border-control: var(--color-neutral-9);
+  --border-control-accent: var(--color-brand-9);
+
+  --text: var(--color-neutral-12);
+  --text-muted: var(--color-neutral-11);
+  --text-heading: var(--color-brand-12);
+  --text-link: var(--color-brand-11);
+  --text-on-accent: #fff;
+  --text-on-inverse: var(--color-neutral-3);
+
+  /* brand-9 is the identity colour: large type, icons, rules, marks. */
+  --accent: var(--color-brand-9);
+  /* brand-10 is the interactive fill: it is dark enough for white labels. */
+  --action: var(--color-brand-10);
+  --action-hover: var(--color-brand-11);
+  /* brand-8 is too light to clear the 3:1 that WCAG 2.2 SC 1.4.11 / 2.4.13
+     require of a focus indicator, so the ring uses brand-9 (3.94:1). */
+  --focus-ring: var(--color-brand-9);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Dark mode is a distinct tonal ramp, not an inversion. Surfaces sit at
+   L 0.18–0.26, chroma is pulled back (saturated colour vibrates on dark), and
+   nothing is pure black — #000 under light text causes halation. */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --surface: oklch(19.5% 0.014 245.7);
+    --surface-sunken: oklch(16.5% 0.012 245.7);
+    --surface-raised: oklch(23.5% 0.016 245.7);
+    --surface-accent: oklch(26.0% 0.032 245.7);
+    --surface-inverse: oklch(96.0% 0.006 245.7);
+
+    --border-subtle: oklch(27.0% 0.014 245.7);
+    --border: oklch(32.0% 0.016 245.7);
+    --border-strong: oklch(42.0% 0.020 245.7);
+    --border-accent: oklch(45.0% 0.070 245.7);
+
+    --text: oklch(95.0% 0.005 245.7);
+    --text-muted: oklch(76.5% 0.012 245.7);
+    --text-heading: oklch(97.0% 0.006 245.7);
+    --text-link: oklch(79.0% 0.078 245.7);
+    --text-on-accent: oklch(16.5% 0.012 245.7);
+    --text-on-inverse: oklch(24.0% 0.010 245.7);
+
+    --accent: oklch(70.5% 0.092 245.7);
+    --action: oklch(74.0% 0.095 245.7);
+    --action-hover: oklch(81.0% 0.080 245.7);
+    --focus-ring: oklch(74.0% 0.095 245.7);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+[data-theme="dark"] {
+  --surface: oklch(19.5% 0.014 245.7);
+  --surface-sunken: oklch(16.5% 0.012 245.7);
+  --surface-raised: oklch(23.5% 0.016 245.7);
+  --surface-accent: oklch(26.0% 0.032 245.7);
+  --surface-inverse: oklch(96.0% 0.006 245.7);
+
+  --border-subtle: oklch(27.0% 0.014 245.7);
+  --border: oklch(32.0% 0.016 245.7);
+  --border-strong: oklch(42.0% 0.020 245.7);
+  --border-accent: oklch(45.0% 0.070 245.7);
+
+  --text: oklch(95.0% 0.005 245.7);
+  --text-muted: oklch(76.5% 0.012 245.7);
+  --text-heading: oklch(97.0% 0.006 245.7);
+  --text-link: oklch(79.0% 0.078 245.7);
+  --text-on-accent: oklch(16.5% 0.012 245.7);
+  --text-on-inverse: oklch(24.0% 0.010 245.7);
+
+  --accent: oklch(70.5% 0.092 245.7);
+  --action: oklch(74.0% 0.095 245.7);
+  --action-hover: oklch(81.0% 0.080 245.7);
+  --focus-ring: oklch(74.0% 0.095 245.7);
+}
+
+/* Expose the aliases to Tailwind as utilities: bg-surface, text-muted, etc. */
+@theme inline {
+  --color-surface: var(--surface);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-accent: var(--surface-accent);
+  --color-surface-inverse: var(--surface-inverse);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-accent: var(--border-accent);
+  --color-border-control: var(--border-control);
+  --color-border-control-accent: var(--border-control-accent);
+
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-heading: var(--text-heading);
+  --color-text-link: var(--text-link);
+  --color-text-on-accent: var(--text-on-accent);
+  --color-text-on-inverse: var(--text-on-inverse);
+
+  --color-accent: var(--accent);
+  --color-action: var(--action);
+  --color-action-hover: var(--action-hover);
+  --color-focus-ring: var(--focus-ring);
+}
+
+/* ============================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--surface);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--text-heading);
+    line-height: 1.15;
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Keyboard focus is always visible; never remove it. */
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--color-brand-5);
+    color: var(--color-brand-12);
+  }
+
+  /* Spec tables are everywhere on this site. Proportional digits make the
+     columns ragged, so numerals are tabular by default in tables. */
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  /* Model and part numbers (CTF-807-LX1) are codes — set them monospaced. */
+  .part-number {
+    font-family: var(--font-mono);
+    font-size: 0.92em;
+    letter-spacing: 0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Comfortable reading measure for long-form prose. */
+  .prose-measure {
+    max-width: 68ch;
+  }
+
+  /* The section label that sits above a heading. */
+  .eyebrow {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-link);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

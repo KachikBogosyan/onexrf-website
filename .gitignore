@@ -41,6 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # images
+# Stray asset files anywhere in the repo are ignored...
 /images/
 *.jpg
 *.jpeg
@@ -50,6 +51,9 @@ next-env.d.ts
 *.bmp
 *.ico
 *.svg
-!public/*.svg
+# ...but public/ IS the site's asset directory and has to ship. Without this
+# the build succeeds on Vercel and every product photo 404s at runtime.
+!public/**
+public/**/.DS_Store
 
 notes.txt

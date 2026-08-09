@@ -2,7 +2,9 @@
   {
     "slug": "pe",
     "name": "Polyethylene",
-    "aliases": ["PE"],
+    "aliases": [
+      "PE"
+    ],
     "description": "A polyolefin thermoplastic widely used in medical tubing and device components, valued for chemical inertness, flexibility across grades, and consistent performance in RF-based thermal forming.",
     "long_description": "Polyethylene (PE) is a thermoplastic polymer made by polymerizing ethylene monomer, available in various density grades (e.g., LDPE, HDPE) with corresponding differences in stiffness. In catheter manufacturing, it’s used especially in cost-sensitive or single-use devices requiring flexible tubing or low-friction surfaces. Different grades range from fairly soft (low-density PE) to relatively rigid (high-density PE), allowing designers to tailor catheter sections or components for flexibility or support as needed. In RF-driven processes—such as catheter tip forming, flaring, and thermal bonding—polyethylene’s relatively low melting range and predictable thermal behavior enable it to soften and re-solidify under controlled conditions, yielding consistent tip geometries and welds when heat and cooling are properly managed. Its low surface energy means PE bonds best to itself, often necessitating surface treatment or tie-layers to join with other polymers. Sterilization compatibility (e.g., EtO, limited gamma) and biocompatibility depend on the specific grade and any additives; medical-grade PE resins are widely available, and their suitability should be confirmed via supplier documentation and device-level validation.",
     "properties": {
@@ -11,16 +13,14 @@
       "elongation": "50–650% (grade-dependent)",
       "tensile_strength": "1,300–4,600 psi (grade-dependent)",
       "density": "0.91–0.96 g/cc (grade-dependent)",
-      "sterilization_methods": ["EtO", "Gamma (may cause embrittlement)", "Steam (limited by low melt point)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma (may cause embrittlement)",
+        "Steam (limited by low melt point)"
+      ],
       "water_absorption_24h": "0.01–0.1% (nearly zero, hydrophobic)",
       "radiopacity": "Not inherently radiopaque; often compounded with radiopaque fillers such as barium sulfate or tungsten if needed"
     },
-    "applications": [
-      "Catheter tipping (forming soft distal tips on polyethylene-based catheters or tubing)",
-      "Catheter flaring (expanding PE tubing ends for connectors or assembly interfaces)",
-      "Joining tubing segments (thermal welding of PE-to-PE catheter segments)",
-      "Forming smooth transitions or neckdowns in polyethylene catheter shafts"
-    ],
     "process_notes": {
       "thermal_processability": "Melts at relatively low temperatures and responds well to RF heating, allowing easy forming of tips and flares when process parameters are dialed in.",
       "bonding_behavior": "Polyethylene welds readily to itself under heat; however, its low surface energy makes bonding to dissimilar polymers challenging without surface treatments or adhesive tie-layers.",
@@ -31,15 +31,24 @@
       "usage_scope": "Polyethylene (including LDPE and HDPE) is widely used in medical devices and packaging. Medical-grade formulations with minimal additives are generally considered biocompatible for short-term contact, but specific grade certification (e.g., USP Class VI or ISO 10993 compliance) and device-level biocompatibility testing are recommended to ensure regulatory suitability."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
-  
   {
     "slug": "pvc",
     "name": "Polyvinyl chloride",
-    "aliases": ["PVC"],
+    "aliases": [
+      "PVC"
+    ],
     "description": "PVC is a versatile, low-cost catheter material known for flexibility, clarity, and ease of processing. Medical PVC can be soft or semi-rigid depending on additives, and is used in tubing and fluid bags. Newer formulations often use DEHP-free plasticizers due to health concerns.",
     "long_description": "Polyvinyl chloride (PVC) is an amorphous vinyl polymer widely used for medical tubing and components due to its versatility and ease of processing. Flexible PVC formulations (with plasticizers) yield high elongation (often >300%) and clarity, making them suitable for endotracheal tubes, IV catheters, and bag materials. PVC’s polar molecular structure allows it to couple well with RF induction heating for forming and welding. In catheter tip forming, PVC can be heated and shaped (typically ~150°C) into smooth inner/outer radii with short cycle times. Similarly, RF bonding or heat sealing can join PVC layers or seal bags due to dielectric heating. Without stabilizers, PVC can decompose before fully melting, so medical grades use additive packages to reduce charring and discoloration. PVC’s continuous service temperature is limited (often cited around 50–60°C depending on formulation). Medical-grade PVC is available in DEHP-free grades to address toxicity and leachables concerns; sterilization is typically by EtO or gamma (steam is generally only suitable for rigid grades). Biocompatibility and regulatory compliance should be confirmed for each formulation.",
     "properties": {
@@ -48,7 +57,11 @@
       "elongation": "60–450% (up to ~450% for highly plasticized grades; ~60% for unplasticized PVC)",
       "tensile_strength": "1,600–7,400 psi (11–51 MPa)",
       "density": "1.24–1.40 g/cc",
-      "sterilization_methods": ["EtO", "Gamma", "Steam (rigid grades)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "Steam (rigid grades)"
+      ],
       "water_absorption_24h": "0.1–0.5%",
       "radiopacity": "Typically clear; radiopaque fillers (barium sulfate, tungsten) added if needed"
     },
@@ -68,14 +81,26 @@
       "usage_scope": "Medical-grade PVC is widely used in catheters, IV/blood bags, and tubing. Biocompatibility depends on the plasticizer and additive package; DEHP-free PVC is commonly used to reduce leachables concerns. Suppliers typically provide regulatory and biocompatibility support documentation; device manufacturers should verify the specific grade and perform testing appropriate to the intended use."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding", "rf-heat-sealing"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding",
+        "rf-heat-sealing"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
   {
     "slug": "pebax",
     "name": "Polyether Block Amide",
-    "aliases": ["PEBAX", "PEBA"],
+    "aliases": [
+      "PEBAX",
+      "PEBA"
+    ],
     "description": "A thermoplastic elastomer family widely used in catheter shafts and distal features, valued for tunable stiffness and consistent performance in RF-based forming and joining.",
     "long_description": "PEBAX (also referred to as PEBA) is a block-copolymer thermoplastic elastomer made from polyether and polyamide segments. In catheter development, it’s frequently selected because grades span from very flexible to relatively stiff, enabling soft distal features, supportive proximal sections, and controlled transitions along the device. In RF-driven processes—such as catheter tipping, flaring, and segment-to-segment joining—PEBAX offers predictable softening and re-solidification behavior that supports repeatable geometry and smooth surface finish when heat input, alignment, and cooling are well controlled. Sterilization suitability and biocompatibility are grade- and supplier-dependent, so medical-device programs typically confirm these through supplier documentation and device-level validation.",
     "properties": {
@@ -84,7 +109,11 @@
       "elongation": "360–790% (grade-dependent)",
       "tensile_strength": "4,210–8,990 psi (grade-dependent)",
       "density": "1.01–1.02 g/cc (typical)",
-      "sterilization_methods": ["EtO", "Gamma", "Steam (grade-dependent)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "Steam (grade-dependent)"
+      ],
       "water_absorption_24h": "0.9–1.2% (typical, grade-dependent)",
       "radiopacity": "Often compounded with radiopaque fillers such as barium sulfate or tungsten (formulation-dependent)"
     },
@@ -104,15 +133,26 @@
       "usage_scope": "PEBAX is offered in medical-grade formulations by major suppliers. Biocompatibility and regulatory suitability depend on the specific grade, additives, and supplier documentation, and should be confirmed as part of the device’s validation plan."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
-    
   {
     "slug": "tpu",
     "name": "Thermoplastic Polyurethane",
-    "aliases": ["TPU", "Polyurethane", "PU"],
+    "aliases": [
+      "TPU",
+      "Polyurethane",
+      "PU"
+    ],
     "description": "Medical-grade thermoplastic polyurethane (TPU) combines biocompatibility, flexibility, and durability, making it suitable for complex catheter designs and distal tip features.",
     "long_description": "Polyurethane (PU) used in catheters is typically a thermoplastic polyurethane (TPU) elastomer. Grades range from very soft (for atraumatic tips) to relatively firm (for catheter shafts), achieved by tuning soft and hard segments in the polymer. TPU offers high tensile strength and elasticity, helping maintain lumen integrity under bending or stress. Its polar structure makes TPU compatible with RF heating, so processes like RF tipping, flaring, and welding can produce repeatable shapes with smooth finishes when process parameters are well controlled. Medical TPUs are formulated to meet biocompatibility and sterilization standards (typically ISO 10993 and USP Class VI), though exact certification depends on the grade and supplier; device programs usually verify this via documentation and testing.",
     "properties": {
@@ -121,7 +161,13 @@
       "elongation": "300–800% (typical for medical-grade TPU).",
       "tensile_strength": "≈2,900–7,250 psi (20–50 MPa) tensile strength.",
       "density": "1.04–1.27 g/cc (polyether-based TPU range, avg ~1.14).",
-      "sterilization_methods": ["EtO (ethylene oxide)", "Gamma radiation", "E-beam", "H₂O₂ (vapor)", "Steam (limited grades)"],
+      "sterilization_methods": [
+        "EtO (ethylene oxide)",
+        "Gamma radiation",
+        "E-beam",
+        "H₂O₂ (vapor)",
+        "Steam (limited grades)"
+      ],
       "water_absorption_24h": "≈1.1–1.5% (24-hour water soak, typical for polyether TPU).",
       "radiopacity": "Often compounded (~10–20% loading) with radiopaque fillers (e.g. barium sulfate, tungsten) to make catheters visible under X-ray."
     },
@@ -137,18 +183,32 @@
       "tooling_considerations": "As with other RF-formed polymers, uniform mold alignment and controlled cooling are critical for consistent geometry and surface quality. TPU can become tacky if overheated, so tooling often uses release coatings or cooling to prevent sticking and maintain concentricity."
     },
     "biocompatibility": {
-      "certifications": ["ISO 10993", "USP Class VI (short-term)"],
+      "certifications": [
+        "ISO 10993",
+        "USP Class VI (short-term)"
+      ],
       "usage_scope": "Medical-grade TPU is available from major suppliers with formulations to meet ISO 10993-1 and USP Class VI requirements. Regulatory and biocompatibility testing is grade-specific; programs should confirm suitability (e.g. long-term implant vs. short-term use) per device requirements."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding", "bag-sealing"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding",
+        "bag-sealing"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
   {
     "slug": "tpe",
     "name": "Thermoplastic Elastomer",
-    "aliases": ["TPE"],
+    "aliases": [
+      "TPE"
+    ],
     "description": "TPE blends the elastic flexibility of rubber with the processing ease of thermoplastics.",
     "long_description": "Thermoplastic elastomers cover a wide range of polymers (polyurethane, olefinic, styrenic, etc.) that provide rubber-like compliance with thermoplastic processability. In catheter development, medical-grade TPEs (such as TPU and polyether block amide) are selected for their adjustable flexibility, strength, and kink resistance. Under RF or induction heating, TPE tubing will soften and re-solidify predictably, enabling smooth tip forming and flaring. For example, application reports describe shaping certain TPE catheter tips by heating an induction die to roughly 210°C for a few seconds. TPE-based adhesives and overmolding resins are used to bond catheter segments and add soft distal features. TPE films are also weldable for packaging; they can be RF-sealed into sterile pouches and bag ports.",
     "properties": {
@@ -157,7 +217,12 @@
       "elongation": "200–800% (highly elastic, grade-dependent)",
       "tensile_strength": "Approx. 2,900–8,700 psi (20–60 MPa, grade-dependent)",
       "density": "0.9–1.2 g/cc",
-      "sterilization_methods": ["EtO", "Gamma", "E-beam", "Steam (limited, grade-dependent)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "E-beam",
+        "Steam (limited, grade-dependent)"
+      ],
       "water_absorption_24h": "0.5–2% (typical, grade-dependent)",
       "radiopacity": "Normally transparent; often compounded with radiopaque fillers (e.g., barium sulfate or tungsten) if needed"
     },
@@ -178,14 +243,27 @@
       "usage_scope": "Medical-grade TPE compounds are available that can be supplied to meet ISO 10993 and/or USP Class VI expectations. Final device-level biocompatibility and sterilization suitability should be confirmed for the selected grade, process, and finished device."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding", "rf-bag-sealing"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro", "rf-sealer"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding",
+        "rf-bag-sealing"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro",
+        "rf-sealer"
+      ]
     }
   },
   {
     "slug": "ptfe",
     "name": "Polytetrafluoroethylene",
-    "aliases": ["PTFE", "Teflon"],
+    "aliases": [
+      "PTFE",
+      "Teflon"
+    ],
     "description": "PTFE is a lubricious, chemically inert fluoropolymer often used as a catheter inner lining to create a smooth, low-friction lumen for guidewires and devices.",
     "long_description": "Polytetrafluoroethylene (PTFE, often known by the brand name Teflon) is a fully fluorinated polymer prized for its exceptional chemical inertness and extremely low coefficient of friction. It can remain stable at high temperatures (theoretically melting at ~327°C) but is not melt-processable, so catheter-grade PTFE liners are made by powder sintering or advanced extrusion. The base material is relatively soft and low-strength, so manufacturers produce ultra-thin-walled PTFE tubes that give good tensile strength while preserving flexibility.\n\nIn catheter design, PTFE's lubricity provides a near-frictionless inner lumen, aiding guidewire passage and minimizing vessel trauma. However, PTFE resists bonding to other polymers without surface treatment. Many liners are manufactured with etched surfaces or tie-layers to allow adhesives or overmolding. When forming catheter tips or flares with RF induction, PTFE-lined sections do not soften or melt (dielectric loss is negligible), so the PTFE liner is typically retracted or removed at the distal end to allow the outer polymer to be shaped without interference.\n\nLikewise, PTFE cannot be directly welded by RF energy (it neither heats nor fuses under RF). Instead, PTFE films or fabrics serve as high-temperature, non-stick covers on RF or impulse heat-sealing electrodes, preventing polymer melt from adhering. Medical-grade PTFE is available from major suppliers and is chemically inert, but its susceptibility to ionizing radiation means gamma or e-beam sterilization is generally avoided.",
     "properties": {
@@ -194,7 +272,11 @@
       "elongation": "200–400% (typical)",
       "tensile_strength": "3,600–4,400 psi (25–30 MPa)",
       "density": "2.13–2.20 g/cc (typical)",
-      "sterilization_methods": ["EtO", "Steam", "Gamma/E-beam (generally avoided)"],
+      "sterilization_methods": [
+        "EtO",
+        "Steam",
+        "Gamma/E-beam (generally avoided)"
+      ],
       "water_absorption_24h": "≈0.01%",
       "radiopacity": "Not inherently radiopaque"
     },
@@ -229,7 +311,9 @@
   {
     "slug": "fep",
     "name": "Fluorinated Ethylene Propylene",
-    "aliases": ["FEP"],
+    "aliases": [
+      "FEP"
+    ],
     "description": "FEP is a melt-processable fluoropolymer used in medical devices, notably catheters. It is softer and more flexible than PTFE, with high optical clarity and low friction. Its lower melting point allows it to be extruded into thin-walled tubing and heat-shrink sleeves for catheter layers.",
     "long_description": "FEP (Fluorinated Ethylene Propylene) is a melt-processable copolymer of tetrafluoroethylene and hexafluoropropylene introduced as a thermoplastic alternative to PTFE. Unlike PTFE, FEP can be extruded into continuous tubing and heat-formed into complex shapes. It exhibits very low chemical reactivity, excellent UV resistance, and naturally low surface friction. Because of its lower melting point (~260°C) and transparency, FEP is often used in catheters as a lubricious liner or heat-shrinkable outer sheath. In catheter construction, FEP heat-shrink tubing can be used to reflow (bond) softer materials (like PEBAX or nylon) in a catheter shaft, for example to create atraumatic tip sleeves. As a thermoplastic, FEP also supports RF-driven forming: segments of FEP tubing can be tipped, tapered, flared or flanged by heating a metal die or mandrel (typically via induction) to melt the FEP. However, FEP’s chemical inertness means it does not readily weld to itself or other polymers without surface treatment; processes like plasma etching or specialized adhesives are often needed for bonding. FEP can withstand common sterilization methods (EtO, gamma, steam, E-beam) without degradation.",
     "properties": {
@@ -238,7 +322,12 @@
       "elongation": "250–300%",
       "tensile_strength": "2100–3050 psi (14–21 MPa)",
       "density": "2.12–2.17 g/cc",
-      "sterilization_methods": ["EtO", "Gamma", "E-beam", "Steam (Autoclave)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "E-beam",
+        "Steam (Autoclave)"
+      ],
       "water_absorption_24h": "<0.01% (virtually none)",
       "radiopacity": "Requires addition of radiopaque fillers (e.g. BaSO4, Bi2O3, W) for visibility"
     },
@@ -260,23 +349,38 @@
       "usage_scope": "FEP has a proven history of use in medical devices. Medical-grade FEP (often USP Class VI/ISO 10993-certified) is available from major suppliers. Its chemical inertness and thermal stability generally provide good biocompatibility, and FEP tolerates EtO, gamma, e-beam and steam sterilization. Material-specific biocompatibility (cytotoxicity, leachables, etc.) should be verified per device requirements."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
-  },  
+  },
   {
     "slug": "pa",
     "name": "Polyamide (Nylon)",
-    "aliases": ["PA", "Nylon"],
+    "aliases": [
+      "PA",
+      "Nylon"
+    ],
     "description": "A strong, semi-rigid polymer family used in catheter shafts and distal tips. Nylons (polyamides) provide high tensile strength, excellent abrasion resistance, and kink resistance, with predictable thermal-forming behavior suited to RF-based tip forming, flaring, and bonding operations.",
-    "long_description": "Polyamide (commonly called Nylon) is a semi-crystalline thermoplastic used in many catheter components. Medical-grade nylons (e.g. PA 11, PA 12) offer a balance of stiffness and flexibility: they form strong proximal shafts yet can be heat-formed into soft distal tips. Nylon tubing is valued for its high tensile strength, abrasion resistance, and reliable melting/re-solidification behavior. Typical catheter nylons can be thermo-fused to compatible materials; for example, Nylon 12 is often thermally bonded to adjacent segments in catheter assemblies.\n\nUnder RF or induction heating, nylon softens uniformly and re-solidifies to retain precise molded shapes. Processing typically occurs around 190–230\u00b0C. Because nylon is hygroscopic, thorough drying (e.g. 80–100\u00b0C for several hours) is required to remove moisture and avoid defects like splay or brittle parts. Mold tooling is often pre-heated (e.g. ~35–40\u00b0C) to ensure controlled crystallization and surface finish. When melted, nylon bonds strongly to itself; joining to dissimilar polymers usually requires adhesives or transition layers.\n\nBeyond catheter components, nylon films (often in polyamide laminates) are used in medical packaging. In RF welding, nylon is commonly used in multilayer pouch and bag structures where strong, consistent seals are required for sterilization packaging or fluid containment. Medical-grade nylons are available (e.g., ISO 10993/USP Class VI grades), but biocompatibility and sterilization compatibility depend on the specific grade and additives. Common sterilization methods include EtO and gamma radiation; some nylon formulations can also tolerate steam, but this varies by formulation and must be verified for each device.",
+    "long_description": "Polyamide (commonly called Nylon) is a semi-crystalline thermoplastic used in many catheter components. Medical-grade nylons (e.g. PA 11, PA 12) offer a balance of stiffness and flexibility: they form strong proximal shafts yet can be heat-formed into soft distal tips. Nylon tubing is valued for its high tensile strength, abrasion resistance, and reliable melting/re-solidification behavior. Typical catheter nylons can be thermo-fused to compatible materials; for example, Nylon 12 is often thermally bonded to adjacent segments in catheter assemblies.\n\nUnder RF or induction heating, nylon softens uniformly and re-solidifies to retain precise molded shapes. Processing typically occurs around 190–230°C. Because nylon is hygroscopic, thorough drying (e.g. 80–100°C for several hours) is required to remove moisture and avoid defects like splay or brittle parts. Mold tooling is often pre-heated (e.g. ~35–40°C) to ensure controlled crystallization and surface finish. When melted, nylon bonds strongly to itself; joining to dissimilar polymers usually requires adhesives or transition layers.\n\nBeyond catheter components, nylon films (often in polyamide laminates) are used in medical packaging. In RF welding, nylon is commonly used in multilayer pouch and bag structures where strong, consistent seals are required for sterilization packaging or fluid containment. Medical-grade nylons are available (e.g., ISO 10993/USP Class VI grades), but biocompatibility and sterilization compatibility depend on the specific grade and additives. Common sterilization methods include EtO and gamma radiation; some nylon formulations can also tolerate steam, but this varies by formulation and must be verified for each device.",
     "properties": {
       "durometer_range": "Shore D ~60–80 (grade-dependent)",
       "melting_point": "178–265°C (type-dependent; e.g. PA12 ~178°C, PA11 ~190°C, PA6 ~215°C, PA6/6 ~263°C)",
       "elongation": "25–200% (unfilled grades; depends on type and condition)",
       "tensile_strength": "7,000–12,000 psi (typical; ~50–80 MPa)",
       "density": "1.01–1.15 g/cc (depending on polymer and fillers)",
-      "sterilization_methods": ["EtO", "Gamma", "Steam (grade-dependent)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "Steam (grade-dependent)"
+      ],
       "water_absorption_24h": "0.5–3.0% (varies by polyamide type; e.g. PA11 <1%, PA12 <2%)",
       "radiopacity": "Typically radiolucent; often compounded with barium sulfate or tungsten for imaging visibility if needed"
     },
@@ -297,14 +401,24 @@
       "usage_scope": "Medical-grade nylon (e.g. PA11, PA12, PA6/6) is offered by major suppliers. Biocompatibility and regulatory compliance (ISO 10993, USP Class VI, etc.) depend on the specific grade, fillers, and processing aids. Device makers should verify material certifications and include nylon in their biocompatibility validation."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
-  },  
+  },
   {
     "slug": "polyimide",
     "name": "Polyimide",
-    "aliases": ["PI"],
+    "aliases": [
+      "PI"
+    ],
     "description": "A high-performance, rigid polymer used for thin-wall catheter tubing and reinforcement. Polyimide provides exceptional tensile strength and high heat and chemical resistance, enabling ultra-thin, high-pressure lumens and support shafts.",
     "long_description": "Polyimides (PI) are high-performance polymers known for their thermal, chemical, and mechanical stability. Medical-grade PI tubing or liners can be produced in extremely thin walls (down to ~0.0005\") with high tensile strength and burst pressure, enabling use in micro- and balloon catheter designs where small diameter and high pressure tolerance are critical. Since PI does not melt like thermoplastics, tip forming relies on heating near or above PI’s glass transition temperature (~360–400°C) with tight process control. PI is often combined with softer materials: for example, thin PI liners can be laminated inside polyurethane or Pebax shafts to improve column strength and reduce lumen friction. Multi-layer constructions may also pair a lubricious inner layer with a bondable outer PI layer to balance low-friction performance and assembly needs. Reinforced PI tubing (braid or coil) is also used when additional torque transmission and kink performance are required. Overall, PI’s stable profile (high heat tolerance, low creep, chemical resistance) makes it well-suited for demanding catheter components, though its rigidity and high processing temperature require careful control in forming and bonding.",
     "properties": {
@@ -313,7 +427,11 @@
       "elongation": "50% (typical)",
       "tensile_strength": "20,000 psi (138 MPa) minimum",
       "density": "1.41 g/cc",
-      "sterilization_methods": ["EtO", "Gamma", "E-beam"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "E-beam"
+      ],
       "water_absorption_24h": "0.3% (typical)",
       "radiopacity": "Low (amber polymer); radiopaque fillers added as needed"
     },
@@ -335,14 +453,24 @@
       "usage_scope": "Medical-grade polyimide is available and is commonly used in catheter components. Many commercially available PI tubing products are offered in grades intended to support USP Class VI and/or ISO 10993 testing, but biocompatibility depends on the specific grade, additives, and processing history. Final device validation should confirm material compliance for the intended use."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
   {
     "slug": "pp",
     "name": "Polypropylene",
-    "aliases": ["PP"],
+    "aliases": [
+      "PP"
+    ],
     "description": "A lightweight, rigid polyolefin with excellent chemical resistance and dimensional stability. Common in catheter components like introducer dilators and connector hubs (luer fittings) where stiffness and low cost are needed.",
     "long_description": "Polypropylene (PP) is a semi-crystalline thermoplastic formed from propylene monomers, resulting in a mostly non-polar polymer with a methyl group on every other carbon. Typical medical-grade homopolymers melt around 160–165 °C and exhibit moderate hardness (Shore D ≈55–65). Mechanically, PP is reasonably strong (yield ~4,500 psi) with good ductility (elongation often >100%). Its high crystallinity gives good heat resistance (service up to ~100 °C) and extremely low moisture uptake (<0.01%), but also means parts can shrink on cooling and require careful mold release. In RF-based processes, PP’s lack of polar groups makes it a poor dielectric heater: it couples weakly to RF energy and typically needs specialized setups or additives for effective welding or tip forming. Standard medical-grade PP is available (e.g., USP Class VI / ISO 10993 compliant) and is considered biocompatible and inert, but final device suitability must be validated by material and regulatory data.",
     "properties": {
@@ -351,7 +479,11 @@
       "elongation": "≥100% (typical, homopolymer)",
       "tensile_strength": "≈4,450–5,300 psi (yield/ultimate, homopolymer)",
       "density": "0.90–0.91 g/cc (typical homopolymer)",
-      "sterilization_methods": ["EtO", "Gamma", "Steam (121 °C autoclave)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "Steam (121 °C autoclave)"
+      ],
       "water_absorption_24h": "<0.01%",
       "radiopacity": "Not intrinsically radiopaque; typically compounded with barium sulfate or tungsten fillers for X-ray visibility"
     },
@@ -367,18 +499,29 @@
       "tooling_considerations": "PP shrinks on cooling (often ~1–2%) and does not absorb moisture (stability <0.01% water uptake), but its high crystallinity can cause warpage if cooled too quickly. Molds and dies should allow release (e.g., polished surfaces or release agents) and be heated or cooled uniformly. Precise cooling control helps maintain concentricity and prevent cracking."
     },
     "biocompatibility": {
-      "certifications": ["USP Class VI", "ISO 10993 certified grades"],
+      "certifications": [
+        "USP Class VI",
+        "ISO 10993 certified grades"
+      ],
       "usage_scope": "Medical-grade polypropylene is offered by major suppliers and used in many device components. It is generally biologically inert (chemically resistant and non-toxic). Specific biocompatibility claims depend on the grade and additives, so final device validation (per ISO 10993) is required."
     },
     "related": {
-      "applications": ["catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-flaring-system", "soft-tip-bonding-system"]
+      "applications": [
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-flaring-system",
+        "soft-tip-bonding-system"
+      ]
     }
   },
   {
     "slug": "hdpe",
     "name": "High-Density Polyethylene",
-    "aliases": ["HDPE"],
+    "aliases": [
+      "HDPE"
+    ],
     "description": "A linear, high-crystallinity polyethylene known for its higher stiffness and strength, used in more rigid catheter sections or flares, valued for its durability and stable performance in RF thermal forming and welding.",
     "long_description": "HDPE (High-Density Polyethylene) is a polyethylene grade with minimal branching in its polymer chains, resulting in higher crystallinity, density (~0.94–0.96 g/cc), and a melting point around 130–137°C, all higher than those of LDPE. This structure gives HDPE significantly greater rigidity, tensile strength, and chemical resistance. In catheter manufacturing, HDPE is utilized for components that need more support or pushability – for example, stiffer proximal shaft sections, flared tube ends that must hold their shape for connections, or other parts where a harder polymer is beneficial. While not as flexible as LDPE or elastomers, HDPE provides structural integrity and is often used in combination with softer segments in multi-layer or multi-durometer catheter designs. In RF-based thermal forming and bonding, HDPE requires more energy (higher temperature) to soften due to its higher melting point, but once heated it can be molded into precise shapes (such as robust flares or tip forms) and welded to itself reliably. It cools into a firm shape; because of its crystallinity, some shrinkage can occur upon cooling, so process parameters and tool design account for this to maintain final dimensions. HDPE’s inertness gives it excellent chemical compatibility and it withstands EtO sterilization easily. It can also be gamma sterilized, though high radiation doses may induce slight embrittlement over time (a common trait of polyolefins). HDPE is not suitable for high-temperature steam sterilization, as it will soften or deform near autoclave temperatures. Medical-grade HDPE resins (including certain FDA/USP Class VI compliant grades) are widely used in healthcare products; nevertheless, each specific formulation’s biocompatibility and regulatory compliance should be confirmed through supplier documentation and device-level testing, especially if any fillers or additives are present.",
     "properties": {
@@ -387,7 +530,11 @@
       "elongation": "50–600% (grade-dependent)",
       "tensile_strength": "3,000–6,500 psi (grade-dependent)",
       "density": "0.94–0.96 g/cc (typical)",
-      "sterilization_methods": ["EtO", "Gamma (radiation-tolerant in single use)", "Steam (not suitable at standard autoclave temps)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma (radiation-tolerant in single use)",
+        "Steam (not suitable at standard autoclave temps)"
+      ],
       "water_absorption_24h": "<0.1% (extremely low)",
       "radiopacity": "Not intrinsically radiopaque; often requires blending with radiopaque fillers (e.g., barium sulfate or tungsten) if fluoroscopic visibility is needed"
     },
@@ -407,24 +554,42 @@
       "usage_scope": "HDPE is widely used for medical device components and packaging, and many grades are available in medical/food-safe formulations. The polymer’s inherent inertness and history of use (including in implants like UHMWPE) suggest good biocompatibility for appropriately chosen grades. Still, any specific HDPE grade used in a device should have supporting biocompatibility documentation (such as ISO 10993 or USP Class VI test results) from the supplier, and final device testing should confirm that it meets all required biocompatibility and regulatory standards for its intended use."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
   {
     "slug": "etfe",
     "name": "Ethylene Tetrafluoroethylene",
-    "aliases": ["ETFE"],
+    "aliases": [
+      "ETFE"
+    ],
     "description": "ETFE combines high mechanical strength, abrasion resistance, and chemical stability, often used as a liner or jacket for catheters requiring durability and biocompatibility.",
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring"],
-      "products": ["dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring"
+      ],
+      "products": [
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
   {
     "slug": "ldpe",
     "name": "Low-Density Polyethylene",
-    "aliases": ["LDPE"],
+    "aliases": [
+      "LDPE"
+    ],
     "description": "A branched, low-density form of polyethylene known for its softness and flexibility, often used in pliable catheter tips and sections, valued for its low melting point and ease of RF tip forming.",
     "long_description": "LDPE (Low-Density Polyethylene) is a polyethylene variant characterized by a high degree of long-chain branching, which yields a lower density, lower crystallinity, and a melting point around 105–115°C. This structure makes LDPE a very soft and flexible polymer. In catheter manufacturing, LDPE is selected for applications that require a very pliable material, such as atraumatic distal tips, soft sleeves, or flexible tubing sections. Its low durometer and melting temperature allow it to form smooth, atraumatic tips or flares at relatively low RF energy, though its lower strength means it’s generally used in less mechanically demanding portions of a device. During RF-based tipping or flaring, LDPE softens quickly and flows easily into molds, and with proper cooling it re-solidifies to a smooth finish. Because it is so soft when molten, process control (minimal heat input, short dwell time, and supportive mandrels or molds) is important to maintain concentricity and prevent over-melting or sticking. LDPE is chemically inert and compatible with common gas sterilization (EtO) and usually tolerant of gamma sterilization for single-use products (though radiation may cause some embrittlement). It cannot withstand standard steam autoclaving due to its low melting point. Medical-grade LDPE resins are available for use in healthcare products, but the specific grade’s biocompatibility and any additives should be verified via supplier documentation and device-level testing.",
     "properties": {
@@ -433,7 +598,11 @@
       "elongation": "300–700% (grade-dependent)",
       "tensile_strength": "1,000–2,400 psi (grade-dependent)",
       "density": "0.91–0.925 g/cc (typical)",
-      "sterilization_methods": ["EtO", "Gamma (possible slight embrittlement)", "Steam (not recommended due to low melt point)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma (possible slight embrittlement)",
+        "Steam (not recommended due to low melt point)"
+      ],
       "water_absorption_24h": "<0.1% (extremely low, hydrophobic)",
       "radiopacity": "Not inherently radiopaque; can be compounded with radiopaque fillers (e.g., barium sulfate or tungsten) if X-ray visibility is required"
     },
@@ -453,14 +622,24 @@
       "usage_scope": "LDPE is commonly used in medical tubing, bags, and disposable device components. Medical-grade LDPE (with FDA or ISO 10993 compliance) should be used for body-contact applications. The base polymer is chemically inert and generally biocompatible for temporary contact, but any additives (antioxidants, colorants) and the specific grade’s certifications must be verified to ensure it meets the necessary biocompatibility and regulatory standards for the intended use."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "products": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "products": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   },
   {
     "slug": "peek",
     "name": "Polyether Ether Ketone",
-    "aliases": ["PEEK"],
+    "aliases": [
+      "PEEK"
+    ],
     "description": "PEEK is a high-performance polymer known for exceptional stiffness, strength, and high-temperature resistance. It is used in demanding medical devices (including certain catheters) where dimensional stability, durability, and biocompatibility are critical.",
     "long_description": "PEEK (polyether ether ketone) is a semi-crystalline thermoplastic valued for very high mechanical strength and thermal stability. Medical-grade PEEK is used where high strength and biocompatibility are required, including long-term medical applications. Unlike more flexible catheter polymers (e.g. PEBAX), PEEK is relatively rigid (around Shore D ~85 in many unfilled grades) and is used in parts that require stiffness and dimensional stability. In catheter design, PEEK often serves as an inner support liner or structural segment where pushability and durability are needed. Because PEEK has a melting point around 343°C, thermal forming processes (such as induction heating of a metal die) require very high tooling temperatures, commonly in the 350–500°C range depending on geometry and process. With precise control, PEEK can be thermoformed into stiff catheter tips, flares, or connector components. PEEK is chemically resistant and is compatible with common medical sterilization methods such as steam autoclave, gamma, and EtO when appropriate grades are selected. It is inherently radiolucent, so radiopaque fillers (e.g. barium sulfate or tungsten) are often added when X-ray visibility is required. PEEK’s high stiffness and melt viscosity make it unsuitable for highly flexible catheter distal segments and it is not used for RF-welded packaging films; it is typically reserved for structural segments and components.",
     "properties": {
@@ -469,7 +648,11 @@
       "elongation": "25–40% (grade-dependent)",
       "tensile_strength": "98–110 MPa (~14,000–16,000 psi)",
       "density": "1.30 g/cc (typical)",
-      "sterilization_methods": ["EtO", "Gamma", "Steam (autoclave)"],
+      "sterilization_methods": [
+        "EtO",
+        "Gamma",
+        "Steam (autoclave)"
+      ],
       "water_absorption_24h": "0.1% (typical)",
       "radiopacity": "Low (requires radiopaque fillers such as barium sulfate or tungsten for X-ray visibility)"
     },
@@ -490,10 +673,16 @@
       "usage_scope": "PEEK is available in medical-grade formulations (commonly supplied in grades intended to support USP Class VI and/or ISO 10993 testing programs) and is widely used in long-term implantable and interventional medical components. Biocompatibility depends on the exact grade, additives, pigments, and processing history, so medical device programs should verify compliance for the selected material and finished component."
     },
     "related": {
-      "applications": ["catheter-tipping", "catheter-flaring", "catheter-bonding"],
-      "product": ["catheter-tipper", "dual-catheter-tipper", "catheter-tipper-pro"]
+      "applications": [
+        "catheter-tipping",
+        "catheter-flaring",
+        "catheter-bonding"
+      ],
+      "product": [
+        "catheter-tipper",
+        "dual-catheter-tipper",
+        "catheter-tipper-pro"
+      ]
     }
   }
-    
-  ]
-  
+]
